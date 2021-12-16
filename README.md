@@ -6,4 +6,4 @@
 
 ### Math
 
-* [Factorial](/Math/factorial.py)
+* [Factorial](https://github.com/taek0622/Algorithm-Notes/blob/main/Math/factorial.py)
