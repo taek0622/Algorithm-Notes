@@ -6,7 +6,6 @@ def factorial(n):
     else:
         return 1
 
-
 '''
 [Input Example]
 factorial(5)
