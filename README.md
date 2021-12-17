@@ -20,3 +20,6 @@
 * Number Card Game (숫자 카드 게임)
   * [Solution 1 (풀이 1)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/number-card-game-example1.py)
   * [★ Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/number-card-game-example2.py)
+* Until it becomes 1 (1이 될 때까지)
+  * [Solution 1 (풀이 1)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/until-it-becomes-one-example1.py)
+  * [★ Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/until-it-becomes-one-example2.py)
