@@ -6,7 +6,7 @@ num.sort()
 max1 = num[n-1]
 max2 = num[n-2]
 
-cnt = int(m / (k+1)) * k
+cnt = m // (k+1) * k
 cnt += m % (k+1)
 
 sum = cnt * max1 + (m - cnt) * max2
