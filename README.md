@@ -19,4 +19,4 @@
   * [★ Solution 3 (풀이 3)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/law-of-great-numbers-example3.py)
 * Number Card Game (숫자 카드 게임)
   * [Solution 1 (풀이 1)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/number-card-game-example1.py)
-  * [Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/number-card-game-example2.py)
+  * [★ Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/number-card-game-example2.py)
