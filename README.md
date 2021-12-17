@@ -29,3 +29,6 @@
 * Up Down Left Right (상하좌우)
   * [Solution 1 (풀이 1)](https://github.com/taek0622/Algorithm-Notes/blob/main/Implementation/left-right-up-down-example1.py)
   * [Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Implementation/left-right-up-down-example2.py)
+* Find 3 in time (시각)
+  * [Solution 1 (풀이 1)](https://github.com/taek0622/Algorithm-Notes/blob/main/Implementation/find-three-in-time1.py)
+  * [Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Implementation/find-three-in-time2.py)
