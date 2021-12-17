@@ -16,4 +16,4 @@
 * Law of Great Numbers (큰 수의 법칙)
   * [Solution 1 (풀이 1)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/law-of-great-numbers-example1.py)
   * [Solution 2 (풀이 2)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/law-of-great-numbers-example2.py)
-  * [Solution 3 (풀이 3)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/law-of-great-numbers-example3.py)
+  * [★ Solution 3 (풀이 3)](https://github.com/taek0622/Algorithm-Notes/blob/main/Greedy/law-of-great-numbers-example3.py)
