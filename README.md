@@ -6,6 +6,6 @@
 
 ## Contents
 
-* [Python]()
-* [Swift]()
+* [Python](https://github.com/taek0622/Algorithm-Notes/blob/main/Python/Python.md)
+* [Swift](https://github.com/taek0622/Algorithm-Notes/blob/main/Swift/Swift.md)
 
