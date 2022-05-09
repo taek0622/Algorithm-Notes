@@ -2,18 +2,17 @@
 //  main.swift
 //  Swift
 //
-//  Created by 김민택 on 2022/05/09.
+//  Created by 김민택 on 2022/05/10.
 //
 
 var input = readLine()!.split(separator: " ").map {
-    Int(String($0))!
+    Int($0)!
 }
 
-var result = 0
+var result = 1
 
 for i in input {
-    result += i
+    result *= i
 }
 
 print(result)
-

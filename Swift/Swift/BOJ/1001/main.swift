@@ -9,11 +9,5 @@ var input = readLine()!.split(separator: " ").map {
     Int(String($0))!
 }
 
-var result = 0
-
-for i in input {
-    result += i
-}
-
-print(result)
+print(input[0] - input[1])
 
