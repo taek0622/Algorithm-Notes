@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26268D7C282E2B4300C69A38 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26268D7B282E2B4300C69A38 /* main.swift */; };
+		26268D7F282E32BB00C69A38 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26268D7E282E32BB00C69A38 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +45,7 @@
 		26268D75282D390000C69A38 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		26268D78282D5EEA00C69A38 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		26268D7B282E2B4300C69A38 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		26268D7E282E32BB00C69A38 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		261BD6D92829595500661F63 /* BOJ */ = {
 			isa = PBXGroup;
 			children = (
+				26268D7D282E32AE00C69A38 /* 10950 */,
 				26268D7A282E2B3400C69A38 /* 2739 */,
 				26268D77282D5EDD00C69A38 /* 2480 */,
 				26268D74282D38EB00C69A38 /* 2525 */,
@@ -278,6 +280,14 @@
 			path = 2739;
 			sourceTree = "<group>";
 		};
+		26268D7D282E32AE00C69A38 /* 10950 */ = {
+			isa = PBXGroup;
+			children = (
+				26268D7E282E32BB00C69A38 /* main.swift */,
+			);
+			path = 10950;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,7 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26268D7C282E2B4300C69A38 /* main.swift in Sources */,
+				26268D7F282E32BB00C69A38 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
