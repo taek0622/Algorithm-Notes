@@ -4,6 +4,7 @@
 //
 //  Created by 김민택 on 2022/06/09.
 //
+
 // 메모리: 85708KB, 시간: 156ms, 코드 길이: 528B
 var input = Array(readLine()!.uppercased())
 
@@ -45,6 +46,7 @@ if maxCount == 1 {
  word.forEach {
      table[$0, default: 0] += 1
  }
+
  if table.count == 1 {
      print(word[word.startIndex])
  } else { // count > 1
