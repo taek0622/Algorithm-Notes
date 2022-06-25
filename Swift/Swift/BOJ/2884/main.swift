@@ -6,9 +6,7 @@
 //
 
 // 메모리: 69104KB, 시간: 8ms, 코드 길이: 171B
-var input = readLine()!.split(separator: " ").map {
-    Int(String($0))!
-}
+var input = readLine()!.split(separator: " ").map { Int(String($0))! }
 
 var time = (input[0] * 60 + input[1] - 45) + 24 * 60
 
