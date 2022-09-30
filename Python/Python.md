@@ -15,9 +15,11 @@
 - Number Card Game (숫자 카드 게임)
   - [Solution 1 (풀이 1)](./Greedy/number-card-game-1.py)
   - [★ Solution 2 (풀이 2)](./Greedy/number-card-game-2.py)
+  - [Solution 3 (풀이 3)](./Greedy/number-card-game-3.py)
 - Until it becomes 1 (1이 될 때까지)
   - [Solution 1 (풀이 1)](./Greedy/until-it-becomes-one-1.py)
   - [★ Solution 2 (풀이 2)](./Greedy/until-it-becomes-one-2.py)
+  - [Solution 3 (풀이 3)](./Greedy/until-it-becomes-one-3.py)
 
 ## Implementation (구현)
 
