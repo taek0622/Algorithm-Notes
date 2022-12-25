@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/12.
 //
 
-// 2-4단계 14681번 사분면 고르기
+// 문제: https://www.acmicpc.net/problem/14681
 
 class BOJ14681 {
     func run() {

@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 2-2단계 9498번 시험 성적
+// 문제: https://www.acmicpc.net/problem/9498
 
 class BOJ9498 {
     func run() {

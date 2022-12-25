@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 1-10단계 10430번 나머지
+// 문제: https://www.acmicpc.net/problem/10430
 
 class BOJ10430 {
     func run() {

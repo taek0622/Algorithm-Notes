@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/10.
 //
 
-// 1-5단계 1008번 A/B
+// 문제: https://www.acmicpc.net/problem/1008
 
 class BOJ1008 {
     func run() {

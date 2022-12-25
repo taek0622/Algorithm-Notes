@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 1-7단계 10926번 ??!
+// 문제: https://www.acmicpc.net/problem/10926
 
 class BOJ10926 {
     func run() {

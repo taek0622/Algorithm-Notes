@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/10.
 //
 
-// 1-4단계 10998번 AxB
+// 문제: https://www.acmicpc.net/problem/10998
 
 class BOJ10998 {
     func run() {

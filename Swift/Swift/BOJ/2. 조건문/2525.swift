@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/12.
 //
 
-// 2-6단계 2525번 오븐 시계
+// 문제: https://www.acmicpc.net/problem/2525
 
 class BOJ2525 {
     func run() {

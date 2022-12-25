@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/09.
 //
 
-// 1-3단계 1001번 A-B
+// 문제: https://www.acmicpc.net/problem/1001
 
 class BOJ1001 {
     func run() {

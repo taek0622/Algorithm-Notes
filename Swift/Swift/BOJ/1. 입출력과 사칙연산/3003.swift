@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/12/25.
 //
 
-// 1-9단계 3003번 킹, 퀸, 룩, 비숍, 나이트, 폰
+// 문제: https://www.acmicpc.net/problem/3003
 
 class BOJ3003 {
     // 메모리: 69104KB, 시간: 8ms, 코드 길이: 242B

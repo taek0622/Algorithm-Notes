@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 1-11단계 2588번 곱셈
+// 문제: https://www.acmicpc.net/problem/2588
 
 class BOJ2588 {
     func run() {

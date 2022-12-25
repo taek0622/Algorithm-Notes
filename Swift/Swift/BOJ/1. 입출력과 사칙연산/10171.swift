@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/10.
 //
 
-// 1-12단계 10171번 고양이
+// 문제: https://www.acmicpc.net/problem/10171
 
 class BOJ10171 {
     func run() {

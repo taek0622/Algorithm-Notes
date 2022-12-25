@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/10.
 //
 
-// 1-6단계 10869번 사칙연산
+// 문제: https://www.acmicpc.net/problem/10869
 
 class BOJ10869 {
     func run() {

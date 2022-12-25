@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/10.
 //
 
-// 1-14단계 25083번 새싹
+// 문제: https://www.acmicpc.net/problem/25083
 
 class BOJ25083 {
     func run() {

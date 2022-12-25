@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/09.
 //
 
-// 1-2단계 1000번 A+B
+// 문제: https://www.acmicpc.net/problem/1000
 
 class BOJ1000 {
     func run() {

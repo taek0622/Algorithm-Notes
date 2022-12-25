@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 2-1단계 1330번 두 수 비교하기
+// 문제: https://www.acmicpc.net/problem/1330
 
 class BOJ1330 {
     func run() {

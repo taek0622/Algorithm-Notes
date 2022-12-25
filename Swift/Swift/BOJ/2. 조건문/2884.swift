@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/12.
 //
 
-// 2-5단계 2884번 알람 시계
+// 문제: https://www.acmicpc.net/problem/2884
 
 class BOJ2884 {
     func run() {

@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 1-8단계 18108번 1998년생인 내가 태국에서는 2541년생?!
+// 문제: https://www.acmicpc.net/problem/18108
 
 class BOJ18108 {
     func run() {

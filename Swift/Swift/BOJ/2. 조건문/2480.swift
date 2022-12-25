@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/13.
 //
 
-// 2-7단계 2480번 주사위 세개
+// 문제: https://www.acmicpc.net/problem/2480
 
 class BOJ2480 {
     func run() {

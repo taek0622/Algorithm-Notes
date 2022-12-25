@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/05/11.
 //
 
-// 2-3단계 2753번 윤년
+// 문제: https://www.acmicpc.net/problem/2753
 
 class BOJ2753 {
     func run() {
