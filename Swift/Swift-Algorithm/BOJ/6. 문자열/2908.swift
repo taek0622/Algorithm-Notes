@@ -9,34 +9,38 @@
 
 class BOJ2908 {
     func run() {
-        // 메모리: 69104KB, 시간: 8ms, 코드: 83B
+        solution4()
+    }
+
+    // 메모리: 69104KB, 시간: 12ms, 코드 길이: 231B
+    private func solution1() {
+        var input = readLine()!.split(separator: " ").map { String($0) }
+
+        var num1 = Int(String(Array(input[0]).reversed()))!
+        var num2 = Int(String(Array(input[1]).reversed()))!
+
+        if num1 >= num2 {
+            print(num1)
+        }
+        else {
+            print(num2)
+        }
+    }
+
+    // 메모리: 69104KB, 시간: 12ms, 코드 길이: 117B
+    private func solution2() {
+        var input = readLine()!.split(separator: " ").map { Int(String(Array(String($0)).reversed()))! }
+
+        print(input.max()!)
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 98B
+    private func solution3() {
+        print(readLine()!.split(separator: " ").map { Int(String(Array(String($0)).reversed()))! }.max()!)
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드: 83B
+    private func solution4() {
         print(readLine()!.split(separator: " ").map { Int(String($0.reversed()))! }.max()!)
-
-        /*
-         메모리: 69104KB, 시간: 8ms, 코드 길이: 98B
-         print(readLine()!.split(separator: " ").map { Int(String(Array(String($0)).reversed()))! }.max()!)
-         */
-
-        /*
-         메모리: 69104KB, 시간: 12ms, 코드 길이: 117B
-         var input = readLine()!.split(separator: " ").map { Int(String(Array(String($0)).reversed()))! }
-
-         print(input.max()!)
-         */
-
-        /*
-         메모리: 69104KB, 시간: 12ms, 코드 길이: 231B
-         var input = readLine()!.split(separator: " ").map { String($0) }
-
-         var num1 = Int(String(Array(input[0]).reversed()))!
-         var num2 = Int(String(Array(input[1]).reversed()))!
-
-         if num1 >= num2 {
-             print(num1)
-         }
-         else {
-             print(num2)
-         }
-         */
     }
 }

@@ -9,26 +9,30 @@
 
 class BOJ10952 {
     func run() {
-        // 메모리: 69104KB, 시간: 8ms, 코드 길이: 132B
+        solution2()
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 284B
+    private func solution1() {
+        var sum: [Int] = []
+
+        while true {
+            var input = readLine()!.split(separator: " ").compactMap { Int(String($0))! }
+            
+            if input[0] == 0 && input[1] == 0 {
+                break
+            }
+            
+            sum.append(input[0] + input[1])
+        }
+
+        print(sum.compactMap { String($0) }.joined(separator: " "))
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 132B
+    private func solution2() {
         while let input = readLine(), input != "0 0" {
             print(input.split(separator: " ").compactMap { Int(String($0))! }.reduce(0, +))
         }
-
-        /*
-         메모리: 69104KB, 시간: 8ms, 코드 길이: 284B
-         var sum: [Int] = []
-
-         while true {
-             var input = readLine()!.split(separator: " ").compactMap { Int(String($0))! }
-             
-             if input[0] == 0 && input[1] == 0 {
-                 break
-             }
-             
-             sum.append(input[0] + input[1])
-         }
-
-         print(sum.compactMap { String($0) }.joined(separator: " "))
-         */
     }
 }

@@ -9,7 +9,33 @@
 
 class BOJ1330 {
     func run() {
-        // 메모리: 69104KB, 시간: 8ms, 코드 길이: 142B
+        solution2()
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 191B
+    private func solution1() {
+        let input = readLine()!.split(separator: " ").map {
+            Int($0)!
+        }
+
+        let a = input[0]
+        let b = input[1]
+
+        if a > b {
+            print(">")
+        }
+
+        if a < b {
+            print("<")
+        }
+
+        if a == b {
+            print("==")
+        }
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 142B
+    private func solution2() {
         let input = readLine()!.split(separator: " ").map {
             Int($0)!
         }
@@ -18,28 +44,5 @@ class BOJ1330 {
         let b = input[1]
 
         print(a > b ? ">" : a < b ? "<" : "==")
-
-        /*
-         메모리: 69104KB, 시간: 8ms, 코드 길이: 191B
-         var input = readLine()!.split(separator: " ").map {
-             Int($0)!
-         }
-
-         var a = input[0]
-         var b = input[1]
-
-         if a > b {
-             print(">")
-         }
-
-         if a < b {
-             print("<")
-         }
-
-         if a == b {
-             print("==")
-         }
-         */
-
     }
 }

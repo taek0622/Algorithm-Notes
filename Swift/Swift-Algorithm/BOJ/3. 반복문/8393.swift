@@ -9,22 +9,26 @@
 
 class BOJ8393 {
     func run() {
-        // 메모리: 69100KB, 시간: 8ms, 코드 길이: 66B
+        solution2()
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 100B
+    private func solution1() {
+        var input = Int(readLine()!)!
+
+        var result = 0
+
+        for i in 1...input {
+            result += i
+        }
+
+        print(result)
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 66B
+    private func solution2() {
         let input = Int(readLine()!)!
 
         print("\(input * (input + 1) / 2)")
-
-        /*
-         메모리: 69100KB, 시간: 8ms, 코드 길이: 100B
-         var input = Int(readLine()!)!
-
-         var result = 0
-
-         for i in 1...input {
-             result += i
-         }
-
-         print(result)
-         */
     }
 }

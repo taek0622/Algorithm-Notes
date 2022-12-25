@@ -9,21 +9,25 @@
 
 class BOJ2439 {
     func run() {
-        // 메모리: 69100KB, 시간: 12ms, 코드 길이: 145B
+        solution2()
+    }
+
+    // 메모리: 69100KB, 시간: 12ms, 코드 길이: 165B
+    private func solution1() {
+        var input = Int(readLine()!)!
+
+        for i in 1...input {
+            print(String(repeating: " ", count: input - i), terminator: "")
+            print(String(repeating: "*", count: i))
+        }
+    }
+
+    // 메모리: 69100KB, 시간: 12ms, 코드 길이: 145B
+    private func solution2() {
         let input = Int(readLine()!)!
 
         for i in 1...input {
             print("\(String(repeating: " ", count: input - i))\(String(repeating: "*", count: i))")
         }
-
-        /*
-         메모리: 69100KB, 시간: 12ms, 코드 길이: 165B
-         var input = Int(readLine()!)!
-
-         for i in 1...input {
-             print(String(repeating: " ", count: input - i), terminator: "")
-             print(String(repeating: "*", count: i))
-         }
-         */
     }
 }

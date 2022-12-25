@@ -9,7 +9,26 @@
 
 class BOJ2480 {
     func run() {
-        // 메모리: 69112KB, 시간: 8ms, 코드 길이: 253B
+        solution2()
+    }
+
+    // 메모리: 69108KB, 시간: 8ms, 코드 길이: 299B
+    private func solution1() {
+        let input = readLine()!.split(separator: " ").map { Int($0)! }.sorted()
+
+        if input[0] == input[1] && input[0] == input[2] {
+            print("\(input[0] * 1000 + 10000)")
+        }
+        else if input[0] == input[1] || input[1] == input[2] {
+            print("\(input[1] * 100 + 1000)")
+        }
+        else {
+            print("\(input[2] * 100)")
+        }
+    }
+
+    // 메모리: 69112KB, 시간: 8ms, 코드 길이: 253B
+    private func solution2() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }.sorted()
         let set = Set(input)
 
@@ -22,21 +41,5 @@ class BOJ2480 {
         else {
             print(input[2] * 100)
         }
-
-        /*
-         메모리: 69108KB, 시간: 8ms, 코드 길이: 299B
-         let input = readLine()!.split(separator: " ").map { Int($0)! }.sorted()
-
-         if input[0] == input[1] && input[0] == input[2] {
-             print("\(input[0] * 1000 + 10000)")
-         }
-         else if input[0] == input[1] || input[1] == input[2] {
-             print("\(input[1] * 100 + 1000)")
-         }
-         else {
-             print("\(input[2] * 100)")
-         }
-         */
-
     }
 }

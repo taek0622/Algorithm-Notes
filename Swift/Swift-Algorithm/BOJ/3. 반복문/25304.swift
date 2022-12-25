@@ -13,7 +13,7 @@ class BOJ25304 {
     }
 
     // 메모리: 69104KB, 시간: 8ms, 코드 길이: 224B
-    func solution1() {
+    private func solution1() {
         let X = Int(readLine()!)!
         let N = Int(readLine()!)!
 
@@ -28,7 +28,7 @@ class BOJ25304 {
     }
 
     // 메모리: 69104KB, 시간: 8ms, 코드 길이: 199B
-    func solution2() {
+    private func solution2() {
         let X = Int(readLine()!)!
         let N = Int(readLine()!)!
 
@@ -42,7 +42,7 @@ class BOJ25304 {
     }
 
     // 메모리: 69104KB, 시간: 20ms, 코드 길이: 182B
-    func solution3() {
+    private func solution3() {
         var X = Int(readLine()!)!
         let N = Int(readLine()!)!
 

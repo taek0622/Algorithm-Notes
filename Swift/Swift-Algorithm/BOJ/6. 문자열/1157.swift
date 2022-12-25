@@ -9,7 +9,11 @@
 
 class BOJ1157 {
     func run() {
-        // 메모리: 85708KB, 시간: 156ms, 코드 길이: 528B
+        solution1()
+    }
+
+    // 메모리: 85708KB, 시간: 156ms, 코드 길이: 528B
+    private func solution1() {
         let input = Array(readLine()!.uppercased())
 
         let alphabet = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
@@ -41,31 +45,31 @@ class BOJ1157 {
         } else {
             print("?")
         }
+    }
 
-        /*
-         출처: https://www.acmicpc.net/source/43965449
-         메모리: 81520KB, 시간: 108ms, 코드 길이: 486B
-         let word = readLine()!.uppercased()
-         var table: Dictionary<Character, Int> = [:]
-         word.forEach {
-             table[$0, default: 0] += 1
-         }
+    // 메모리: 81520KB, 시간: 108ms, 코드 길이: 486B
+    // 출처: https://www.acmicpc.net/source/43965449
+    private func solution2() {
+        let word = readLine()!.uppercased()
+        var table: Dictionary<Character, Int> = [:]
+        word.forEach {
+            table[$0, default: 0] += 1
+        }
 
-         if table.count == 1 {
-             print(word[word.startIndex])
-         } else { // count > 1
-             let values = table.values.sorted(by: >)
-             if values[0] == values[1] {
-                 print("?")
-             } else {
-                 for (key, value) in table {
-                     if value == values[0] {
-                         print(key)
-                         break
-                     }
-                 }
-             }
-         }
-         */
+        if table.count == 1 {
+            print(word[word.startIndex])
+        } else { // count > 1
+            let values = table.values.sorted(by: >)
+            if values[0] == values[1] {
+                print("?")
+            } else {
+                for (key, value) in table {
+                    if value == values[0] {
+                        print(key)
+                        break
+                    }
+                }
+            }
+        }
     }
 }

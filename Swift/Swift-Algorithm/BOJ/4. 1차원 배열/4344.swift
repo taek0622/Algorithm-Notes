@@ -10,7 +10,6 @@
 class BOJ4344 {
     func run() {
         // 메모리: 79512KB, 시간: 16ms, 코드 길이: 491B
-
         let input = Int(readLine()!)!
 
         for _ in 0..<input {

@@ -9,13 +9,11 @@
 
 class BOJ11720 {
     func run() {
-        // 메모리: 69100KB, 시간: 8ms, 코드 길이: 93B
-        let input = Int(readLine()!)!
+        solution2()
+    }
 
-        print(Array(readLine()!).map{ Int(String($0))! }.reduce(0, +))
-
-        /*
-        메모리: 69100KB, 시간: 12ms, 코드 길이: 162B
+    // 메모리: 69100KB, 시간: 12ms, 코드 길이: 162B
+    private func solution1() {
         let input = Int(readLine()!)!
 
         let intString = Array(readLine()!).map{ Int(String($0))! }
@@ -27,6 +25,12 @@ class BOJ11720 {
         }
 
         print(sum)
-         */
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 93B
+    private func solution2() {
+        let input = Int(readLine()!)!
+
+        print(Array(readLine()!).map{ Int(String($0))! }.reduce(0, +))
     }
 }

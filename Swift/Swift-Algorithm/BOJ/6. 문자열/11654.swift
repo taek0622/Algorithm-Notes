@@ -9,21 +9,25 @@
 
 class BOJ11654 {
     func run() {
-        // 메모리: 69096KB, 시간: 8ms, 코드 길이: 37B
+        solution3()
+    }
+
+    // 메모리: 69096KB, 시간: 8ms, 코드 길이: 45B
+    private func solution1() {
+        print(Int(UnicodeScalar(readLine()!)!.value))
+    }
+
+    // 메모리: 69096KB, 시간: 12ms, 코드 길이: 83B
+    private func solution2() {
+        let input = readLine()!
+
+        let ascii = Int(UnicodeScalar(input)!.value)
+
+        print(ascii)
+    }
+
+    // 메모리: 69096KB, 시간: 8ms, 코드 길이: 37B
+    private func solution3() {
         print(readLine()!.first!.asciiValue!)
-
-        /*
-         메모리: 69096KB, 시간: 8ms, 코드 길이: 45B
-         print(Int(UnicodeScalar(readLine()!)!.value))
-         */
-
-        /*
-         메모리: 69096KB, 시간: 12ms, 코드 길이: 83B
-         let input = readLine()!
-
-         let ascii = Int(UnicodeScalar(input)!.value)
-
-         print(ascii)
-         */
     }
 }

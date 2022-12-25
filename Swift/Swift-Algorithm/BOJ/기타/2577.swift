@@ -9,7 +9,11 @@
 
 class BOJ2577 {
     func run() {
-        // 메모리: 69100KB, 시간: 8ms, 코드 길이: 271B
+        solution1()
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 271B
+    private func solution1() {
         let a = Int(readLine()!)!
         let b = Int(readLine()!)!
         let c = Int(readLine()!)!
@@ -26,12 +30,12 @@ class BOJ2577 {
         for i in numberArray {
             print(i)
         }
+    }
 
-        /*
-         메모리: 60392KB, 시간: 8ms, 코드 길이: 128B
-         var a=[0,0,0,0,0,0,0,0,0,0]
-         String([1,2,3].map{_ in Int(readLine()!)!}.reduce(1,*)).map{a[Int(String($0))!]+=1}
-         a.map{print($0)}
-         */
+    // 메모리: 60392KB, 시간: 8ms, 코드 길이: 128B
+    private func solution2() {
+        var a=[0,0,0,0,0,0,0,0,0,0]
+        String([1,2,3].map{_ in Int(readLine()!)!}.reduce(1,*)).map{a[Int(String($0))!]+=1}
+        a.map{print($0)}
     }
 }

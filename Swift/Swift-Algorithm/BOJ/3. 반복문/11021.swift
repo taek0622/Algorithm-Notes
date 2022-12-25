@@ -9,31 +9,35 @@
 
 class BOJ11021 {
     func run() {
-        // 메모리: 69104KB, 시간: 8ms, 코드 길이: 175B
+        solution2()
+    }
+
+    // 메모리: 69104KB, 시간: 12ms, 코드 길이: 174B
+    private func solution1() {
+        let input = Int(readLine()!)!
+
+        for i in 0..<input {
+            let num = readLine()!.split(separator: " ").map { Int(String($0))! }
+            print("Case #\(i + 1): \(num[0] + num[1])")
+        }
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 175B
+    private func solution2() {
         let input = Int(readLine()!)!
 
         for i in 0..<input {
             let num = readLine()!.split(separator: " ").map { Int(String($0))! }.reduce(0, +)
             print("Case #\(i + 1): \(num)")
         }
+    }
 
-        /*
-         메모리: 69104KB, 시간: 12ms, 코드 길이: 153B
-         let input = Int(readLine()!)!
+    // 메모리: 69104KB, 시간: 12ms, 코드 길이: 153B
+    private func solution3() {
+        let input = Int(readLine()!)!
 
-         for i in 1...input {
-             print("Case #\(i): \(readLine()!.split(separator: " ").map { Int(String($0))! }.reduce(0, +))")
-         }
-         */
-
-        /*
-         메모리: 69104KB, 시간: 12ms, 코드 길이: 174B
-         let input = Int(readLine()!)!
-
-         for i in 0..<input {
-             let num = readLine()!.split(separator: " ").map { Int(String($0))! }
-             print("Case #\(i + 1): \(num[0] + num[1])")
-         }
-         */
+        for i in 1...input {
+            print("Case #\(i): \(readLine()!.split(separator: " ").map { Int(String($0))! }.reduce(0, +))")
+        }
     }
 }

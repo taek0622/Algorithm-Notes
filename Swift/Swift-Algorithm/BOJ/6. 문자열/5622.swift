@@ -42,6 +42,5 @@ class BOJ5622 {
         }
 
         print(sum)
-
     }
 }

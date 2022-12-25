@@ -9,7 +9,11 @@
 
 class BOJ4673 {
     func run() {
-        // 메모리: 69236KB, 시간: 8ms, 코드 길이: 315B
+        solution1()
+    }
+
+    // 메모리: 69236KB, 시간: 8ms, 코드 길이: 315B
+    private func solution1() {
         func d(_ originalNumber: Int) -> Int {
             var n = originalNumber
             var sum = n
@@ -29,30 +33,30 @@ class BOJ4673 {
         for i in selfNumberFilter.sorted() {
             print(i)
         }
+    }
 
-        /*
-         메모리: 69360KB, 시간: 12ms, 코드 길이: 339B
-         func d(_ originalNumber: Int) -> Int {
-             var n = originalNumber
-             var sum = n
-             while n > 0 {
-                 sum += n % 10
-                 n /= 10
-             }
-             return sum
-         }
+    // 메모리: 69360KB, 시간: 12ms, 코드 길이: 339B
+    private func solution2() {
+        func d(_ originalNumber: Int) -> Int {
+            var n = originalNumber
+            var sum = n
+            while n > 0 {
+                sum += n % 10
+                n /= 10
+            }
+            return sum
+        }
 
-         var selfNumberFilter = Set<Int>()
+        var selfNumberFilter = Set<Int>()
 
-         for i in 1...10000 {
-             selfNumberFilter.insert(d(i))
-         }
+        for i in 1...10000 {
+            selfNumberFilter.insert(d(i))
+        }
 
-         for i in 1...10000 {
-             if !selfNumberFilter.contains(i) {
-                 print(i)
-             }
-         }
-         */
+        for i in 1...10000 {
+            if !selfNumberFilter.contains(i) {
+                print(i)
+            }
+        }
     }
 }
