@@ -14,7 +14,7 @@ class BOJ2439 {
 
     // 메모리: 69100KB, 시간: 12ms, 코드 길이: 165B
     private func solution1() {
-        var input = Int(readLine()!)!
+        let input = Int(readLine()!)!
 
         for i in 1...input {
             print(String(repeating: " ", count: input - i), terminator: "")

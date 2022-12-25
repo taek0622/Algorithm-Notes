@@ -14,8 +14,8 @@ class BOJ1546 {
 
     // 메모리: 69104KB, 시간: 8ms, 코드 길이: 218B
     private func solution1() {
-        var count = Int(readLine()!)!
-        var number = readLine()!.split(separator: " ").map { Int(String($0))! }
+        let count = Int(readLine()!)!
+        let number = readLine()!.split(separator: " ").map { Int(String($0))! }
 
         var sum = 0.0
 

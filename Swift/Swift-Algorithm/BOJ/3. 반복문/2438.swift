@@ -14,7 +14,7 @@ class BOJ2438 {
 
     // 메모리: 69100KB, 시간: 12ms, 코드 길이: 129B
     private func solution1() {
-        var input = Int(readLine()!)!
+        let input = Int(readLine()!)!
 
         for i in 1...input {
             for _ in 1...i {
@@ -26,7 +26,7 @@ class BOJ2438 {
 
     // 메모리: 69100KB, 시간: 8ms, 코드 길이: 97B
     private func solution2() {
-        var input = Int(readLine()!)!
+        let input = Int(readLine()!)!
 
         for i in 1...input {
             print(String(repeating: "*", count: i))

@@ -14,7 +14,7 @@ class BOJ1065 {
 
     // 메모리: 69100KB, 시간: 12ms, 코드 길이: 628B
     private func solution1() {
-        var input = Int(readLine()!)!
+        let input = Int(readLine()!)!
         var cnt = 0
 
         for i in 1...input {
@@ -52,7 +52,7 @@ class BOJ1065 {
 
     // 메모리: 69100KB, 시간: 12ms, 코드 길이: 525B
     private func solution2() {
-        var input = Int(readLine()!)!
+        let input = Int(readLine()!)!
         var cnt = 0
 
         for i in 1...input {

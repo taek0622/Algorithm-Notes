@@ -14,10 +14,10 @@ class BOJ2908 {
 
     // 메모리: 69104KB, 시간: 12ms, 코드 길이: 231B
     private func solution1() {
-        var input = readLine()!.split(separator: " ").map { String($0) }
+        let input = readLine()!.split(separator: " ").map { String($0) }
 
-        var num1 = Int(String(Array(input[0]).reversed()))!
-        var num2 = Int(String(Array(input[1]).reversed()))!
+        let num1 = Int(String(Array(input[0]).reversed()))!
+        let num2 = Int(String(Array(input[1]).reversed()))!
 
         if num1 >= num2 {
             print(num1)
@@ -29,7 +29,7 @@ class BOJ2908 {
 
     // 메모리: 69104KB, 시간: 12ms, 코드 길이: 117B
     private func solution2() {
-        var input = readLine()!.split(separator: " ").map { Int(String(Array(String($0)).reversed()))! }
+        let input = readLine()!.split(separator: " ").map { Int(String(Array(String($0)).reversed()))! }
 
         print(input.max()!)
     }

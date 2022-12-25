@@ -14,7 +14,7 @@ class BOJ8393 {
 
     // 메모리: 69100KB, 시간: 8ms, 코드 길이: 100B
     private func solution1() {
-        var input = Int(readLine()!)!
+        let input = Int(readLine()!)!
 
         var result = 0
 

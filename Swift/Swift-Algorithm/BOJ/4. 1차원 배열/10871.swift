@@ -14,11 +14,11 @@ class BOJ10871 {
 
     // 메모리: 70012KB, 시간: 20ms, 코드 길이: 281B
     private func solution1() {
-        var input = readLine()!.split(separator: " ").compactMap {
+        let input = readLine()!.split(separator: " ").compactMap {
             Int(String($0))!
         }
 
-        var intArray = readLine()!.split(separator: " ").compactMap {
+        let intArray = readLine()!.split(separator: " ").compactMap {
             Int(String($0))!
         }
 

@@ -6,3 +6,9 @@
 //
 
 // 문제: https://www.acmicpc.net/problem/15552
+
+class BOJ15552 {
+    func run() {
+        
+    }
+}

@@ -17,7 +17,7 @@ class BOJ10952 {
         var sum: [Int] = []
 
         while true {
-            var input = readLine()!.split(separator: " ").compactMap { Int(String($0))! }
+            let input = readLine()!.split(separator: " ").compactMap { Int(String($0))! }
             
             if input[0] == 0 && input[1] == 0 {
                 break
