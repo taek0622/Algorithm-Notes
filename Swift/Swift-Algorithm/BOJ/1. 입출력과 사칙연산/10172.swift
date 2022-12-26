@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/10172
 
-class BOJ10172 {
+class BOJ10172: Solvable {
     // 메모리: 69092KB, 시간: 8ms, 코드 길이: 80B
     func run() {
         let dog = #"""

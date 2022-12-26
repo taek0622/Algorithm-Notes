@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/1157
 
-class BOJ1157 {
+class BOJ1157: Solvable {
     func run() {
         solution1()
     }

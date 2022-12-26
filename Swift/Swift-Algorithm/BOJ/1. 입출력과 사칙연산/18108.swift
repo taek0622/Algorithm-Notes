@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/18108
 
-class BOJ18108 {
+class BOJ18108: Solvable {
     func run() {
         // 2541 - 1998 = 543
         

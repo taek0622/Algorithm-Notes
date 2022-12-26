@@ -9,7 +9,7 @@
 
 import Foundation
 
-class BOJ5597 {
+class BOJ5597: Solvable {
     func run() {
         solution3()
     }

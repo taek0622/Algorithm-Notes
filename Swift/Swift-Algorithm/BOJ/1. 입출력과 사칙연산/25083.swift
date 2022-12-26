@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/25083
 
-class BOJ25083 {
+class BOJ25083: Solvable {
     func run() {
         let bud = #"""
                  ,r'"7

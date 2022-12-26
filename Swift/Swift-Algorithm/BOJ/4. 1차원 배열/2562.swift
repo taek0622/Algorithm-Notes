@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/2562
 
-class BOJ2562 {
+class BOJ2562: Solvable {
     func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 205B
         var max = 0

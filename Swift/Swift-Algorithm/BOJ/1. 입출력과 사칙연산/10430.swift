@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/10430
 
-class BOJ10430 {
+class BOJ10430: Solvable {
     func run() {
         let input = readLine()!.split(separator: " ").map {
             Int($0)!

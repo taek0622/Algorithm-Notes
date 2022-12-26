@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/2753
 
-class BOJ2753 {
+class BOJ2753: Solvable {
     func run() {
         let input = Int(readLine()!)!
 

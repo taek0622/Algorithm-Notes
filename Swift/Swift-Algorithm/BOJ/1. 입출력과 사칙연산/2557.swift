@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/2557
 
-class BOJ2557 {
+class BOJ2557: Solvable {
     func run() {
         print("Hello World!")
     }

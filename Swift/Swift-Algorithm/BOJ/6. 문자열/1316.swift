@@ -5,7 +5,7 @@
 //  Created by 김민택 on 2022/12/26.
 //
 
-class BOJ1316 {
+class BOJ1316: Solvable {
     func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 500B
         let N = Int(readLine()!)!

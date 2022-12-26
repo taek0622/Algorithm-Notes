@@ -7,7 +7,7 @@
 
 // 문제: https://www.acmicpc.net/problem/4344
 
-class BOJ4344 {
+class BOJ4344: Solvable {
     func run() {
         // 메모리: 79512KB, 시간: 16ms, 코드 길이: 491B
         let input = Int(readLine()!)!
