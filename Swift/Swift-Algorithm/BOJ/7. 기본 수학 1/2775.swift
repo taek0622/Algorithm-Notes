@@ -12,7 +12,7 @@ class BOJ2775: Solvable {
         solution2()
     }
 
-    // 메모리: 69100KB, 시간: 280ms, 코드 길이: 417B
+    // 메모리: 69100KB, 시간: 280ms, 코드 길이: 391B
     private func solution1() {
         let T = Int(readLine()!)!
 
@@ -24,14 +24,13 @@ class BOJ2775: Solvable {
         }
 
         func checkPopulation(_ k: Int, _ n: Int) -> Int {
-            var floor = k
             var population = 0
 
-            if floor == 0 {
+            if k == 0 {
                 population += n
             } else {
                 for room in 1...n {
-                    population += checkPopulation(floor - 1, room)
+                    population += checkPopulation(k - 1, room)
                 }
             }
 
