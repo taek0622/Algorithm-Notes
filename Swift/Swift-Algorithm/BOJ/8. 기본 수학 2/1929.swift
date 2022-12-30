@@ -9,7 +9,7 @@
 
 class BOJ1929: Solvable {
     func run() {
-        solution3()
+        solution4()
     }
 
     // 메모리: 69104KB, 시간: 364ms, 코드 길이: 412B
@@ -86,6 +86,31 @@ class BOJ1929: Solvable {
         for idx in input[0]...input[1] {
             if numbers[idx] != 0 {
                 print(numbers[idx])
+            }
+        }
+    }
+
+    // 메모리: 70084KB, 시간: 88ms, 코드 길이: 427B
+    private func solution4() {
+        let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+        var numbers = Array(repeating: true, count: 1000001)
+
+        numbers[0] = false
+        numbers[1] = false
+
+        for idx in 2..<numbers.count {
+            if !numbers[idx] {
+                continue
+            }
+
+            for num in stride(from: idx * 2, through: 1000000, by: idx) {
+                numbers[num] = false
+            }
+        }
+
+        for idx in input[0]...input[1] {
+            if numbers[idx] {
+                print(idx)
             }
         }
     }
