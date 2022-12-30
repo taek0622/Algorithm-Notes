@@ -27,10 +27,10 @@ class BOJ11720: Solvable {
         print(sum)
     }
 
-    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 93B
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 86B
     private func solution2() {
         let input = Int(readLine()!)!
 
-        print(Array(readLine()!).map{ Int(String($0))! }.reduce(0, +))
+        print(readLine()!.map{ Int(String($0))! }.reduce(0, +))
     }
 }
