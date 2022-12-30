@@ -9,7 +9,11 @@
 
 class BOJ10809: Solvable {
     func run() {
-        // 메모리: 69096KB, 시간: 8ms, 코드 길이: 193B
+        solution1()
+    }
+
+    // 메모리: 69096KB, 시간: 8ms, 코드 길이: 193B
+    private func solution1() {
         let S = Array(readLine()!)
 
         let alphabet = Array("abcdefghijklmnopqrstuvwxyz")
@@ -21,5 +25,12 @@ class BOJ10809: Solvable {
         }
 
         print(containS)
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 128B
+    private func solution2() {
+        let S = readLine()!.map { $0.asciiValue! }
+
+        (97...122).map { S.firstIndex(of: $0) ?? -1 }.forEach { print($0, terminator: " ") }
     }
 }
