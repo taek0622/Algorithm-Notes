@@ -39,7 +39,31 @@ class BOJ1929: Solvable {
         }
     }
 
+    // 메모리: 76920KB, 시간: 324ms, 코드 길이: 538B
     private func solution2() {
-        
+        let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+        var numbers = Array(0...1000000)
+
+        numbers[0] = 0
+        numbers[1] = 0
+
+        for idx in stride(from: 4, through: 1000000, by: 2) {
+            numbers[idx] = 0
+        }
+
+        for idx in stride(from: 3, through: 1000000, by: 2) {
+            for divisor in stride(from: 3, through: 1000, by: 2) {
+                if numbers[idx] % divisor == 0 && idx != divisor {
+                    numbers[idx] = 0
+                    break
+                }
+            }
+        }
+
+        for idx in input[0]...input[1] {
+            if numbers[idx] != 0 {
+                print(idx)
+            }
+        }
     }
 }
