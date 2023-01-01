@@ -9,7 +9,7 @@
 
 class BOJ1929: Solvable {
     func run() {
-        solution5()
+        solution6()
     }
 
     // 메모리: 69104KB, 시간: 364ms, 코드 길이: 412B
@@ -115,7 +115,7 @@ class BOJ1929: Solvable {
         }
     }
 
-    // 메모리: 78672KB, 시간: 68ms, 코드 길이: 410B
+    // 메모리: 78672KB, 시간: 60ms, 코드 길이: 410B
     private func solution5() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var numbers = Array(0...(input[1] + 1))
@@ -134,5 +134,9 @@ class BOJ1929: Solvable {
         }
 
         print(numbers[input[0]...input[1]].filter { $0 != -1 }.map {"\($0)\n"}.joined())
+    }
+
+    private func solution6() {
+        
     }
 }
