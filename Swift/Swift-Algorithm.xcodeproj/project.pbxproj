@@ -82,6 +82,7 @@
 		268B77EB2961B992006620D3 /* 4948.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B77EA2961B992006620D3 /* 4948.swift */; };
 		26BAD5422961CF2300F30724 /* 9020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5412961CF2300F30724 /* 9020.swift */; };
 		26BAD5452961E6FA00F30724 /* 2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5442961E6FA00F30724 /* 2738.swift */; };
+		26BAD5472961F2FA00F30724 /* 2566.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5462961F2FA00F30724 /* 2566.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,6 +165,7 @@
 		26BA8F98283A8177006FCFA8 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
 		26BAD5412961CF2300F30724 /* 9020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9020.swift; sourceTree = "<group>"; };
 		26BAD5442961E6FA00F30724 /* 2738.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2738.swift; sourceTree = "<group>"; };
+		26BAD5462961F2FA00F30724 /* 2566.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2566.swift; sourceTree = "<group>"; };
 		26BE34A32868B0EC006DCC5F /* 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11022.swift; sourceTree = "<group>"; };
 		26C0D5E1284A512A009CE570 /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
 		26F5FF9E283E3CED00C14D69 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				26BAD5442961E6FA00F30724 /* 2738.swift */,
+				26BAD5462961F2FA00F30724 /* 2566.swift */,
 			);
 			name = "9. 2차원 배열";
 			path = "9. 2차원 배열";
@@ -494,6 +497,7 @@
 				2651E84329587E3D00D700FE /* 11720.swift in Sources */,
 				2651E83429587A9500D700FE /* 1712.swift in Sources */,
 				2651E81329578A1C00D700FE /* 10869.swift in Sources */,
+				26BAD5472961F2FA00F30724 /* 2566.swift in Sources */,
 				2651E83F29587C5F00D700FE /* 4344.swift in Sources */,
 				2651E829295877FD00D700FE /* 2739.swift in Sources */,
 				26333BBA295F44F0005A62FA /* 11653.swift in Sources */,
