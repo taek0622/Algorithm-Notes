@@ -80,6 +80,7 @@
 		2651E84929587EEA00D700FE /* 5622.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26206097285794CF00ED79C8 /* 5622.swift */; };
 		2651E84A29587F0900D700FE /* 2941.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265B1442285CC7A10027FD5F /* 2941.swift */; };
 		268B77EB2961B992006620D3 /* 4948.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B77EA2961B992006620D3 /* 4948.swift */; };
+		26BAD5422961CF2300F30724 /* 9020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5412961CF2300F30724 /* 9020.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -160,6 +161,7 @@
 		268B77EA2961B992006620D3 /* 4948.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4948.swift; sourceTree = "<group>"; };
 		26BA8F95283A7D6C006FCFA8 /* 10951.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10951.swift; sourceTree = "<group>"; };
 		26BA8F98283A8177006FCFA8 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
+		26BAD5412961CF2300F30724 /* 9020.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9020.swift; sourceTree = "<group>"; };
 		26BE34A32868B0EC006DCC5F /* 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11022.swift; sourceTree = "<group>"; };
 		26C0D5E1284A512A009CE570 /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
 		26F5FF9E283E3CED00C14D69 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
@@ -249,6 +251,7 @@
 				26333BB9295F44F0005A62FA /* 11653.swift */,
 				26333BBB295F5C6C005A62FA /* 1929.swift */,
 				268B77EA2961B992006620D3 /* 4948.swift */,
+				26BAD5412961CF2300F30724 /* 9020.swift */,
 			);
 			name = "8. 기본 수학 2";
 			path = "8. 기본 수학 2";
@@ -435,6 +438,7 @@
 				2651E84529587E6000D700FE /* 2675.swift in Sources */,
 				2651E83329587A7200D700FE /* 15552-no.swift in Sources */,
 				2651E84729587EA900D700FE /* 1152.swift in Sources */,
+				26BAD5422961CF2300F30724 /* 9020.swift in Sources */,
 				2651E81729578BAE00D700FE /* 10430.swift in Sources */,
 				2651E83729587AFE00D700FE /* 2741.swift in Sources */,
 				2651E84629587E8300D700FE /* 1157.swift in Sources */,
