@@ -136,7 +136,27 @@ class BOJ1929: Solvable {
         print(numbers[input[0]...input[1]].filter { $0 != -1 }.map {"\($0)\n"}.joined())
     }
 
+    // 메모리: 71076KB, 시간: 40ms, 코드 길이: 433B
     private func solution6() {
-        
+        let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+        var numbers = Array(repeating: true, count: 1000001)
+        var result = ""
+
+        numbers[0] = false
+        numbers[1] = false
+
+        for idx in 2...1000 where numbers[idx] {
+            for num in stride(from: idx * idx, through: 1000000, by: idx) {
+                numbers[num] = false
+            }
+        }
+
+        for idx in input[0]...input[1] {
+            if numbers[idx] {
+                result += "\(idx)\n"
+            }
+        }
+
+        print(result)
     }
 }
