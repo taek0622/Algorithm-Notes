@@ -159,4 +159,30 @@ class BOJ1929: Solvable {
 
         print(result)
     }
+
+    // 메모리: 71372KB, 시간: 40ms, 코드 길이: 465B
+    private func solution7() {
+        let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+        let maxNum = 1000000
+        var numbers = [false, false] + Array(repeating: true, count: maxNum - 1)
+        var result = ""
+
+        for idx in 2..<numbers.count where numbers[idx] {
+            if idx * idx > maxNum {
+                break
+            }
+
+            for num in idx...maxNum/idx {
+                numbers[idx * num] = false
+            }
+        }
+
+        for idx in input[0]...input[1] {
+            if numbers[idx] {
+                result += "\(idx)\n"
+            }
+        }
+
+        print(result)
+    }
 }
