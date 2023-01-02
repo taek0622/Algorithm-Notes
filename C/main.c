@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+// 메모리: 12832KB, 시간: 4ms, 코드 길이: 142B
 long long sum(int *a, int n) {
     long long ans = 0;
 
@@ -13,8 +14,6 @@ long long sum(int *a, int n) {
 }
 
 int main() {
-    int a[6] = {1,3,5,6,3,1};
-    int n = 6;
-    int ans = sum(a, n);
-    printf("%d", ans);
+    printf("Hello World!");
+    return 0;
 }
