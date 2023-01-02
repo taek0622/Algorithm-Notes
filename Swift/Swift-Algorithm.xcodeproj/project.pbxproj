@@ -84,6 +84,7 @@
 		26BAD5452961E6FA00F30724 /* 2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5442961E6FA00F30724 /* 2738.swift */; };
 		26BAD5472961F2FA00F30724 /* 2566.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5462961F2FA00F30724 /* 2566.swift */; };
 		26BAD5492961F9B400F30724 /* 2563.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5482961F9B400F30724 /* 2563.swift */; };
+		26BAD54C2962E59800F30724 /* 2750.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD54B2962E59800F30724 /* 2750.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -168,6 +169,7 @@
 		26BAD5442961E6FA00F30724 /* 2738.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2738.swift; sourceTree = "<group>"; };
 		26BAD5462961F2FA00F30724 /* 2566.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2566.swift; sourceTree = "<group>"; };
 		26BAD5482961F9B400F30724 /* 2563.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2563.swift; sourceTree = "<group>"; };
+		26BAD54B2962E59800F30724 /* 2750.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2750.swift; sourceTree = "<group>"; };
 		26BE34A32868B0EC006DCC5F /* 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11022.swift; sourceTree = "<group>"; };
 		26C0D5E1284A512A009CE570 /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
 		26F5FF9E283E3CED00C14D69 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				26333BA12959DE33005A62FA /* 7. 기본 수학 1 */,
 				26333BB4295DE64C005A62FA /* 8. 기본 수학 2 */,
 				26BAD5432961E6D700F30724 /* 9. 2차원 배열 */,
+				26BAD54A2962E58400F30724 /* 10. 정렬 */,
 				2651E82629578F5E00D700FE /* 기타 */,
 			);
 			path = BOJ;
@@ -389,6 +392,15 @@
 			path = "9. 2차원 배열";
 			sourceTree = "<group>";
 		};
+		26BAD54A2962E58400F30724 /* 10. 정렬 */ = {
+			isa = PBXGroup;
+			children = (
+				26BAD54B2962E59800F30724 /* 2750.swift */,
+			);
+			name = "10. 정렬";
+			path = "10. 정렬";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -467,6 +479,7 @@
 				2651E81929578C0300D700FE /* 25083.swift in Sources */,
 				26333B9C2958B5AB005A62FA /* 10807.swift in Sources */,
 				2651E83229587A3A00D700FE /* 1110.swift in Sources */,
+				26BAD54C2962E59800F30724 /* 2750.swift in Sources */,
 				2651E83E29587C1400D700FE /* 8958.swift in Sources */,
 				2651E83529587AB300D700FE /* 2577.swift in Sources */,
 				2651E812295789F000D700FE /* 1008.swift in Sources */,
