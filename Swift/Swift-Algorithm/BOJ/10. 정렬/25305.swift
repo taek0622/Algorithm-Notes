@@ -9,11 +9,23 @@
 
 class BOJ25305: Solvable {
     func run() {
-        // 메모리: 69108KB, 시간: 8ms, 코드 길이: 200B
+        solution2()
+    }
+
+    // 메모리: 69108KB, 시간: 8ms, 코드 길이: 200B
+    private func solution1() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var students = readLine()!.split(separator: " ").map { Int(String($0))! }
 
         students.sort()
         print(students.reversed()[input[1]-1])
+    }
+
+    // 메모리: 69108KB, 시간: 8ms, 코드 길이: 187B
+    private func solution2() {
+        let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+        let students = readLine()!.split(separator: " ").map { Int(String($0))! }.sorted(by: >)
+
+        print(students[input[1]-1])
     }
 }
