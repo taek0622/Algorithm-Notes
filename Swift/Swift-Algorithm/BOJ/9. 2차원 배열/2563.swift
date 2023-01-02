@@ -9,7 +9,7 @@
 
 class BOJ2563: Solvable {
     func run() {
-        solution2()
+        solution3()
     }
 
     // 메모리: 69104KB, 시간: 8ms, 코드 길이: 525B
@@ -39,7 +39,7 @@ class BOJ2563: Solvable {
 
     // 메모리: 69108KB, 시간: 8ms, 코드 길이: 408B
     private func solution2() {
-        var canvus = Array(repeating: Array(repeating: false, count: 100), count: 100)
+        var canvas = Array(repeating: Array(repeating: false, count: 100), count: 100)
         let count = Int(readLine()!)!
 
         for _ in 0..<count {
@@ -47,11 +47,34 @@ class BOJ2563: Solvable {
 
             for line in paper[0]..<paper[0]+10 {
                 for element in paper[1]..<paper[1]+10 {
-                    canvus[line-1][element-1] = true
+                    canvas[line-1][element-1] = true
                 }
             }
         }
 
-        print(canvus.flatMap { $0 }.filter { $0 }.count)
+        print(canvas.flatMap { $0 }.filter { $0 }.count)
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 445B
+    private func solution3() {
+        var canvas = Array(repeating: Array(repeating: false, count: 100), count: 100)
+        let count = Int(readLine()!)!
+        var size = 0
+
+        for _ in 0..<count {
+            let paper = readLine()!.split(separator: " ").map { Int(String($0))! }
+
+            for line in paper[0]..<paper[0]+10 {
+                for element in paper[1]..<paper[1]+10 {
+                    canvas[line-1][element-1] = true
+                }
+            }
+        }
+
+        for line in canvas {
+            size += line.filter { $0 }.count
+        }
+
+        print(size)
     }
 }
