@@ -26,7 +26,7 @@ class BOJ2751: Solvable {
         }
     }
 
-    // 메모리: 106732KB, 시간: 780ms, 코드 길이: 173B
+    // 메모리: 106732KB, 시간: 7802ms, 코드 길이: 173B
     private func solution2() {
         let N = Int(readLine()!)!
         var numbers = [Int]()
