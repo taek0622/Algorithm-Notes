@@ -86,5 +86,6 @@ class BOJ1181: Solvable {
         let wordTuple: [(Int, String)] = copiedWords.map { ($0.count, $0) }
 
         print(wordTuple.sorted(by: { $0.0 == $1.0 ? $0.1 < $1.1 : $0.0 < $1.0 }).map { $0.1 }.joined(separator: "\n"))
+        // 해당 부분 map 에서 $0.1 혹은 $1를 넣었을 때, 같은 결과가 나오는데 그 이유는?
     }
 }
