@@ -9,7 +9,7 @@
 
 class BOJ2231: Solvable {
     func run() {
-        solution1()
+        solution3()
     }
 
     // 메모리: 69100KB, 시간: 24ms, 코드 길이: 349B
@@ -57,5 +57,24 @@ class BOJ2231: Solvable {
         }
 
         print((numbers.firstIndex(of: N) ?? 0))
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 253B
+    private func solution3() {
+        let N = Int(readLine()!)!
+        var result = 0
+
+        for num in N-(String(N).count * 9)...N {
+            let sum = String(num).reduce(0) {
+                $0 + Int(String($1))!
+            }
+
+            if sum + num == N {
+                result = num
+                break
+            }
+        }
+
+        print(result)
     }
 }
