@@ -9,21 +9,36 @@
 
 class BOJ10815: Solvable {
     func run() {
-        // 메모리: 118248KB, 시간: 660ms, 코드 길이: 369B
-        let N = Int(readLine()!)!
-        var cards = Set<Int>()
-        let myCard = readLine()!.split(separator: " ").map { Int(String($0))! }
-        var result = ""
+        solution2()
+    }
 
-        myCard.forEach {
-            cards.insert($0)
-        }
+    // 메모리: 117960KB, 시간: 636ms, 코드 길이: 309B
+    private func solution1() {
+        let N = Int(readLine()!)!
+        var cards = Set(readLine()!.split(separator: " ").map { Int(String($0))! })
+        var result = ""
 
         let M = Int(readLine()!)!
         let needCard = readLine()!.split(separator: " ").map { Int(String($0))! }
 
         needCard.forEach {
             result += "\(cards.insert($0).inserted ? 0 : 1) "
+        }
+
+        print(result)
+    }
+
+    // 메모리: 117960KB, 시간: 620ms, 코드 길이: 302B
+    private func solution2() {
+        let N = Int(readLine()!)!
+        var cards = Set(readLine()!.split(separator: " ").map { Int(String($0))! })
+        var result = ""
+
+        let M = Int(readLine()!)!
+        let needCard = readLine()!.split(separator: " ").map { Int(String($0))! }
+
+        needCard.forEach {
+            result += "\(cards.contains($0) ? 1 : 0) "
         }
 
         print(result)
