@@ -9,7 +9,11 @@
 
 class BOJ1018: Solvable {
     func run() {
-        // 메모리: 69268KB, 시간: 12ms, 코드 길이: 1286B
+        solution2()
+    }
+
+    // 메모리: 69108KB, 시간: 12ms, 코드 길이: 930B
+    private func solution1() {
         let size = readLine()!.split(separator: " ").map { Int(String($0))! }
         let pattern = [[0, 1, 0, 1, 0, 1, 0, 1],
                        [1, 0, 1, 0, 1, 0, 1, 0],
@@ -25,9 +29,6 @@ class BOJ1018: Solvable {
             board.append(readLine()!.map { $0 })
         }
 
-        let startWhite = board.map { $0.map { $0 == "W" ? 0 : 1 } }
-        let startBlack = board.map { $0.map { $0 == "B" ? 0 : 1 } }
-
         var counter = [Int]()
 
         for rowArea in 0...size[0]-8 {
@@ -36,25 +37,41 @@ class BOJ1018: Solvable {
 
                 for row in 0..<8 {
                     for column in 0..<8 {
-                        if startWhite[row+rowArea][column+columnArea] != pattern[row][column] {
+                        if (board[row+rowArea][column+columnArea] == "W" ? 0 : 1) != pattern[row][column] {
                             count += 1
                         }
                     }
                 }
 
-                counter.append(count)
+                counter.append(count > 32 ? 64 - count : count)
+            }
+        }
 
-                count = 0
+        print(counter.min()!)
+    }
 
-                for row in 0..<8 {
-                    for column in 0..<8 {
-                        if startBlack[row+rowArea][column+columnArea] != pattern[row][column] {
-                            count += 1
-                        }
+    // 메모리: 69108KB, 시간: 12ms, 코드 길이: 585B
+    private func solution2() {
+        let size = readLine()!.split(separator: " ").map { Int(String($0))! }
+        var board = [[String]]()
+
+        for _ in 0..<size[0] {
+            board.append(readLine()!.map { String($0) })
+        }
+
+        var counter = [Int]()
+
+        for rowArea in 0...size[0]-8 {
+            for columnArea in 0...size[1]-8 {
+                var count = 0
+
+                for row in rowArea..<rowArea+8 {
+                    for column in columnArea..<columnArea+8 where board[row][column] != ((row + column) % 2 == 0 ? "W" : "B") {
+                        count += 1
                     }
                 }
 
-                counter.append(count)
+                counter.append(count > 32 ? 64 - count : count)
             }
         }
 
