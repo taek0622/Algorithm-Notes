@@ -103,6 +103,7 @@
 		26679B0E296BC72400D8956A /* 1269.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B0D296BC72400D8956A /* 1269.swift */; };
 		26679B13296C9F7D00D8956A /* 1085.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B12296C9F7D00D8956A /* 1085.swift */; };
 		26679B17296CA75600D8956A /* 4153.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B16296CA75600D8956A /* 4153.swift */; };
+		26679B1C296DDC3700D8956A /* 5086.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B1B296DDC3700D8956A /* 5086.swift */; };
 		268B77EB2961B992006620D3 /* 4948.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B77EA2961B992006620D3 /* 4948.swift */; };
 		26BAD5422961CF2300F30724 /* 9020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5412961CF2300F30724 /* 9020.swift */; };
 		26BAD5452961E6FA00F30724 /* 2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5442961E6FA00F30724 /* 2738.swift */; };
@@ -213,6 +214,7 @@
 		26679B12296C9F7D00D8956A /* 1085.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1085.swift; sourceTree = "<group>"; };
 		26679B14296CA18A00D8956A /* 3009.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3009.swift; sourceTree = "<group>"; };
 		26679B16296CA75600D8956A /* 4153.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4153.swift; sourceTree = "<group>"; };
+		26679B1B296DDC3700D8956A /* 5086.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5086.swift; sourceTree = "<group>"; };
 		268B77EA2961B992006620D3 /* 4948.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4948.swift; sourceTree = "<group>"; };
 		26BA8F95283A7D6C006FCFA8 /* 10951.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10951.swift; sourceTree = "<group>"; };
 		26BA8F98283A8177006FCFA8 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				26679AF729685E1400D8956A /* 12. 브루트 포스 */,
 				26679B022969BAAA00D8956A /* 13. 집합과 맵 */,
 				26679B11296C9F6700D8956A /* 14. 기하 1 */,
+				26679B1A296DDC1700D8956A /* 15. 정수론 및 조합론 */,
 				2651E82629578F5E00D700FE /* 기타 */,
 			);
 			path = BOJ;
@@ -484,6 +487,15 @@
 			);
 			name = "14. 기하 1";
 			path = "14. 기하 1";
+			sourceTree = "<group>";
+		};
+		26679B1A296DDC1700D8956A /* 15. 정수론 및 조합론 */ = {
+			isa = PBXGroup;
+			children = (
+				26679B1B296DDC3700D8956A /* 5086.swift */,
+			);
+			name = "15. 정수론 및 조합론";
+			path = "15. 배수와 약수";
 			sourceTree = "<group>";
 		};
 		26BAD5432961E6D700F30724 /* 9. 2차원 배열 */ = {
