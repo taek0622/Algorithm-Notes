@@ -108,6 +108,7 @@
 		26679B75296F0A7900D8956A /* 1037.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B74296F0A7900D8956A /* 1037.swift */; };
 		26679B77296F0D7A00D8956A /* 2609.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B76296F0D7A00D8956A /* 2609.swift */; };
 		26679B79296F12BB00D8956A /* 1934.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B78296F12BB00D8956A /* 1934.swift */; };
+		26679B7D29702F2C00D8956A /* 3036.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26679B7C29702F2C00D8956A /* 3036.swift */; };
 		268B77EB2961B992006620D3 /* 4948.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B77EA2961B992006620D3 /* 4948.swift */; };
 		26BAD5422961CF2300F30724 /* 9020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5412961CF2300F30724 /* 9020.swift */; };
 		26BAD5452961E6FA00F30724 /* 2738.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD5442961E6FA00F30724 /* 2738.swift */; };
@@ -222,6 +223,7 @@
 		26679B74296F0A7900D8956A /* 1037.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1037.swift; sourceTree = "<group>"; };
 		26679B76296F0D7A00D8956A /* 2609.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2609.swift; sourceTree = "<group>"; };
 		26679B78296F12BB00D8956A /* 1934.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1934.swift; sourceTree = "<group>"; };
+		26679B7C29702F2C00D8956A /* 3036.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3036.swift; sourceTree = "<group>"; };
 		268B77EA2961B992006620D3 /* 4948.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4948.swift; sourceTree = "<group>"; };
 		26BA8F95283A7D6C006FCFA8 /* 10951.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10951.swift; sourceTree = "<group>"; };
 		26BA8F98283A8177006FCFA8 /* 1110.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1110.swift; sourceTree = "<group>"; };
@@ -503,6 +505,7 @@
 				26679B74296F0A7900D8956A /* 1037.swift */,
 				26679B76296F0D7A00D8956A /* 2609.swift */,
 				26679B78296F12BB00D8956A /* 1934.swift */,
+				26679B7C29702F2C00D8956A /* 3036.swift */,
 			);
 			name = "15. 정수론 및 조합론";
 			path = "15. 배수와 약수";
@@ -690,6 +693,7 @@
 				26333BB8295DECF1005A62FA /* 2581.swift in Sources */,
 				2651E81429578A4400D700FE /* 10926.swift in Sources */,
 				26333BA72959E71D005A62FA /* 2292.swift in Sources */,
+				26679B7D29702F2C00D8956A /* 3036.swift in Sources */,
 				2651E81D29578D8300D700FE /* 2753.swift in Sources */,
 				26679B012969B38900D8956A /* 1436.swift in Sources */,
 				2651E81F29578DF400D700FE /* 2884.swift in Sources */,
