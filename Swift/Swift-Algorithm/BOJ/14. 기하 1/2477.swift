@@ -9,7 +9,11 @@
 
 class BOJ2477: Solvable {
     func run() {
-        // 메모리: 69104KB, 시간: 16ms, 코드 길이: 807B
+        solution2()
+    }
+
+    // 메모리: 69104KB, 시간: 16ms, 코드 길이: 807B
+    private func solution1() {
         let K = Int(readLine()!)!
         var sides = [(Int, Int)]()
 
@@ -40,5 +44,25 @@ class BOJ2477: Solvable {
         area -= (lostWidth * lostHeight)
 
         print(K * area)
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 525B
+    private func solution2() {
+        let K = Int(readLine()!)!
+        var sides = [Int]()
+
+        for _ in 0..<6 {
+            let input = readLine()!.split(separator: " ").map { Int(String($0))! }
+
+            sides.append(input[1])
+        }
+
+        let maxIndex = sides.firstIndex(of: sides.max()!)!
+
+        if sides[(maxIndex + 1) % 6] > sides[(maxIndex + 5) % 6] {
+            print(K * (sides[maxIndex] * sides[(maxIndex + 1) % 6] - sides[(maxIndex + 3) % 6] * sides[(maxIndex + 4) % 6]))
+        } else {
+            print(K * (sides[maxIndex] * sides[(maxIndex + 5) % 6] - sides[(maxIndex + 2) % 6] * sides[(maxIndex + 3) % 6]))
+        }
     }
 }
