@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		260A63F02975CCFB004034AD /* 3053.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63EF2975CCFB004034AD /* 3053.swift */; };
 		260A63F62976CCFB004034AD /* 1002.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63F52976CCFB004034AD /* 1002.swift */; };
+		260A63F829781325004034AD /* 1004.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63F729781325004034AD /* 1004.swift */; };
 		26333B9A29588C14005A62FA /* 25304.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26333B9929588C14005A62FA /* 25304.swift */; };
 		26333B9C2958B5AB005A62FA /* 10807.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26333B9B2958B5AB005A62FA /* 10807.swift */; };
 		26333B9E2958B84F005A62FA /* 5597.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26333B9D2958B84F005A62FA /* 5597.swift */; };
@@ -142,6 +143,7 @@
 /* Begin PBXFileReference section */
 		260A63EF2975CCFB004034AD /* 3053.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3053.swift; sourceTree = "<group>"; };
 		260A63F52976CCFB004034AD /* 1002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1002.swift; sourceTree = "<group>"; };
+		260A63F729781325004034AD /* 1004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1004.swift; sourceTree = "<group>"; };
 		261BD6CF2829593E00661F63 /* Swift-Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift-Algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261BD6D22829593E00661F63 /* 1000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1000.swift; sourceTree = "<group>"; };
 		261BD6DC282962CC00661F63 /* 1001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
@@ -516,6 +518,7 @@
 				26679B18296DA12A00D8956A /* 2477.swift */,
 				260A63EF2975CCFB004034AD /* 3053.swift */,
 				260A63F52976CCFB004034AD /* 1002.swift */,
+				260A63F729781325004034AD /* 1004.swift */,
 			);
 			name = "14. 기하 1";
 			path = "14. 기하 1";
@@ -713,6 +716,7 @@
 				26679B77296F0D7A00D8956A /* 2609.swift in Sources */,
 				2651E83F29587C5F00D700FE /* 4344.swift in Sources */,
 				2651E829295877FD00D700FE /* 2739.swift in Sources */,
+				260A63F829781325004034AD /* 1004.swift in Sources */,
 				26333BBA295F44F0005A62FA /* 11653.swift in Sources */,
 				26333B9E2958B84F005A62FA /* 5597.swift in Sources */,
 				2651E82029578E1F00D700FE /* 2525.swift in Sources */,
