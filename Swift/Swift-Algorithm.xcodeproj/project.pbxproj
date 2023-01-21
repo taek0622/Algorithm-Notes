@@ -11,6 +11,7 @@
 		260A63F62976CCFB004034AD /* 1002.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63F52976CCFB004034AD /* 1002.swift */; };
 		260A63F829781325004034AD /* 1004.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63F729781325004034AD /* 1004.swift */; };
 		260A63FD297AF707004034AD /* 15649.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63FC297AF707004034AD /* 15649.swift */; };
+		260A63FF297C539A004034AD /* 1676.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A63FE297C539A004034AD /* 1676.swift */; };
 		26333B9A29588C14005A62FA /* 25304.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26333B9929588C14005A62FA /* 25304.swift */; };
 		26333B9C2958B5AB005A62FA /* 10807.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26333B9B2958B5AB005A62FA /* 10807.swift */; };
 		26333B9E2958B84F005A62FA /* 5597.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26333B9D2958B84F005A62FA /* 5597.swift */; };
@@ -147,6 +148,7 @@
 		260A63F52976CCFB004034AD /* 1002.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1002.swift; sourceTree = "<group>"; };
 		260A63F729781325004034AD /* 1004.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1004.swift; sourceTree = "<group>"; };
 		260A63FC297AF707004034AD /* 15649.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15649.swift; sourceTree = "<group>"; };
+		260A63FE297C539A004034AD /* 1676.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1676.swift; sourceTree = "<group>"; };
 		261BD6CF2829593E00661F63 /* Swift-Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Swift-Algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		261BD6D22829593E00661F63 /* 1000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1000.swift; sourceTree = "<group>"; };
 		261BD6DC282962CC00661F63 /* 1001.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1001.swift; sourceTree = "<group>"; };
@@ -556,6 +558,7 @@
 				26679B7A296F15F200D8956A /* 2981.swift */,
 				26679B7C29702F2C00D8956A /* 3036.swift */,
 				26679B7E2970330300D8956A /* 11050.swift */,
+				260A63FE297C539A004034AD /* 1676.swift */,
 			);
 			name = "15. 정수론 및 조합론";
 			path = "15. 배수와 약수";
@@ -700,6 +703,7 @@
 				26679B15296CA18A00D8956A /* 3009.swift in Sources */,
 				2651E81529578A7000D700FE /* 18108.swift in Sources */,
 				260A63F02975CCFB004034AD /* 3053.swift in Sources */,
+				260A63FF297C539A004034AD /* 1676.swift in Sources */,
 				2651E81E29578DC800D700FE /* 14681.swift in Sources */,
 				2651E83829587B2400D700FE /* 10718.swift in Sources */,
 				26333B9A29588C14005A62FA /* 25304.swift in Sources */,
