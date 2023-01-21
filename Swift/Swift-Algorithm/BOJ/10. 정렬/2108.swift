@@ -16,7 +16,7 @@ import Foundation
 
 class BOJ2108: Solvable {
     func run() {
-        // 메모리: 85764KB, 시간: 396ms, 코드 길이: 659B
+        // 메모리: 85764KB, 시간: 296ms, 코드 길이: 659B
         let N = Int(readLine()!)!
         var numbers = [Int]()
         var countNum = [Int: Int]()
