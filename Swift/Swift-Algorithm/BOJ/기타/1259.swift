@@ -9,7 +9,11 @@
 
 class BOJ1259: Solvable {
     func run() {
-        // 메모리: 69096KB, 시간: 8ms, 코드 길이: 566B
+        solution2()
+    }
+
+    // 메모리: 69096KB, 시간: 8ms, 코드 길이: 566B
+    private func solution1() {
         checkPalindrome(readLine()!)
 
         func checkPalindrome(_ number: String) {
@@ -39,6 +43,13 @@ class BOJ1259: Solvable {
             }
 
             checkPalindrome(readLine()!)
+        }
+    }
+
+    // 메모리: 69096KB, 시간: 8ms, 코드 길이: 106B
+    private func solution2() {
+        while let input = readLine(), input != "0" {
+            print(input == String(input.reversed()) ? "yes" : "no")
         }
     }
 }
