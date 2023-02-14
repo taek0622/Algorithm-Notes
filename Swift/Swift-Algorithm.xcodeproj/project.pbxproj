@@ -174,6 +174,7 @@
 		26BAD54C2962E59800F30724 /* 2750.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD54B2962E59800F30724 /* 2750.swift */; };
 		26BAD54E2962E8CB00F30724 /* 2587.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD54D2962E8CB00F30724 /* 2587.swift */; };
 		26BAD5502962EA9700F30724 /* 25305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD54F2962EA9700F30724 /* 25305.swift */; };
+		26DD0954299BC8F300BF0407 /* 105156.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD0953299BC8F300BF0407 /* 105156.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -350,6 +351,7 @@
 		26BAD54F2962EA9700F30724 /* 25305.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 25305.swift; sourceTree = "<group>"; };
 		26BE34A32868B0EC006DCC5F /* 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11022.swift; sourceTree = "<group>"; };
 		26C0D5E1284A512A009CE570 /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
+		26DD0953299BC8F300BF0407 /* 105156.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 105156.swift; sourceTree = "<group>"; };
 		26F5FF9E283E3CED00C14D69 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
 		26F5FFA1283E417900C14D69 /* 2562.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2562.swift; sourceTree = "<group>"; };
 		26F5FFA4283F7E1500C14D69 /* 2577.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2577.swift; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 				2614F25E2999E5020051EE51 /* 2530.swift */,
 				2614F2622999EB600051EE51 /* 10610.swift */,
 				2614F2642999F2580051EE51 /* 1292.swift */,
+				26DD0953299BC8F300BF0407 /* 105156.swift */,
 			);
 			name = "수학";
 			path = "수학";
@@ -961,6 +964,7 @@
 				26BAD5492961F9B400F30724 /* 2563.swift in Sources */,
 				2614F25F2999E5020051EE51 /* 2530.swift in Sources */,
 				2658113E2986F3A8009C85A8 /* 10039.swift in Sources */,
+				26DD0954299BC8F300BF0407 /* 105156.swift in Sources */,
 				26679AFD2968A25D00D8956A /* 7568.swift in Sources */,
 				2614F22E2991ED180051EE51 /* 2455.swift in Sources */,
 				2651E81729578BAE00D700FE /* 10430.swift in Sources */,
