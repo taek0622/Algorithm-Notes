@@ -1,5 +1,5 @@
 //
-//  105156.swift
+//  10156.swift
 //  Swift-Algorithm
 //
 //  Created by 김민택 on 2023/02/14.
