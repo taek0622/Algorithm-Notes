@@ -420,6 +420,15 @@
 			path = "19. 그리디 알고리즘";
 			sourceTree = "<group>";
 		};
+		2608ABCB299DDCB300BA9887 /* 23. 이분 탐색 */ = {
+			isa = PBXGroup;
+			children = (
+				2658113529854EEC009C85A8 /* 1920.swift */,
+			);
+			name = "23. 이분 탐색";
+			path = "23. 이분 탐색";
+			sourceTree = "<group>";
+		};
 		260A63EC29726A53004034AD /* SHOW ME THE CODE */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,6 +477,7 @@
 				2608ABC8299DDAFD00BA9887 /* 17. 동적 계획법 1 */,
 				2608ABC9299DDB1800BA9887 /* 18. 누적합 */,
 				2608ABCA299DDB2000BA9887 /* 19. 그리디 알고리즘 */,
+				2608ABCB299DDCB300BA9887 /* 23. 이분 탐색 */,
 			);
 			name = "단계별";
 			path = "단계별";
@@ -627,7 +637,6 @@
 			isa = PBXGroup;
 			children = (
 				265811332983A901009C85A8 /* 1259.swift */,
-				2658113529854EEC009C85A8 /* 1920.swift */,
 			);
 			path = class2;
 			sourceTree = "<group>";
