@@ -401,6 +401,15 @@
 			path = "17. 동적 계획법 1";
 			sourceTree = "<group>";
 		};
+		2608ABC9299DDB1800BA9887 /* 18. 누적합 */ = {
+			isa = PBXGroup;
+			children = (
+				2614F225298E89FE0051EE51 /* 11659.swift */,
+			);
+			name = "18. 누적합";
+			path = "18. 누적합";
+			sourceTree = "<group>";
+		};
 		260A63EC29726A53004034AD /* SHOW ME THE CODE */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,7 +812,6 @@
 				262E040F298AAEDA003E59D4 /* 1003.swift */,
 				2614F21F298C1BED0051EE51 /* 11047.swift */,
 				2614F221298CB7780051EE51 /* 11399.swift */,
-				2614F225298E89FE0051EE51 /* 11659.swift */,
 				2614F233299492E50051EE51 /* 4134.swift */,
 				2614F252299923480051EE51 /* 6841.swift */,
 				2614F25C299962AD0051EE51 /* 27327.swift */,
