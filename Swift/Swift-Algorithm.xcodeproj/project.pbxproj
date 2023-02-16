@@ -410,6 +410,15 @@
 			path = "18. 누적합";
 			sourceTree = "<group>";
 		};
+		2608ABCA299DDB2000BA9887 /* 19. 그리디 알고리즘 */ = {
+			isa = PBXGroup;
+			children = (
+				2614F21F298C1BED0051EE51 /* 11047.swift */,
+			);
+			name = "19. 그리디 알고리즘";
+			path = "19. 그리디 알고리즘";
+			sourceTree = "<group>";
+		};
 		260A63EC29726A53004034AD /* SHOW ME THE CODE */ = {
 			isa = PBXGroup;
 			children = (
@@ -810,7 +819,6 @@
 			children = (
 				261BD6E2282968C200661F63 /* 10718.swift */,
 				262E040F298AAEDA003E59D4 /* 1003.swift */,
-				2614F21F298C1BED0051EE51 /* 11047.swift */,
 				2614F221298CB7780051EE51 /* 11399.swift */,
 				2614F233299492E50051EE51 /* 4134.swift */,
 				2614F252299923480051EE51 /* 6841.swift */,
