@@ -387,10 +387,18 @@
 		2608ABC3299DC8A000BA9887 /* 다이나믹 프로그래밍 */ = {
 			isa = PBXGroup;
 			children = (
-				2608ABC4299DC8B500BA9887 /* 1463.swift */,
 			);
 			name = "다이나믹 프로그래밍";
 			path = "다이나믹 프로그래밍";
+			sourceTree = "<group>";
+		};
+		2608ABC8299DDAFD00BA9887 /* 17. 동적 계획법 1 */ = {
+			isa = PBXGroup;
+			children = (
+				2608ABC4299DC8B500BA9887 /* 1463.swift */,
+			);
+			name = "17. 동적 계획법 1";
+			path = "17. 동적 계획법 1";
 			sourceTree = "<group>";
 		};
 		260A63EC29726A53004034AD /* SHOW ME THE CODE */ = {
