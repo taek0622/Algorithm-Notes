@@ -9,7 +9,11 @@
 
 class BOJ1874: Solvable {
     func run() {
-        // 메모리: 70348KB, 시간: 332ms, 코드 길이: 500B
+        solution2()
+    }
+
+    // 메모리: 70348KB, 시간: 332ms, 코드 길이: 500B
+    private func solution1() {
         let n = Int(readLine()!)!
         var stack = [Int]()
         var result = ""
@@ -33,6 +37,34 @@ class BOJ1874: Solvable {
 
                 stack.removeLast()
                 result += "-\n"
+            }
+        }
+
+        print(result)
+    }
+
+    // 메모리: 70348KB, 시간: 72ms, 코드 길이: 388B
+    private func solution2() {
+        let n = Int(readLine()!)!
+        var stack = [Int]()
+        var count = 1
+        var result = ""
+
+        for _ in 0..<n {
+            let number = Int(readLine()!)!
+
+            while count <= number {
+                stack.append(count)
+                result += "+\n"
+                count += 1
+            }
+
+            if stack.last == number {
+                stack.removeLast()
+                result += "-\n"
+            } else {
+                result = "NO"
+                break
             }
         }
 
