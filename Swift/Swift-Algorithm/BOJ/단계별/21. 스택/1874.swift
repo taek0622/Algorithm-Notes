@@ -70,4 +70,35 @@ class BOJ1874: Solvable {
 
         print(result)
     }
+
+    // 메모리: 70348KB, 시간: 68ms, 코드 길이: 465B
+    private func solution3() {
+        let n = Int(readLine()!)!
+        var stack = [Int]()
+        var count = 1
+        var result = ""
+
+        for _ in 0..<n {
+            let number = Int(readLine()!)!
+
+            while count < number {
+                stack.append(count)
+                result += "+\n"
+                count += 1
+            }
+
+            if count == number {
+                result += "+\n-\n"
+                count += 1
+            } else if stack.last == number {
+                stack.removeLast()
+                result += "-\n"
+            } else {
+                result = "NO"
+                break
+            }
+        }
+
+        print(result)
+    }
 }
