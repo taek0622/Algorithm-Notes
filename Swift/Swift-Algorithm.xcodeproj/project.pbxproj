@@ -67,6 +67,7 @@
 		2627B14A29D32D8B00D5E66E /* 27323.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B14929D32D8B00D5E66E /* 27323.swift */; };
 		2627B14C29D3308700D5E66E /* 9063.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B14B29D3308700D5E66E /* 9063.swift */; };
 		2627B14E29D44CCB00D5E66E /* 5073.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B14D29D44CCB00D5E66E /* 5073.swift */; };
+		2627B16D29D5CA5B00D5E66E /* 14215.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B16C29D5CA5B00D5E66E /* 14215.swift */; };
 		262E04042988280E003E59D4 /* 2747.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E04032988280E003E59D4 /* 2747.swift */; };
 		262E040629895704003E59D4 /* 3046.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E040529895704003E59D4 /* 3046.swift */; };
 		262E040829895806003E59D4 /* 5543.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E040729895806003E59D4 /* 5543.swift */; };
@@ -352,6 +353,7 @@
 		2627B14929D32D8B00D5E66E /* 27323.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 27323.swift; sourceTree = "<group>"; };
 		2627B14B29D3308700D5E66E /* 9063.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9063.swift; sourceTree = "<group>"; };
 		2627B14D29D44CCB00D5E66E /* 5073.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5073.swift; sourceTree = "<group>"; };
+		2627B16C29D5CA5B00D5E66E /* 14215.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14215.swift; sourceTree = "<group>"; };
 		262E04032988280E003E59D4 /* 2747.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2747.swift; sourceTree = "<group>"; };
 		262E040529895704003E59D4 /* 3046.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3046.swift; sourceTree = "<group>"; };
 		262E040729895806003E59D4 /* 5543.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5543.swift; sourceTree = "<group>"; };
@@ -849,6 +851,7 @@
 				2627B14929D32D8B00D5E66E /* 27323.swift */,
 				2627B14B29D3308700D5E66E /* 9063.swift */,
 				2627B14D29D44CCB00D5E66E /* 5073.swift */,
+				2627B16C29D5CA5B00D5E66E /* 14215.swift */,
 			);
 			name = "9. 기하- 직사각형과 삼각형";
 			path = "9. 기하- 직사각형과 삼각형";
@@ -1237,6 +1240,7 @@
 				2614F25F2999E5020051EE51 /* 2530.swift in Sources */,
 				2658113E2986F3A8009C85A8 /* 10039.swift in Sources */,
 				26DD0954299BC8F300BF0407 /* 10156.swift in Sources */,
+				2627B16D29D5CA5B00D5E66E /* 14215.swift in Sources */,
 				26679AFD2968A25D00D8956A /* 7568.swift in Sources */,
 				2614F22E2991ED180051EE51 /* 2455.swift in Sources */,
 				2651E81729578BAE00D700FE /* 10430.swift in Sources */,
