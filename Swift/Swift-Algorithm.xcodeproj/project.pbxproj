@@ -68,6 +68,7 @@
 		2627B14C29D3308700D5E66E /* 9063.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B14B29D3308700D5E66E /* 9063.swift */; };
 		2627B14E29D44CCB00D5E66E /* 5073.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B14D29D44CCB00D5E66E /* 5073.swift */; };
 		2627B16D29D5CA5B00D5E66E /* 14215.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B16C29D5CA5B00D5E66E /* 14215.swift */; };
+		2627B17029D6E38300D5E66E /* 2720.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627B16F29D6E38300D5E66E /* 2720.swift */; };
 		262E04042988280E003E59D4 /* 2747.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E04032988280E003E59D4 /* 2747.swift */; };
 		262E040629895704003E59D4 /* 3046.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E040529895704003E59D4 /* 3046.swift */; };
 		262E040829895806003E59D4 /* 5543.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E040729895806003E59D4 /* 5543.swift */; };
@@ -354,6 +355,7 @@
 		2627B14B29D3308700D5E66E /* 9063.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9063.swift; sourceTree = "<group>"; };
 		2627B14D29D44CCB00D5E66E /* 5073.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5073.swift; sourceTree = "<group>"; };
 		2627B16C29D5CA5B00D5E66E /* 14215.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 14215.swift; sourceTree = "<group>"; };
+		2627B16F29D6E38300D5E66E /* 2720.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2720.swift; sourceTree = "<group>"; };
 		262E04032988280E003E59D4 /* 2747.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2747.swift; sourceTree = "<group>"; };
 		262E040529895704003E59D4 /* 3046.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3046.swift; sourceTree = "<group>"; };
 		262E040729895806003E59D4 /* 5543.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5543.swift; sourceTree = "<group>"; };
@@ -580,6 +582,7 @@
 				26B7B1EA29AF94F100D3C3F7 /* 6. 심화 1 */,
 				26333BA12959DE33005A62FA /* 7. 기본 수학 1 */,
 				26333BB4295DE64C005A62FA /* 8. 기본 수학 2 */,
+				2627B16E29D6E2CE00D5E66E /* 8. 일반 수학 1 */,
 				26BAD5432961E6D700F30724 /* 9. 2차원 배열 */,
 				2627B14829D32D5700D5E66E /* 9. 기하- 직사각형과 삼각형 */,
 				26B73F6429B61A8400EE28C2 /* 9. 약수, 배수와 소수 */,
@@ -855,6 +858,15 @@
 			);
 			name = "9. 기하- 직사각형과 삼각형";
 			path = "9. 기하- 직사각형과 삼각형";
+			sourceTree = "<group>";
+		};
+		2627B16E29D6E2CE00D5E66E /* 8. 일반 수학 1 */ = {
+			isa = PBXGroup;
+			children = (
+				2627B16F29D6E38300D5E66E /* 2720.swift */,
+			);
+			name = "8. 일반 수학 1";
+			path = "8. 일반 수학 1";
 			sourceTree = "<group>";
 		};
 		26333BA12959DE33005A62FA /* 7. 기본 수학 1 */ = {
@@ -1251,6 +1263,7 @@
 				26679B13296C9F7D00D8956A /* 1085.swift in Sources */,
 				260D7F1829CC0069003F2399 /* 10833.swift in Sources */,
 				2651E81C29578D2800D700FE /* 9498.swift in Sources */,
+				2627B17029D6E38300D5E66E /* 2720.swift in Sources */,
 				2651E81B29578CF500D700FE /* 1330.swift in Sources */,
 				26679AF629685CE500D8956A /* 11729.swift in Sources */,
 				2614F234299492E50051EE51 /* 4134.swift in Sources */,
