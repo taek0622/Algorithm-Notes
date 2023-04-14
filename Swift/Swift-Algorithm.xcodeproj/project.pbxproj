@@ -222,6 +222,7 @@
 		26B2854C29E54815005F87C7 /* 24263.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2854B29E54815005F87C7 /* 24263.swift */; };
 		26B2854E29E68FDF005F87C7 /* 24264.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2854D29E68FDF005F87C7 /* 24264.swift */; };
 		26B2855029E7D8BB005F87C7 /* 24265.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2854F29E7D8BB005F87C7 /* 24265.swift */; };
+		26B2855229E92EDF005F87C7 /* 24266.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2855129E92EDF005F87C7 /* 24266.swift */; };
 		26B73F6629B61AA500EE28C2 /* 9506.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B73F6529B61AA500EE28C2 /* 9506.swift */; };
 		26B73F6829B74F7A00EE28C2 /* 24416.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B73F6729B74F7A00EE28C2 /* 24416.swift */; };
 		26B7B11129A2512D00D3C3F7 /* 5522.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7B11029A2512D00D3C3F7 /* 5522.swift */; };
@@ -471,6 +472,7 @@
 		26B2854B29E54815005F87C7 /* 24263.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24263.swift; sourceTree = "<group>"; };
 		26B2854D29E68FDF005F87C7 /* 24264.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24264.swift; sourceTree = "<group>"; };
 		26B2854F29E7D8BB005F87C7 /* 24265.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24265.swift; sourceTree = "<group>"; };
+		26B2855129E92EDF005F87C7 /* 24266.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24266.swift; sourceTree = "<group>"; };
 		26B73F6529B61AA500EE28C2 /* 9506.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9506.swift; sourceTree = "<group>"; };
 		26B73F6729B74F7A00EE28C2 /* 24416.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24416.swift; sourceTree = "<group>"; };
 		26B7B11029A2512D00D3C3F7 /* 5522.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5522.swift; sourceTree = "<group>"; };
@@ -1146,6 +1148,7 @@
 				26B2854B29E54815005F87C7 /* 24263.swift */,
 				26B2854D29E68FDF005F87C7 /* 24264.swift */,
 				26B2854F29E7D8BB005F87C7 /* 24265.swift */,
+				26B2855129E92EDF005F87C7 /* 24266.swift */,
 			);
 			name = "11. 시간 복잡도";
 			path = "11. 시간 복잡도";
@@ -1515,6 +1518,7 @@
 				2651E84429587E4300D700FE /* 10809.swift in Sources */,
 				26333BAB295A1E7F005A62FA /* 2869.swift in Sources */,
 				2614F2612999E94F0051EE51 /* 10101.swift in Sources */,
+				26B2855229E92EDF005F87C7 /* 24266.swift in Sources */,
 				262E04042988280E003E59D4 /* 2747.swift in Sources */,
 				265811342983A901009C85A8 /* 1259.swift in Sources */,
 				2614F2652999F2580051EE51 /* 1292.swift in Sources */,
