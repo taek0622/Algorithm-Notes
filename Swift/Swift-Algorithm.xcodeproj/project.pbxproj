@@ -223,6 +223,7 @@
 		26B2854E29E68FDF005F87C7 /* 24264.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2854D29E68FDF005F87C7 /* 24264.swift */; };
 		26B2855029E7D8BB005F87C7 /* 24265.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2854F29E7D8BB005F87C7 /* 24265.swift */; };
 		26B2855229E92EDF005F87C7 /* 24266.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2855129E92EDF005F87C7 /* 24266.swift */; };
+		26B2855429EAC6F5005F87C7 /* 24267.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B2855329EAC6F5005F87C7 /* 24267.swift */; };
 		26B73F6629B61AA500EE28C2 /* 9506.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B73F6529B61AA500EE28C2 /* 9506.swift */; };
 		26B73F6829B74F7A00EE28C2 /* 24416.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B73F6729B74F7A00EE28C2 /* 24416.swift */; };
 		26B7B11129A2512D00D3C3F7 /* 5522.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B7B11029A2512D00D3C3F7 /* 5522.swift */; };
@@ -473,6 +474,7 @@
 		26B2854D29E68FDF005F87C7 /* 24264.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24264.swift; sourceTree = "<group>"; };
 		26B2854F29E7D8BB005F87C7 /* 24265.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24265.swift; sourceTree = "<group>"; };
 		26B2855129E92EDF005F87C7 /* 24266.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24266.swift; sourceTree = "<group>"; };
+		26B2855329EAC6F5005F87C7 /* 24267.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24267.swift; sourceTree = "<group>"; };
 		26B73F6529B61AA500EE28C2 /* 9506.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9506.swift; sourceTree = "<group>"; };
 		26B73F6729B74F7A00EE28C2 /* 24416.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 24416.swift; sourceTree = "<group>"; };
 		26B7B11029A2512D00D3C3F7 /* 5522.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5522.swift; sourceTree = "<group>"; };
@@ -1149,6 +1151,7 @@
 				26B2854D29E68FDF005F87C7 /* 24264.swift */,
 				26B2854F29E7D8BB005F87C7 /* 24265.swift */,
 				26B2855129E92EDF005F87C7 /* 24266.swift */,
+				26B2855329EAC6F5005F87C7 /* 24267.swift */,
 			);
 			name = "11. 시간 복잡도";
 			path = "11. 시간 복잡도";
@@ -1400,6 +1403,7 @@
 				2651E82129578E4900D700FE /* 2480.swift in Sources */,
 				262E0410298AAEDA003E59D4 /* 1003.swift in Sources */,
 				26333BBC295F5C6C005A62FA /* 1929.swift in Sources */,
+				26B2855429EAC6F5005F87C7 /* 24267.swift in Sources */,
 				2614F2322993E45D0051EE51 /* 1009.swift in Sources */,
 				268B77EB2961B992006620D3 /* 4948.swift in Sources */,
 				26679AEE2966FA0300D8956A /* 10870.swift in Sources */,
