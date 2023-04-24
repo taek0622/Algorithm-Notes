@@ -9,7 +9,11 @@
 
 class BOJ2592: Solvable {
     func run() {
-        // 메모리: 69104KB, 시간: 8ms, 코드 길이: 316B
+        solution2()
+    }
+
+    // 메모리: 69104KB, 시간: 8ms, 코드 길이: 316B
+    private func solution1() {
         var counter = [Int: Int]()
         var sum = 0
         var modeNumber = 0
@@ -28,5 +32,17 @@ class BOJ2592: Solvable {
         }
 
         print("\(sum/10)\n\(modeNumber)")
+    }
+
+    // 메모리: 69100KB, 시간: 8ms, 코드 길이: 278B
+    private func solution2() {
+        var counter = Array(repeating: 0, count: 100)
+
+        for _ in 0..<10 {
+            counter[Int(readLine()!)! / 10] += 1
+        }
+
+        print(counter.enumerated().map { $0.offset * $0.element }.reduce(0, +))
+        print(counter.enumerated().filter { $0.element == counter.max()! }.map { $0.offset }.first! * 10)
     }
 }
