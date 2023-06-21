@@ -319,6 +319,7 @@
 		26BAD54E2962E8CB00F30724 /* 2587.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD54D2962E8CB00F30724 /* 2587.swift */; };
 		26BAD5502962EA9700F30724 /* 25305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BAD54F2962EA9700F30724 /* 25305.swift */; };
 		26C37AE62A41914F00AE6230 /* 12790.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C37AE52A41914F00AE6230 /* 12790.swift */; };
+		26C37AE82A42A1D100AE6230 /* 21300.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C37AE72A42A1D100AE6230 /* 21300.swift */; };
 		26DD0954299BC8F300BF0407 /* 10156.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD0953299BC8F300BF0407 /* 10156.swift */; };
 /* End PBXBuildFile section */
 
@@ -641,6 +642,7 @@
 		26BE34A32868B0EC006DCC5F /* 11022.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11022.swift; sourceTree = "<group>"; };
 		26C0D5E1284A512A009CE570 /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
 		26C37AE52A41914F00AE6230 /* 12790.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12790.swift; sourceTree = "<group>"; };
+		26C37AE72A42A1D100AE6230 /* 21300.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 21300.swift; sourceTree = "<group>"; };
 		26DD0953299BC8F300BF0407 /* 10156.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10156.swift; sourceTree = "<group>"; };
 		26F5FF9E283E3CED00C14D69 /* 10818.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10818.swift; sourceTree = "<group>"; };
 		26F5FFA1283E417900C14D69 /* 2562.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2562.swift; sourceTree = "<group>"; };
@@ -912,6 +914,7 @@
 				2614EA642A3EE57A003C2FFD /* 5618.swift */,
 				2614EA692A400A4E003C2FFD /* 1312.swift */,
 				26C37AE52A41914F00AE6230 /* 12790.swift */,
+				26C37AE72A42A1D100AE6230 /* 21300.swift */,
 			);
 			name = "수학";
 			path = "수학";
@@ -1632,6 +1635,7 @@
 				2608ABBE299DB61E00BA9887 /* 2845.swift in Sources */,
 				26333B9A29588C14005A62FA /* 25304.swift in Sources */,
 				26BAD54E2962E8CB00F30724 /* 2587.swift in Sources */,
+				26C37AE82A42A1D100AE6230 /* 21300.swift in Sources */,
 				2658112229800AE5009C85A8 /* 2743.swift in Sources */,
 				26B85B45299C986A0039C14A /* 14626.swift in Sources */,
 				2651E84229587E3B00D700FE /* 11654.swift in Sources */,
