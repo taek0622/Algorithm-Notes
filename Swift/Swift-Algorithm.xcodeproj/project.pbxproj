@@ -323,6 +323,7 @@
 		26C37AE62A41914F00AE6230 /* 12790.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C37AE52A41914F00AE6230 /* 12790.swift */; };
 		26C37AE82A42A1D100AE6230 /* 21300.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C37AE72A42A1D100AE6230 /* 21300.swift */; };
 		26DD0954299BC8F300BF0407 /* 10156.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD0953299BC8F300BF0407 /* 10156.swift */; };
+		26F9B5382A4724E100D662AC /* 10179.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9B5372A4724E100D662AC /* 10179.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -655,6 +656,7 @@
 		26F5FFAA283F95D300C14D69 /* 1546.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1546.swift; sourceTree = "<group>"; };
 		26F5FFCB2846074D00C14D69 /* 8958.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8958.swift; sourceTree = "<group>"; };
 		26F5FFCE28473D9E00C14D69 /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
+		26F9B5372A4724E100D662AC /* 10179.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10179.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -921,6 +923,7 @@
 				26C37AE72A42A1D100AE6230 /* 21300.swift */,
 				260F76772A43D24000C4E524 /* 1526.swift */,
 				260F767B2A45D5F800C4E524 /* 27433.swift */,
+				26F9B5372A4724E100D662AC /* 10179.swift */,
 			);
 			name = "수학";
 			path = "수학";
@@ -1544,6 +1547,7 @@
 				2651E81729578BAE00D700FE /* 10430.swift in Sources */,
 				26679AB72964A19B00D8956A /* 10989.swift in Sources */,
 				26679B19296DA12A00D8956A /* 2477.swift in Sources */,
+				26F9B5382A4724E100D662AC /* 10179.swift in Sources */,
 				2651E83729587AFE00D700FE /* 2741.swift in Sources */,
 				2602B7672A05FC3A0073F5F8 /* 1225.swift in Sources */,
 				2614EA5F2A3ADEAB003C2FFD /* 10539.swift in Sources */,
