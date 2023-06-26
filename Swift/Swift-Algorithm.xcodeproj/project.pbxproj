@@ -325,6 +325,7 @@
 		26DD0954299BC8F300BF0407 /* 10156.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD0953299BC8F300BF0407 /* 10156.swift */; };
 		26F9B5382A4724E100D662AC /* 10179.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9B5372A4724E100D662AC /* 10179.swift */; };
 		26F9B53A2A47F4F100D662AC /* 1834.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9B5392A47F4F100D662AC /* 1834.swift */; };
+		26F9B53C2A47FB6500D662AC /* 4375.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9B53B2A47FB6500D662AC /* 4375.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -659,6 +660,7 @@
 		26F5FFCE28473D9E00C14D69 /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
 		26F9B5372A4724E100D662AC /* 10179.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10179.swift; sourceTree = "<group>"; };
 		26F9B5392A47F4F100D662AC /* 1834.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1834.swift; sourceTree = "<group>"; };
+		26F9B53B2A47FB6500D662AC /* 4375.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4375.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -927,6 +929,7 @@
 				260F767B2A45D5F800C4E524 /* 27433.swift */,
 				26F9B5372A4724E100D662AC /* 10179.swift */,
 				26F9B5392A47F4F100D662AC /* 1834.swift */,
+				26F9B53B2A47FB6500D662AC /* 4375.swift */,
 			);
 			name = "수학";
 			path = "수학";
@@ -1526,6 +1529,7 @@
 				268A97682A2778C20094440E /* 17496.swift in Sources */,
 				2602B7872A177A120073F5F8 /* 1408.swift in Sources */,
 				2614EA5B2A3849E4003C2FFD /* 14470.swift in Sources */,
+				26F9B53C2A47FB6500D662AC /* 4375.swift in Sources */,
 				26679AE7296691E300D8956A /* 10814.swift in Sources */,
 				26333BA52959DEBA005A62FA /* Solvable.swift in Sources */,
 				2651E84529587E6000D700FE /* 2675.swift in Sources */,
