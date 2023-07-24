@@ -16,5 +16,5 @@
 
 import Foundation
 
-let main = BOJ13301()
+let main = BOJ10158()
 main.run()
