@@ -66,7 +66,7 @@ class BOJ15624: Solvable {
         var fibonacci2 = 1
 
         for _ in 0..<n {
-            var sum = fibonacci1 + fibonacci2
+            let sum = fibonacci1 + fibonacci2
             fibonacci1 = fibonacci2
             fibonacci2 = sum > 1000000007 ? sum % 1000000007 : sum
         }
