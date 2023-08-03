@@ -9,7 +9,7 @@
 
 class BOJ3474: Solvable {
     func run() {
-        
+        solution3()
     }
 
     // 메모리: 69100KB, 시간: 104ms, 코드 길이: 228B
