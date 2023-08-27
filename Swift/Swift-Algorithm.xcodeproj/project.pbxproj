@@ -800,14 +800,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2608ABC3299DC8A000BA9887 /* 다이나믹 프로그래밍 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "다이나믹 프로그래밍";
-			path = "다이나믹 프로그래밍";
-			sourceTree = "<group>";
-		};
 		2608ABC8299DDAFD00BA9887 /* 17. 동적 계획법 1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -875,7 +867,6 @@
 		2614F23729967ACC0051EE51 /* 단계별 */ = {
 			isa = PBXGroup;
 			children = (
-				2651E80D2957883500D700FE /* 1. 입출력과 사칙연산 */,
 				2651E81A29578C9E00D700FE /* 2. 조건문 */,
 				2651E82229578E8100D700FE /* 3. 반복문 */,
 				2651E82329578EC600D700FE /* 4. 1차원 배열 */,
@@ -911,7 +902,6 @@
 			isa = PBXGroup;
 			children = (
 				2614F23929967AF20051EE51 /* 수학 */,
-				2608ABC3299DC8A000BA9887 /* 다이나믹 프로그래밍 */,
 			);
 			name = "분류별";
 			path = "분류별";
@@ -1128,7 +1118,6 @@
 				2614F24429967D5D0051EE51 /* class1++ */,
 				2614F24529967F010051EE51 /* class2 */,
 				2614F24629967FB70051EE51 /* class2+ */,
-				2614F247299680490051EE51 /* class2++ */,
 			);
 			name = "클래스별";
 			path = "클래스별";
@@ -1239,13 +1228,6 @@
 				265811372986E6AC009C85A8 /* 2164.swift */,
 			);
 			path = "class2+";
-			sourceTree = "<group>";
-		};
-		2614F247299680490051EE51 /* class2++ */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "class2++";
 			sourceTree = "<group>";
 		};
 		261BD6C62829593E00661F63 = {
@@ -1363,14 +1345,6 @@
 			);
 			name = "8. 기본 수학 2";
 			path = "8. 기본 수학 2";
-			sourceTree = "<group>";
-		};
-		2651E80D2957883500D700FE /* 1. 입출력과 사칙연산 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "1. 입출력과 사칙연산";
-			path = "1. 입출력과 사칙연산";
 			sourceTree = "<group>";
 		};
 		2651E81A29578C9E00D700FE /* 2. 조건문 */ = {
