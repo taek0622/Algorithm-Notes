@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2023/01/24.
 //
 
-// 문제: https://www.acmicpc.net/problem/2420
+//  문제 링크: https://www.acmicpc.net/problem/2420
+//  알고리즘 분류: 수학, 구현, 사칙연산
 
 class BOJ2420: Solvable {
     func run() {
