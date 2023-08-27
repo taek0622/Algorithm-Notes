@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2022/05/09.
 //
 
-// 문제: https://www.acmicpc.net/problem/1001
+//  문제 링크: https://www.acmicpc.net/problem/1001
+//  알고리즘 분류: 수학, 구현, 사칙연산
 
 class BOJ1001: Solvable {
     func run() {
