@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2023/01/26.
 //
 
-// 문제: https://www.acmicpc.net/problem/2920
+//  문제 링크: https://www.acmicpc.net/problem/2920
+//  알고리즘 분류: 구현
 
 class BOJ2920: Solvable {
     func run() {
