@@ -1135,7 +1135,6 @@
 		2614F24429967D5D0051EE51 /* class1++ */ = {
 			isa = PBXGroup;
 			children = (
-				26F5FFA4283F7E1500C14D69 /* 2577.swift */,
 			);
 			path = "class1++";
 			sourceTree = "<group>";
@@ -1193,6 +1192,7 @@
 				2658111F298009E0009C85A8 /* 2420.swift */,
 				2658112F298167D6009C85A8 /* 2475.swift */,
 				261BD6DF2829684C00661F63 /* 2557.swift */,
+				26F5FFA4283F7E1500C14D69 /* 2577.swift */,
 				26268D63282BD4BE00C69A38 /* 2588.swift */,
 				26268D87283277DB00C69A38 /* 2741.swift */,
 				2658112129800AE5009C85A8 /* 2743.swift */,
