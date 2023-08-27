@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2022/05/16.
 //
 
-// 문제: https://www.acmicpc.net/problem/2741
+//  문제 링크: https://www.acmicpc.net/problem/2741
+//  알고리즘 분류: 구현
 
 class BOJ2741: Solvable {
     func run() {
