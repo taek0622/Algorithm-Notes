@@ -97,7 +97,7 @@ class BOJ1755: Solvable {
     private func solution2() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         let numbers = Array(input[0]...input[1])
-        var numberDict = ["zero": "0", "one": "1", "two": "2", "three": "3", "four": "4",
+        let numberDict = ["zero": "0", "one": "1", "two": "2", "three": "3", "four": "4",
                           "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9"]
         var dict = [String]()
         var result = ""
@@ -124,9 +124,9 @@ class BOJ1755: Solvable {
     // 메모리: 69112KB, 시간: 8ms, 코드 길이: 538B
     private func solution3() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
-        var numberDict: [Character: String] = ["0": "zero", "1": "one", "2": "two", "3": "three", "4": "four",
+        let numberDict: [Character: String] = ["0": "zero", "1": "one", "2": "two", "3": "three", "4": "four",
                           "5": "five", "6": "six", "7": "seven", "8": "eight", "9": "nine"]
-        var dict = (input[0]...input[1]).map { ($0, String($0).map { numberDict[$0]! }.joined()) }.sorted(by: { $0.1 < $1.1 }).map { $0.0 }
+        let dict = (input[0]...input[1]).map { ($0, String($0).map { numberDict[$0]! }.joined()) }.sorted(by: { $0.1 < $1.1 }).map { $0.0 }
         var result = ""
 
         for (idx, num) in dict.enumerated() {
