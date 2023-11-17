@@ -6,7 +6,7 @@
 //
 
 //  문제 링크: https://www.acmicpc.net/problem/1753
-//  알고리즘 분류: 그래프 이론, 데이트스트라, 최단 경로
+//  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로
 
 class BOJ1753: Solvable {
     func run() {
