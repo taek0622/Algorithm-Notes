@@ -10,17 +10,21 @@
 
 class BOJ1707: Solvable {
     func run() {
-        // 메모리: 76812KB, 시간: 1568ms, 코드 길이: 1148B
+        solution1()
+    }
+
+    // 메모리: 76816KB, 시간: 1504ms, 코드 길이: 1120B
+    private func solution1() {
         let K = Int(readLine()!)!
 
         for _ in 0..<K {
-            let VE = readLine()!.split(separator: " ").map { Int(String($0))! }
+            let VE = readLine()!.split(separator: " ").map { Int($0)! }
             var groups = Array(repeating: 0, count: VE[0])
             var graph = [Int: [Int]]()
             var isBipartite = true
 
             for _ in 0..<VE[1] {
-                let input = readLine()!.split(separator: " ").map { Int(String($0))! - 1 }
+                let input = readLine()!.split(separator: " ").map { Int($0)! - 1 }
                 graph[input[0], default: []].append(input[1])
                 graph[input[1], default: []].append(input[0])
             }
@@ -40,7 +44,7 @@ class BOJ1707: Solvable {
                             break
                         } else if groups[next] == 0 {
                             queue.append(next)
-                            groups[next] = groups[current] == 1 ? 2 : 1
+                            groups[next] = -groups[current]
                         }
                     }
 
@@ -51,6 +55,43 @@ class BOJ1707: Solvable {
             }
 
             print(isBipartite ? "YES" : "NO")
+        }
+    }
+
+    // 메모리: 77912KB, 시간: 1524ms, 코드 길이: 914B
+    private func solution2() {
+        let K = Int(readLine()!)!
+
+        for _ in 0..<K {
+            let VE = readLine()!.split(separator: " ").map { Int($0)! }
+            var groups = Array(repeating: 0, count: VE[0])
+            var graph = [Int: [Int]]()
+            var isBipartite = true
+
+            for _ in 0..<VE[1] {
+                let input = readLine()!.split(separator: " ").map { Int($0)! - 1 }
+                graph[input[0], default: []].append(input[1])
+                graph[input[1], default: []].append(input[0])
+            }
+
+            for start in 0..<VE[0] where groups[start] == 0 {
+                groups[start] = 1
+                dfs(start)
+            }
+
+            print(isBipartite ? "YES" : "NO")
+
+            func dfs(_ current: Int) {
+                for next in graph[current, default: []] {
+                    if groups[current] == groups[next] {
+                        isBipartite = false
+                        return
+                    } else if groups[next] == 0 {
+                        groups[next] = -groups[current]
+                        dfs(next)
+                    }
+                }
+            }
         }
     }
 }
