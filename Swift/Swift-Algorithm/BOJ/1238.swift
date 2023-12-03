@@ -10,7 +10,7 @@
 
 class BOJ1238: Solvable {
     func run() {
-        // 메모리: 84748KB, 시간: 28ms, 코드 길이: 3001B
+        // 메모리: 84748KB, 시간: 28ms, 코드 길이: 2983B
         let NMX = readLine()!.split(separator: " ").map { Int(String($0))! }
         var goPath = Array(repeating: Array(repeating: 100001, count: NMX[0]), count: NMX[0])
         var comePath = Array(repeating: Array(repeating: 100001, count: NMX[0]), count: NMX[0])
@@ -24,7 +24,7 @@ class BOJ1238: Solvable {
         var goDp = dijkstra(goPath)
         let comeDp = dijkstra(comePath)
 
-        for idx in goDp.indices {
+        for idx in 0..<NMX[0] {
             goDp[idx] += comeDp[idx]
         }
 
@@ -42,7 +42,7 @@ class BOJ1238: Solvable {
                     continue
                 }
 
-                for idx in path[current.city].indices where current.time + path[current.city][idx] < dp[idx] {
+                for idx in 0..<NMX[0] where current.time + path[current.city][idx] < dp[idx] {
                     dp[idx] = current.time + path[current.city][idx]
                     heap.push(Path(city: idx, time: current.time + path[current.city][idx]))
                 }
