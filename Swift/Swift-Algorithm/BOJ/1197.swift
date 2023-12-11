@@ -5,7 +5,7 @@
 //  Created by 김민택 on 11/12/23.
 //
 
-//  문제 링크: https://www.acmicpc.net/problem/1997
+//  문제 링크: https://www.acmicpc.net/problem/1197
 //  알고리즘 분류: 그래프 이론, 최소 스패닝 트리
 
 class BOJ1197: Solvable {
