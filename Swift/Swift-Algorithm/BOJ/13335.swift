@@ -10,21 +10,25 @@
 
 class BOJ13335: Solvable {
     func run() {
-        // 메모리: 69108KB, 시간: 16ms, 코드 길이: 400B
+        // 메모리: 69104KB, 시간: 12ms, 코드 길이: 462B
         let nwL = readLine()!.split(separator: " ").map { Int($0)! }
         let a = readLine()!.split(separator: " ").map { Int($0)! }
         var bridge = Array(repeating: 0, count: nwL[1])
         var second = 0
         var idx = 0
+        var weight = 0
 
         while idx < a.count {
             second += 1
 
-            bridge = bridge[1...] + [0]
+            weight -= bridge.removeFirst()
 
-            if bridge.reduce(0, +) + a[idx] <= nwL[2] {
-                bridge[nwL[1] - 1] = a[idx]
+            if weight + a[idx] <= nwL[2] {
+                weight += a[idx]
+                bridge.append(a[idx])
                 idx += 1
+            } else {
+                bridge.append(0)
             }
         }
 
