@@ -10,36 +10,29 @@
 
 class BOJ11049: Solvable {
     func run() {
-        // 메모리: 71088KB, 시간: 560ms, 코드 길이: 749B
+        // 메모리: 71088KB, 시간: 96ms, 코드 길이: 571B
         let N = Int(readLine()!)!
         var matrix = [(Int, Int)]()
-        var multiple = Array(repeating: Array(repeating: -1, count: 501), count: 501)
+        var dp = Array(repeating: Array(repeating: 0, count: N), count: N)
 
         for _ in 0..<N {
             let input = readLine()!.split(separator: " ").map { Int($0)! }
             matrix.append((input[0], input[1]))
         }
 
-        print(countOperations(0, N-1))
+        for idx in 1..<N {
+            for start in 0..<N-idx {
+                let end = idx + start
+                var count = Int.max
 
-        func countOperations(_ start: Int, _ end: Int) -> Int {
-            if start == end {
-                return 0
+                for mid in start..<end {
+                    count = min(count, dp[start][mid] + dp[mid+1][end] + matrix[start].0 * matrix[mid].1 * matrix[end].1)
+                }
+
+                dp[start][end] = count
             }
-
-            var count = multiple[start][end]
-            if count != -1 {
-                return count
-            }
-
-            for idx in start..<end {
-                let cost = countOperations(start, idx) + countOperations(idx+1, end) + matrix[start].0 * matrix[idx].1 * matrix[end].1
-                count = count == -1 ? cost : min(count, cost)
-            }
-
-            multiple[start][end] = count
-
-            return count
         }
+
+        print(dp[0][N-1])
     }
 }
