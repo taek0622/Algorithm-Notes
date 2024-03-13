@@ -5,7 +5,7 @@
 //  Created by 김민택 on 12/22/23.
 //
 
-//  문제 링크: https://www.acmicpc.net/problem/2512
+//  문제 링크: https://www.acmicpc.net/problem/2529
 //  알고리즘 분류: 브루트포스 알고리즘, 백트래킹
 
 class BOJ2529: Solvable {
