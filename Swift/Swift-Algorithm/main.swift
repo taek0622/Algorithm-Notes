@@ -16,8 +16,57 @@
 
 import Foundation
 
-let main = BOJ22352()
+let main = BOJ22856()
 main.run()
+
+class BOJ19538: Solvable {
+    func run() {
+        let N = Int(readLine()!)!
+        var t = Array(repeating: -1, count: N)
+        var graph = [Int: [Int]]()
+
+        for idx in 0..<N {
+            var input = readLine()!.split(separator: " ").map { Int($0)! - 1 }
+            input.removeLast()
+
+            if input.isEmpty {
+                continue
+            }
+
+            for next in input {
+                graph[idx, default: []].append(next)
+            }
+        }
+
+        _ = Int(readLine()!)!
+        let liars = readLine()!.split(separator: " ").map { Int($0)! - 1 }
+        var queue = [Int]()
+        var idx = 0
+
+        for liar in liars {
+            queue.append(liar)
+            t[liar] = 0
+        }
+
+        while idx < queue.count {
+            let now = queue[idx]
+            idx += 1
+
+            var updates = [Int]()
+
+            for next in graph[now, default: []] where t[next] < 0 && graph[next, default: []].filter { t[$0] > -1 }.count * 2 >= graph[next, default: []].count {
+                updates.append(next)
+            }
+
+            for update in updates {
+                t[update] = t[now] + 1
+                queue.append(update)
+            }
+        }
+
+        print(t.map { String($0) }.joined(separator: " "))
+    }
+}
 
 class BOJ16236: Solvable {
     func run() {
