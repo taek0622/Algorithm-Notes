@@ -16,7 +16,7 @@
 
 import Foundation
 
-let main = BOJ9046()
+let main = BOJ14726()
 main.run()
 
 class BOJ19538: Solvable {
