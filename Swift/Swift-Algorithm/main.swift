@@ -16,8 +16,97 @@
 
 import Foundation
 
-let main = BOJ12100()
+let main = BOJ15685()
 main.run()
+
+class BOJ16236: Solvable {
+    func run() {
+        let N = Int(readLine()!)!
+        var size = 2
+        var eat = 0
+        var space = Array(repeating: Array(repeating: 0, count: N), count: N)
+        var (cr, cc) = (0, 0)
+        var count = 0
+
+        for row in 0..<N {
+            space[row] = readLine()!.split(separator: " ").map { Int($0)! }
+
+            for col in 0..<N where space[row][col] == 9 {
+                (cr, cc) = (row, col)
+                space[row][col] = 0
+            }
+        }
+
+        sp: while true {
+            var tempSpace = Array(repeating: Array(repeating: (0, 0), count: N), count: N)
+
+            for row in 0..<N {
+                for col in 0..<N {
+                    tempSpace[row][col] = (space[row][col], 0)
+                }
+            }
+
+            var queue = [(cr, cc)]
+            var idx = 0
+
+            pa: while idx < queue.count {
+                let (tr, tc) = queue[idx]
+                idx += 1
+
+                for (nr, nc) in [(tr-1, tc), (tr, tc-1), (tr, tc+1), (tr+1, tc)] where 0..<N ~= nr && 0..<N ~= nc && 0...size ~= tempSpace[nr][nc].0 && tempSpace[nr][nc].1 == 0 {
+                    if 1..<size ~=  tempSpace[nr][nc].0 {
+                        (cr, cc) = (nr, nc)
+                        tempSpace[nr][nc].0 = 0
+                        count += tempSpace[tr][tc].1 + 1
+                        eat += 1
+
+                        for row in 0..<N {
+                            for col in 0..<N {
+                                space[row][col] = tempSpace[row][col].0
+                            }
+                        }
+
+                        if eat == size {
+                            eat = 0
+                            size += 1
+                        }
+
+                        break pa
+                    } else {
+                        queue.append((nr, nc))
+                        tempSpace[nr][nc].1 = tempSpace[tr][tc].1 + 1
+                    }
+                }
+
+                var sum = 0
+
+                for row in 0..<N {
+                    for col in 0..<N where space[row][col] >= size {
+                        sum += space[row][col]
+                    }
+                }
+
+                if sum == 0 {
+                    break sp
+                }
+            }
+
+            var sum = 0
+
+            for row in 0..<N {
+                for col in 0..<N where space[row][col] >= size {
+                    sum += space[row][col]
+                }
+            }
+
+            if sum == 0 {
+                break
+            }
+        }
+
+        print(count)
+    }
+}
 
 class BOJ19538: Solvable {
     func run() {
@@ -65,32 +154,6 @@ class BOJ19538: Solvable {
         }
 
         print(t.map { String($0) }.joined(separator: " "))
-    }
-}
-
-class BOJ16236: Solvable {
-    func run() {
-        let N = Int(readLine()!)!
-        var area = Array(repeating: Array(repeating: 0, count: N), count: N)
-        var current = (0, 0)
-        var (time, count) = (0, 0)
-        var sharkSize = 2
-        var stop = false
-        var eat = false
-
-        for row in 0..<N {
-            area[row] = readLine()!.split(separator: " ").map { Int($0)! }
-
-            for col in 0..<N where area[row][col] == 9 {
-                current = (row, col)
-                area[row][col] = 0
-            }
-        }
-
-        while !stop {
-            var visited = Array(repeating: Array(repeating: false, count: N), count: N)
-
-        }
     }
 }
 
