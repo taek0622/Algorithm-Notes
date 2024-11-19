@@ -16,8 +16,80 @@
 
 import Foundation
 
-let main = BOJ15685()
+let main = BOJ17072()
 main.run()
+
+class BOJ17822: Solvable {
+    func run() {
+        let NMT = readLine()!.split(separator: " ").map { Int($0)! }
+        var boards = Array(repeating: Array(repeating: 0, count: NMT[1]), count: NMT[0])
+
+        for row in 0..<NMT[0] {
+            boards[row] = readLine()!.split(separator: " ").map { Int($0)! }
+        }
+
+        for idx in 0..<NMT[2] {
+            let xdk = readLine()!.split(separator: " ").map { Int($0)! }
+
+            for row in 0..<NMT[0] where (row+1) % xdk[0] == 0 {
+                if xdk[1] == 0 {
+                    let temp = boards[row].last!
+
+                    for col in 1..<NMT[1] {
+                        boards[row][col] = boards[row][col-1]
+                    }
+
+                    boards[row][0] = temp
+                } else {
+                    let temp = boards[row].first!
+
+                    for col in stride(from: NMT[1] - 1, to: 0, by: -1) {
+                        boards[row][col-1] = boards[row][col]
+                    }
+
+                    boards[row][NMT[1]-1] = temp
+                }
+            }
+
+            for row in 0..<NMT[0] {
+                for col in 0..<NMT[1] {
+                    
+                }
+            }
+        }
+    }
+}
+
+class BOJ15683: Solvable {
+    func run() {
+        let NM = readLine()!.split(separator: " ").map { Int($0)! }
+        var office = Array(repeating: Array(repeating: 0, count: NM[1]), count: NM[0])
+        var area = Array(repeating: Array(repeating: false, count: NM[1]), count: NM[0])
+        var cctvs = [(row: Int, col: Int, type: Int)]()
+
+        for row in 0..<NM[0] {
+            office[row] = readLine()!.split(separator: " ").map { Int($0)! }
+
+            for col in 0..<NM[1] where office[row][col] != 0 {
+                area[row][col] = true
+
+                if 1...4 ~= office[row][col] {
+                    cctvs.append((row, col, office[row][col]))
+                }
+
+                if office[row][col] == 5 {
+                    for nr in 0..<NM[0] {
+                        area[nr][col] = true
+                    }
+
+                    for nc in 0..<NM[1] {
+                        area[row][nc] = true
+                    }
+                }
+            }
+        }
+    }
+}
 
 class BOJ16236: Solvable {
     func run() {
