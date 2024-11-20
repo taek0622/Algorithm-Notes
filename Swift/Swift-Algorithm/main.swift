@@ -16,7 +16,7 @@
 
 import Foundation
 
-let main = BOJ17072()
+let main = BOJ15683()
 main.run()
 
 class BOJ17822: Solvable {
@@ -54,37 +54,6 @@ class BOJ17822: Solvable {
             for row in 0..<NMT[0] {
                 for col in 0..<NMT[1] {
                     
-                }
-            }
-        }
-    }
-}
-
-class BOJ15683: Solvable {
-    func run() {
-        let NM = readLine()!.split(separator: " ").map { Int($0)! }
-        var office = Array(repeating: Array(repeating: 0, count: NM[1]), count: NM[0])
-        var area = Array(repeating: Array(repeating: false, count: NM[1]), count: NM[0])
-        var cctvs = [(row: Int, col: Int, type: Int)]()
-
-        for row in 0..<NM[0] {
-            office[row] = readLine()!.split(separator: " ").map { Int($0)! }
-
-            for col in 0..<NM[1] where office[row][col] != 0 {
-                area[row][col] = true
-
-                if 1...4 ~= office[row][col] {
-                    cctvs.append((row, col, office[row][col]))
-                }
-
-                if office[row][col] == 5 {
-                    for nr in 0..<NM[0] {
-                        area[nr][col] = true
-                    }
-
-                    for nc in 0..<NM[1] {
-                        area[row][nc] = true
-                    }
                 }
             }
         }
