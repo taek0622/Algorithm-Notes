@@ -16,8 +16,97 @@
 
 import Foundation
 
-let main = BOJ15683()
+let main = BOJ17293()
 main.run()
+
+class BOJ17143: Solvable {
+    func run() {
+        enum Direction: Int {
+            case up = 1
+            case down = 2
+            case right = 3
+            case left = 4
+        }
+
+        let RCM = readLine()!.split(separator: " ").map { Int($0)! }
+        var sharks = [(Int, Int, Int, Direction, Int)]()
+        var count = 0
+
+        for _ in 0..<RCM[2] {
+            let rcsdz = readLine()!.split(separator: " ").map { Int($0)! }
+            sharks.append((rcsdz[0] - 1, rcsdz[1] - 1, rcsdz[2], Direction.init(rawValue: rcsdz[3])!, rcsdz[4]))
+        }
+
+        sharks.sort(by: { $0.0 < $1.0 })
+
+        for col in 0..<RCM[1] {
+            if let removeShark = sharks.firstIndex(where: { $0.1 == col }) {
+                count += sharks.remove(at: removeShark).4
+            }
+
+            for idx in sharks.indices {
+                var newShark = sharks[idx]
+
+                while newShark.2 > 0 {
+                    newShark.2 -= 1
+
+                    switch newShark.3 {
+                        case .up:
+                            if 0..<RCM[0] ~= newShark.0 - 1 {
+                                newShark.0 -= 1
+                            } else {
+                                newShark.0 += 1
+                                newShark.3 = .down
+                            }
+                        case .down:
+                            if 0..<RCM[0] ~= newShark.0 + 1 {
+                                newShark.0 += 1
+                            } else {
+                                newShark.0 -= 1
+                                newShark.3 = .up
+                            }
+                        case .right:
+                            if 0..<RCM[1] ~= newShark.1 + 1 {
+                                newShark.1 += 1
+                            } else {
+                                newShark.1 -= 1
+                                newShark.3 = .left
+                            }
+                        case .left:
+                            if 0..<RCM[1] ~= newShark.1 - 1 {
+                                newShark.1 -= 1
+                            } else {
+                                newShark.1 += 1
+                                newShark.3 = .right
+                            }
+                    }
+                }
+
+                sharks[idx] = (newShark.0, newShark.1, sharks[idx].2, newShark.3, newShark.4)
+            }
+
+            sharks.sort(by: { $0.0 < $1.0 })
+
+            var idx = 0
+
+            while idx < sharks.count - 1 {
+                var compare = idx + 1
+
+                while compare < sharks.count {
+                    if sharks[idx].0 == sharks[compare].0 && sharks[idx].1 == sharks[compare].1 {
+                        _ = sharks.remove(at: sharks[idx].4 > sharks[compare].4 ? compare : idx)
+                    } else {
+                        compare += 1
+                    }
+                }
+
+                idx += 1
+            }
+        }
+
+        print(count)
+    }
+}
 
 class BOJ17822: Solvable {
     func run() {
