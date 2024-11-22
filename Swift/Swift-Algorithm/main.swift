@@ -16,8 +16,76 @@
 
 import Foundation
 
-let main = BOJ17293()
+let main = BOJ2828()
 main.run()
+
+class BOJ19238: Solvable {
+    func run() {
+        let NMF = readLine()!.split(separator: " ").map { Int($0)! }
+        var map = Array(repeating: Array(repeating: (0, 0, 0), count: NMF[0]), count: NMF[0])
+
+        for row in 0..<NMF[0] {
+            map[row] = readLine()!.split(separator: " ").map { Int($0)! == 1 ? (1, 0, 0) : (0, 0, 0) }
+        }
+
+        let start = readLine()!.split(separator: " ").map { Int($0)! - 1 }
+
+        for idx in 0..<NMF[1] {
+            let customer = readLine()!.split(separator: " ").map { Int($0)! - 1 }
+            map[customer[0]][customer[1]] = (2, idx + 1, 0)
+            map[customer[2]][customer[3]] = (3, idx + 1, 0)
+        }
+
+        var remain = NMF[1]
+        var fuel = NMF[2]
+        var idx = 0
+        var queue = [(start[0], start[1])]
+        var tempMap = map
+        var rideWithCustomer = false
+        var isFail = false
+        var dest = 0
+
+        while fuel > 0 && remain > 0 && idx < queue.count && !isFail {
+            let (cr, cc) = queue[idx]
+            idx += 1
+
+            for (nr, nc) in [(cr-1, cc), (cr, cc-1), (cr, cc+1), (cr+1, cc)] where 0..<NMF[0] ~= nr && 0..<NMF[0] ~= nc && tempMap[nr][nc].0 != 1 && tempMap[nr][nc].2 == 0 {
+                if !rideWithCustomer && tempMap[nr][nc].0 == 2 {
+                    rideWithCustomer = true
+                    fuel -= (tempMap[cr][cc].2 + 1)
+                    map[nr][nc].0 = 0
+                    queue = [(nr, nc)]
+                    idx = 0
+                    dest = map[nr][nc].1
+                    tempMap = map
+                    break
+                } else if rideWithCustomer && tempMap[nr][nc].0 == 3 && tempMap[nr][nc].1 == dest {
+                    rideWithCustomer = false
+                    fuel += (tempMap[cr][cc].2 + 1)
+                    map[nr][nc].0 = 0
+                    queue = [(nr, nc)]
+                    idx = 0
+                    remain -= 1
+                    tempMap = map
+                    break
+                } else {
+                    tempMap[nr][nc].2 = tempMap[cr][cc].2 + 1
+                    queue.append((nr, nc))
+
+                    if fuel - tempMap[nr][nc].2 <= 0 {
+                        isFail = true
+                    }
+                }
+            }
+        }
+
+        if idx == queue.count {
+            isFail = true
+        }
+
+        print(isFail ? -1 : fuel)
+    }
+}
 
 class BOJ17143: Solvable {
     func run() {
