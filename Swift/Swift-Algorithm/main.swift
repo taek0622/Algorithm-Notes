@@ -16,8 +16,47 @@
 
 import Foundation
 
-let main = BOJ9037()
+let main = BOJ1730()
 main.run()
+
+class BOJ22351: Solvable {
+    func run() {
+        // 메모리: KB, 시간: ms, 코드 길이: B
+        let S = readLine()!
+        let target = S.map { Int(String($0))! }
+        var (countA, countB) = (0, S.count - 1)
+        var (A, B) = (target.first!, target.last!)
+
+        while true {
+            while A > B {
+                countB -= 1
+                var mul = 1
+
+                for _ in countB..<S.count-1 {
+                    mul *= 10
+                }
+
+                mul *= target[countB]
+                B += mul
+            }
+
+            var number = ""
+
+            for num in A...B {
+                number += "\(num)"
+            }
+
+            if S == number {
+                print(A, B)
+                break
+            }
+
+            countA += 1
+            A *= 10
+            A += target[countA]
+        }
+    }
+}
 
 class BOJ19238: Solvable {
     func run() {
