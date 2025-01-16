@@ -16,8 +16,35 @@
 
 import Foundation
 
-let main = BOJ5046()
+let main = BOJ17203()
 main.run()
+
+class BOJ14584: Solvable {
+    func run() {
+        let crypt = readLine()!.map { Int($0.asciiValue!) - 97 }
+        let N = Int(readLine()!)!
+        var result = ""
+
+        for _ in 0..<N {
+            let word = readLine()!.map { Int($0.asciiValue!) - 97 }
+
+            if result != "" {
+                continue
+            }
+
+            for add in 0..<26 where result == "" {
+                for idx in 0..<crypt.count - word.count {
+                    if word == Array(crypt[idx..<idx+word.count].map { ($0 + add) % 26 }) {
+                        result = crypt.map { String(UnicodeScalar(($0 + add) % 26 + 97)!) }.joined()
+                        break
+                    }
+                }
+            }
+        }
+
+        print(result)
+    }
+}
 
 class BOJ22351: Solvable {
     func run() {
