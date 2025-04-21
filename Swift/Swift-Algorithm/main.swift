@@ -16,8 +16,34 @@
 
 import Foundation
 
-let main = BOJ5939()
+let main = BOJ28292()
 main.run()
+
+class BOJ25966: Solvable {
+    func run() {
+        // 시간초과
+        let NMq = readLine()!.split(separator: " ").map { Int($0)! }
+        var array = Array(repeating: Array(repeating: 0, count: NMq[1]), count: NMq[0])
+
+        for row in 0..<NMq[0] {
+            array[row] = readLine()!.split(separator: " ").map { Int($0)! }
+        }
+
+        for _ in 0..<NMq[2] {
+            let query = readLine()!.split(separator: " ").map { Int($0)! }
+
+            if query[0] == 0 {
+                array[query[1]][query[2]] = query[3]
+            } else {
+                array.swapAt(query[1], query[2])
+            }
+        }
+
+        array.forEach {
+            print($0.map { String($0) }.joined(separator: " "))
+        }
+    }
+}
 
 class BOJ14584: Solvable {
     func run() {
