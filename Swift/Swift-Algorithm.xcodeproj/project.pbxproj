@@ -3505,11 +3505,11 @@
 			};
 			buildConfigurationList = 261BD6CA2829593E00661F63 /* Build configuration list for PBXProject "Swift-Algorithm" */;
 			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
+			developmentRegion = "ko-KR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				"ko-KR",
 			);
 			mainGroup = 261BD6C62829593E00661F63;
 			productRefGroup = 261BD6D02829593E00661F63 /* Products */;
