@@ -9,6 +9,8 @@
 
 import Foundation
 
+import Shared
+
 class SMTC2203: Solvable {
     func run() {
         C()

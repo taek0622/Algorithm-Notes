@@ -8,6 +8,8 @@
 //  문제 링크: https://www.acmicpc.net/problem/32978
 //  알고리즘 분류: 구현, 자료 구조, 브루트포스 알고리즘, 해시를 사용한 집합과 맵
 
+import Shared
+
 class BOJ32978: Solvable {
     func run() {
         // 메모리: 69372KB, 시간: 8ms, 코드 길이: 240B
