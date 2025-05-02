@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4803
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 트리, 깊이 우선 탐색, 분리 집합
 
-class BOJ4803: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4803: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 71104KB, 시간: 224ms, 코드 길이: 1161B
         var caseNum = 0
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4563
 //  알고리즘 분류: 수학, 기하학, 정수론, 피타고라스 정리
 
-class BOJ4563: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4563: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 120ms, 코드 길이: 451B
         while let input = readLine(), input != "0" {
             let A = Int(input)!

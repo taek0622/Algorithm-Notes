@@ -8,6 +8,8 @@
 //  문제 링크: https://www.acmicpc.net/problem/4821
 //  알고리즘 분류: 구현, 문자열, 파싱
 
+import Shared
+
 class BOJ4821: Solvable {
     func run() {
         // 메모리: 69108KB, 시간: 168ms, 코드 길이: 495B

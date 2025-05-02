@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4613
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ4613: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4613: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 228B
         while let input = readLine(), input != "#" {
             let packet = input.map { $0 == " " ? 0 : Int($0.asciiValue!) - 64 }

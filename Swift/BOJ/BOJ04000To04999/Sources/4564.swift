@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4564
 //  알고리즘 분류: 수학, 구현
 
-class BOJ4564: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4564: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 286B
         while let input = readLine(), input != "0" {
             var result = input

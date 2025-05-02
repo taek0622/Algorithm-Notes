@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4108
 //  알고리즘 분류: 구현
 
-class BOJ4108: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4108: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69636KB, 시간: 52ms, 코드 길이: 759B
         while let input = readLine(), input != "0 0" {
             let RC = input.split(separator: " ").map { Int($0)! }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4485
 //  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로
 
-class BOJ4485: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4485: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

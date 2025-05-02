@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/4396
 //  알고리즘 분류: 구현
 
-class BOJ4396: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4396: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1070B
         let n = Int(readLine()!)!
         var mine = Array(repeating: Array(repeating: false, count: n), count: n)
