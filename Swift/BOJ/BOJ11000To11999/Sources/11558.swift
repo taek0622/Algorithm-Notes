@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11558
 //  알고리즘 분류: 구현, 그래프 이론, 그래프 탐색, 시뮬레이션
 
-class BOJ11558: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11558: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69312KB, 시간: 24ms, 코드 길이: 457B
         let T = Int(readLine()!)!
 

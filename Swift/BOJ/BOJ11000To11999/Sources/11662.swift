@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ11662: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11662: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 967B
         let locations = readLine()!.split(separator: " ").map { Double($0)! }
         print(ternarySearch(0, 1))

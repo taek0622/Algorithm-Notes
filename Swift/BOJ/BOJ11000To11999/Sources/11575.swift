@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11575
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ11575: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11575: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 88588KB, 시간: 1116ms, 코드 길이: 240B
         let T = Int(readLine()!)!
 

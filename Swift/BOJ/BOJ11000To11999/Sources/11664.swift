@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ11664: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11664: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 900B
         let input = readLine()!.split(separator: " ").map { Double($0)! }
         var (A, B, C) = ((input[0], input[1], input[2]), (input[3], input[4], input[5]), (input[6], input[7], input[8]))

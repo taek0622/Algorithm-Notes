@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11319
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ11319: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11319: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 4ms, 코드 길이: 265B
         let S = Int(readLine()!)!
         let vowels: [Character] = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]

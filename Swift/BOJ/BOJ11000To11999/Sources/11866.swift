@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11866
 //  알고리즘 분류: 구현, 자료 구조, 큐
 
-class BOJ11866: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11866: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 273B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var queue = Array(1...NK[0])

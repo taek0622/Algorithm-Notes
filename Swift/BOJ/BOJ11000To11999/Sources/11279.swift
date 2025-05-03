@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11279
 //  알고리즘 분류: 자료 구조, 우선순위 큐
 
-class BOJ11279: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11279: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70672KB, 시간: 116ms, 코드 길이: 1849B
         var heap = Heap<Int>()
         let N = Int(readLine()!)!

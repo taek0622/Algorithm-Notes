@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11332
 //  알고리즘 분류: 구현, 많은 조건 분기
 
-class BOJ11332: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11332: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 4ms, 코드 길이: 1150B
         let C = Int(readLine()!)!
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11000
 //  알고리즘 분류: 자료 구조, 그리디 알고리즘, 정렬, 우선순위 큐
 
-class BOJ11000: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11000: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 81596KB, 시간: 312ms, 코드 길이: 497B
         let N = Int(readLine()!)!
         var lectures = [(Int, Bool)]()

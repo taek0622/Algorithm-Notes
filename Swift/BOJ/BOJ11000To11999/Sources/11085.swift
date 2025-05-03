@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11085
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 분리 집합
 
-class BOJ11085: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11085: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 71480KB, 시간: 92ms, 코드 길이: 916B
         let pw = readLine()!.split(separator: " ").map { Int($0)! }
         let cv = readLine()!.split(separator: " ").map { Int($0)! }

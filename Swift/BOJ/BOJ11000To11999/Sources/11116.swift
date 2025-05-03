@@ -8,13 +8,17 @@
 //  문제 링크: https://www.acmicpc.net/problem/11116
 //  알고리즘 분류: 구현, 브루트포스 알고리즘
 
-class BOJ11116: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11116: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 16ms, 코드 길이: 414B
         let n = Int(readLine()!)!
 
         for _ in 0..<n {
-            let m = Int(readLine()!)!
+            let _ = readLine()
             let left = Set(readLine()!.split(separator: " ").map { Int($0)! })
             let right = Set(readLine()!.split(separator: " ").map { Int($0)! })
             var count = 0

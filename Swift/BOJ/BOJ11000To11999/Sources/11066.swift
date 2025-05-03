@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11066
 //  알고리즘 분류: 다이나믹 프로그래밍
 
-class BOJ11066: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11066: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 71100KB, 시간: 540ms, 코드 길이: 646B
         let T = Int(readLine()!)!
 
@@ -25,7 +29,7 @@ class BOJ11066: Solvable {
 
             for idx in 1..<K {
                 for row in 1...K-idx {
-                    var col = row + idx
+                    let col = row + idx
                     dp[row][col] = 1000000000
 
                     for mid in row..<col {

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/11971
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ11971: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11971: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 637B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var roads = Array(repeating: 0, count: 100)
