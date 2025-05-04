@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/12886
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ12886: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ12886: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 82708KB, 시간: 168ms, 코드 길이: 635B
         let ABC = readLine()!.split(separator: " ").map { Int($0)! }.sorted()
         var isSame = false

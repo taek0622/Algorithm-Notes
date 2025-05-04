@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/12919
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 재귀
 
-class BOJ12919: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ12919: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69096KB, 시간: 8ms, 코드 길이: 472B
         let S = readLine()!
         let T = readLine()!

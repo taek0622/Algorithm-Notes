@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/12784
 //  알고리즘 분류: 다이나믹 프로그래밍, 그래프 이론, 그래프 탐색, 트리, 깊이 우선 탐색, 트리에서의 다이나믹 프로그래밍
 
-class BOJ12784: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ12784: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69280KB, 시간: 104ms, 코드 길이: 771B
         let T = Int(readLine()!)!
 

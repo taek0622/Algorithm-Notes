@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/12760
 //  알고리즘 분류: 구현, 정렬, 시뮬레이션
 
-class BOJ12760: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ12760: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 669B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var cards = Array(repeating: [Int](), count: NM[0])
