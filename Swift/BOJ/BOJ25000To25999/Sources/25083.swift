@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/25083
 //  알고리즘 분류: 구현
 
-class BOJ25083: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ25083: Solvable {
+    public init() {}
+
+    public func run() {
         let bud = #"""
                  ,r'"7
         r`-_   ,'  ,/

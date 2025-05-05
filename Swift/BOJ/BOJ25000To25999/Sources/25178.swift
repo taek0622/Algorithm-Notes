@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/25178
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ25178: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ25178: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 73004KB, 시간: 24ms, 코드 길이: 607B
         let N = Int(readLine()!)!
         let word1 = readLine()!.map { Int($0.asciiValue!) - 97 }

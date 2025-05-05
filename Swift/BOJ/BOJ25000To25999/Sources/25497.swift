@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/25497
 //  알고리즘 분류: 구현, 자료 구조
 
-class BOJ25497: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ25497: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69424KB, 시간: 16ms, 코드 길이: 501B
         _ = readLine()
         let skills = readLine()!
