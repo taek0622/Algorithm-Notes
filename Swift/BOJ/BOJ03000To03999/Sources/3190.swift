@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3190
 //  알고리즘 분류: 구현, 자료 구조, 시뮬레이션, 덱, 큐
 
-class BOJ3190: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3190: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 12ms, 코드 길이: 2261B
         let N = Int(readLine()!)!
         let K = Int(readLine()!)!

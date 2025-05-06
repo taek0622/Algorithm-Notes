@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3181
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ3181: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3181: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 291B
         let dump = ["i", "pa", "te", "ni", "niti", "a", "ali", "nego", "no", "ili"]
         let string = readLine()!.split(separator: " ").map { String($0) }

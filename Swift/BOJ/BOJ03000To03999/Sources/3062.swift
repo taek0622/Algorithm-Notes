@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3062
 //  알고리즘 분류: 수학, 구현, 문자열, 사칙연산
 
-class BOJ3062: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3062: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 205B
         let T = Int(readLine()!)!
 

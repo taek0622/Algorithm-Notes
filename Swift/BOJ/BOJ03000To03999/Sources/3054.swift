@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3054
 //  알고리즘 분류: 구현
 
-class BOJ3054: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3054: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 909B
         let word = readLine()!.map { String($0) }
 

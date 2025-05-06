@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3943
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ3943: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3943: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 240ms, 코드 길이: 218B
         let T = Int(readLine()!)!
 

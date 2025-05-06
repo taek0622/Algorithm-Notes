@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3584
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 트리, 깊이 우선 탐색, 최소 공통 조상
 
-class BOJ3584: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3584: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69396KB, 시간: 52ms, 코드 길이: 564B
         let T = Int(readLine()!)!
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/3035
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ3035: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3035: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 12ms, 코드 길이: 432B
         let RCZRZC = readLine()!.split(separator: " ").map { Int($0)! }
         var scan = Array(repeating: Array(repeating: "", count: RCZRZC[1]), count: RCZRZC[0])
