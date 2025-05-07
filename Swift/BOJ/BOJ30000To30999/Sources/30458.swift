@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/30458
 //  알고리즘 분류: 구현, 문자열, 애드 혹
 
-class BOJ30458: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ30458: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72436KB, 시간: 24ms, 코드 길이: 378B
         let N = Int(readLine()!)!
         let S = readLine()!.map { Character(String($0)) }

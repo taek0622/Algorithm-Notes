@@ -10,8 +10,10 @@
 
 import Shared
 
-class BOJ32978: Solvable {
-    func run() {
+public struct BOJ32978: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69372KB, 시간: 8ms, 코드 길이: 240B
         let N = Int(readLine()!)!
         var ingredient = Set(readLine()!.split(separator: " ").map { String($0) })

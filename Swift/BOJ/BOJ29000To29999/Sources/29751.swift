@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ29751: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ29751: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 130B
         let WH = readLine()!.split(separator: " ").map { Double($0)! }
         print(String(format: "%.1f", WH[0] * WH[1] / 2))

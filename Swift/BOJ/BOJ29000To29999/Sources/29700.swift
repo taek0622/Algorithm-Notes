@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/29700
 //  알고리즘 분류: 구현, 문자열, 브루트포스 알고리즘, 누적 합, 슬라이딩 윈도우
 
-class BOJ29700: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ29700: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 260ms, 코드 길이: 650B
         let NMK = readLine()!.split(separator: " ").map { Int($0)! }
         let target = Array(repeating: true, count: NMK[2])
