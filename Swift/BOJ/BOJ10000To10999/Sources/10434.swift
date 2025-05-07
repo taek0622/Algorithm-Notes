@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10434
 //  알고리즘 분류: 수학, 구현, 정수론, 시뮬레이션, 소수 판정
 
-class BOJ10434: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10434: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 24ms, 코드 길이: 896B
         let P = Int(readLine()!)!
 

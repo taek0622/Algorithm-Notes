@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10216
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 기하학, 분리 집합
 
-class BOJ10216: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10216: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69316KB, 시간: 3828ms, 코드 길이: 997B
         let T = Int(readLine()!)!
 

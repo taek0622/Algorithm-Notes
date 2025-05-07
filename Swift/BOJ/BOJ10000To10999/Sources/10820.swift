@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10820
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ10820: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10820: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69096KB, 시간: 8ms, 코드 길이: 461B
         while let input = readLine() {
             var count = (lower: 0, upper: 0, num: 0, space: 0)

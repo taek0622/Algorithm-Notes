@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10093
 //  알고리즘 분류: 구현
 
-class BOJ10093: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10093: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 73616KB, 시간: 36ms, 코드 길이: 213B
         let AB = readLine()!.split(separator: " ").map { Int($0)! }.sorted()
         print(AB[1] - AB[0] > 1 ? AB[1] - AB[0] - 1 : 0)

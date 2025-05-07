@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10430
 //  알고리즘 분류: 수학, 구현, 사칙연산
 
-class BOJ10430: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10430: Solvable {
+    public init() {}
+
+    public func run() {
         let input = readLine()!.split(separator: " ").map {
             Int($0)!
         }

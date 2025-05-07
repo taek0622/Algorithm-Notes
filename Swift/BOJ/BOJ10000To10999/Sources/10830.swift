@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10819
 //  알고리즘 분류: 수학, 분할 정복, 분할 정복을 이용한 거듭제곱, 선형대수학
 
-class BOJ10830: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10830: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 1023B
         let NB = readLine()!.split(separator: " ").map { Int($0)! }
         var (N, B) = (NB[0], NB[1])

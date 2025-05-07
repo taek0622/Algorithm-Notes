@@ -16,10 +16,10 @@
 
 import Foundation
 
-import BOJ03000To03999
+import BOJ10000To10999
 import Shared
 
-let main = BOJ3230()
+let main = BOJ10545()
 main.run()
 
 class BOJ25966: Solvable {

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10655
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 기하학
 
-class BOJ10655: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10655: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72240KB, 시간: 120ms, 코드 길이: 1410B
         let N = Int(readLine()!)!
         var checkPoints = Array(repeating: (0, 0), count: N)

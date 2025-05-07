@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10451
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 순열 사이클 분할
 
-class BOJ10451: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10451: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 140ms, 코드 길이: 890B
         let T = Int(readLine()!)!
 

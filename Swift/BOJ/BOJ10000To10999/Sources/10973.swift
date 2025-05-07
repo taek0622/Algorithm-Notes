@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10973
 //  알고리즘 분류: 수학, 구현, 조합론
 
-class BOJ10973: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10973: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70024KB, 시간: 12ms, 코드 길이: 513B
         let N = Int(readLine()!)!
         var nums = readLine()!.split(separator: " ").map { Int($0)! }

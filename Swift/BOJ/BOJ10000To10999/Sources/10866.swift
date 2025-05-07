@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10866
 //  알고리즘 분류: 구현, 자료 구조, 덱
 
-class BOJ10866: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10866: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 24ms, 코드 길이: 731B
         let N = Int(readLine()!)!
         var deque = [Int]()

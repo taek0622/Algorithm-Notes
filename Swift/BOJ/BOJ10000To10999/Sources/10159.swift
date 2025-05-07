@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10159
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 최단 경로, 플로이드-워셜
 
-class BOJ10159: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10159: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 16ms, 코드 길이: 588B
         let N = Int(readLine()!)!
         let M = Int(readLine()!)!

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10157
 //  알고리즘 분류: 구현, 브루트포스 알고리즘
 
-class BOJ10157: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10157: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70036KB, 시간: 28ms, 코드 길이: 1311B
         enum Direction {
             case up, right, down, left

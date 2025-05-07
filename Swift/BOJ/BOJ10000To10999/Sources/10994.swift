@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10994
 //  알고리즘 분류: 구현, 재귀
 
-class BOJ10994: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10994: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69232KB, 시간: 16ms, 코드 길이: 489B
         drawStar(Int(readLine()!)!).forEach {
             print($0)

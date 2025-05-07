@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10775
 //  알고리즘 분류: 자료 구조, 그리디 알고리즘, 분리 집합
 
-class BOJ10775: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10775: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 74448KB, 시간: 64ms, 코드 길이: 390B
         let G = Int(readLine()!)!
         let P = Int(readLine()!)!

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10859
 //  알고리즘 분류: 수학, 구현, 정수론, 소수 판정
 
-class BOJ10859: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10859: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 1472ms, 코드 길이: 855B
         let N = Int(readLine()!)!
         var isPrime = true

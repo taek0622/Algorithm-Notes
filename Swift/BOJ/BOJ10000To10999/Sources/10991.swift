@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10991
 //  알고리즘 분류: 구현
 
-class BOJ10991: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10991: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 155B
         let N = Int(readLine()!)!
         let pattern = "* "

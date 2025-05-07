@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/10845
 //  알고리즘 분류: 자료 구조, 큐
 
-class BOJ10845: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10845: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69244KB, 시간: 24ms, 코드 길이: 502B
         let N = Int(readLine()!)!
         var queue = [Int]()
