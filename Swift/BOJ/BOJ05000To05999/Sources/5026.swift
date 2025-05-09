@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5026
 //  알고리즘 분류: 수학, 구현, 문자열, 사칙연산, 파싱
 
-class BOJ5026: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5026: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 188B
         let N = Int(readLine()!)!
 

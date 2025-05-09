@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5939
 //  알고리즘 분류: 구현, 정렬
 
-class BOJ5939: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5939: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69296KB, 시간: 16ms, 코드 길이: 419B
         let N = Int(readLine()!)!
         var cows = Array(repeating: (0, 0, 0), count: N)

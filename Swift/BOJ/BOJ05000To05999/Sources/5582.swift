@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5582
 //  알고리즘 분류: 다이나믹 프로그래밍, 문자열
 
-class BOJ5582: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5582: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 194432KB, 시간: 516ms, 코드 길이: 403B
         let string1 = Array(readLine()!)
         let string2 = Array(readLine()!)

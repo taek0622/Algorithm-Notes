@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5585
 //  알고리즘 분류: 그리디 알고리즘
 
-class BOJ5585: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5585: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 152B
         var price = 1000 - Int(readLine()!)!
         var count = 0

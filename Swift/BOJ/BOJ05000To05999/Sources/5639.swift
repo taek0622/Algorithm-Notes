@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5639
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 트리, 재귀
 
-class BOJ5639: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5639: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70060KB, 시간: 64ms, 코드 길이: 423B
         var nodes = [Int]()
 

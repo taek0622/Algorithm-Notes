@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5052
 //  알고리즘 분류: 자료 구조, 문자열, 정렬, 트리, 트라이
 
-class BOJ5052: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5052: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

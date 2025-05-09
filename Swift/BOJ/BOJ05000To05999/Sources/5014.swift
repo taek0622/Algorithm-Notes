@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/5014
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ5014: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5014: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70088KB, 시간: 92ms, 코드 길이: 690B
         let FSGUD = readLine()!.split(separator: " ").map { Int($0)! }
         var queue = [(FSGUD[1], 0)]
