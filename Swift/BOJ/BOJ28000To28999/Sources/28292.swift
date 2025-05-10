@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/28292
 //  알고리즘 분류: 구현, 애드 혹
 
-class BOJ28292: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ28292: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 65B
         let N = Int(readLine()!)!
         print(N > 5 ? 3 : [1, 1, 2, 2, 2][N-1])

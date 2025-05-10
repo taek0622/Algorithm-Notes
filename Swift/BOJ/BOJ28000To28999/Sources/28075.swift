@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/28075
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 재귀
 
-class BOJ28075: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ28075: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 64ms, 코드 길이: 908B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var mission = Array(repeating: Array(repeating: 0, count: 3), count: 2)
