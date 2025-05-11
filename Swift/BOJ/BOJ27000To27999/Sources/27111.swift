@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/27111
 //  알고리즘 분류: 구현, 애드 혹, 시뮬레이션
 
-class BOJ27111: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ27111: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72244KB, 시간: 240ms, 코드 길이: 396B
         let N = Int(readLine()!)!
         var entrance = Set<Int>()

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/27162
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 많은 조건 분기
 
-class BOJ27162: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ27162: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 8ms, 코드 길이: 1892B
         let combi = readLine()!.map { $0 == "Y" }
         let dice = readLine()!.split(separator: " ").map { Int($0)! }

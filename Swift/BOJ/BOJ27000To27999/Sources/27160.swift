@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/27160
 //  알고리즘 분류: 구현, 자료 구조, 문자열, 해시를 사용한 집합과 맵
 
-class BOJ27160: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ27160: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 140ms, 코드 길이: 269B
         let N = Int(readLine()!)!
         var fruits = ["STRAWBERRY": 0, "BANANA": 0, "LIME": 0, "PLUM": 0]
