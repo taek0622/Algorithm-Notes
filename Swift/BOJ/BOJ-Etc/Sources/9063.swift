@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/9063
 
-class BOJ9063: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9063: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 76ms, 코드 길이: 411B
         let N = Int(readLine()!)!
         var minPoint = (10000, 10000)

@@ -6,9 +6,13 @@
 //
 
 // 문제: https://www.acmicpc.net/problem/5988
-class BOJ5988: Solvable {
+import Shared
+
+public struct BOJ5988: Solvable {
     // 메모리: 69100KB, 시간: 8ms, 코드 길이: 128B
-    func run() {
+    public init() {}
+
+    public func run() {
         let N = Int(readLine()!)!
 
         for _ in 0..<N {

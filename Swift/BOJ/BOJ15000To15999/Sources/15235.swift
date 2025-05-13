@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15235
 //  알고리즘 분류: 구현, 자료 구조, 시뮬레이션, 큐
 
-class BOJ15235: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15235: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 349B
         let N = Int(readLine()!)!
         var needs = readLine()!.split(separator: " ").map { Int($0)! }

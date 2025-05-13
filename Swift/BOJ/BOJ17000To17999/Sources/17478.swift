@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17478
 //  알고리즘 분류: 구현, 재귀
 
-class BOJ17478: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17478: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 898B
         let N = Int(readLine()!)!
         print("어느 한 컴퓨터공학과 학생이 유명한 교수님을 찾아가 물었다.")

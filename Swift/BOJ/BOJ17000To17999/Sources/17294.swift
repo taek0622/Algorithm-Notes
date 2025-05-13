@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17294
 //  알고리즘 분류: 수학, 구현
 
-class BOJ17294: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17294: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 310B
         let k = readLine()!.map { Int(String($0))! }
         var isCute = true

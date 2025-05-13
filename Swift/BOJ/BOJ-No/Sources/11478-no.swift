@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/11478
 
-class BOJ11478: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11478: Solvable {
+    public init() {}
+
+    public func run() {
         let S = String(readLine()!)
         var partOfS = Set<String.SubSequence>()
         var count = 0

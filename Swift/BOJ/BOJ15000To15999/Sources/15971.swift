@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15971
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ15971: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15971: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 88764KB, 시간: 248ms, 코드 길이: 759B
         let NSE = readLine()!.split(separator: " ").map { Int($0)! }
         var graph = [Int: [(Int, Int)]]()

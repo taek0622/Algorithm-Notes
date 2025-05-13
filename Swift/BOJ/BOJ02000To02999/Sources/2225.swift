@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2225
 //  알고리즘 분류: 수학, 다이나믹 프로그래밍
 
-class BOJ2225: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2225: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69368KB, 시간: 12ms, 코드 길이: 344B
         let NK = readLine()!.split(separator: " ").map { Int(String($0))! }
         var count = Array(repeating: Array(repeating: 1, count: NK[0]), count: NK[1])

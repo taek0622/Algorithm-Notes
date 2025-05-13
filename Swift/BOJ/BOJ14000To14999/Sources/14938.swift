@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14938
 //  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로, 플로이드-워셜
 
-class BOJ14938: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14938: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

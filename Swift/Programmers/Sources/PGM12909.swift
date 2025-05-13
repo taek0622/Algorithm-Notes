@@ -13,7 +13,9 @@ import Foundation
 import Shared
 
 class PGM12909: Solvable {
-    func run() {
+    public init() {}
+
+    public func run() {
         print(solution2("()()"))
         print(solution2("(())()"))
         print(solution2(")()("))

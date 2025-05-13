@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/17496
 
-class BOJ17496: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17496: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 125B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         print((input[0] - 1) / input[1] * input[2] * input[3])

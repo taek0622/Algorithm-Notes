@@ -8,12 +8,16 @@
 //  문제 링크: https://www.acmicpc.net/problem/1786
 //  알고리즘 분류: 문자열, kmp
 
-class BOJ1786: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1786: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 115216KB, 시간: 208ms, 코드 길이: 1098B
         let text = Array(readLine()!)
         let pattern = Array(readLine()!)
-        var status = configurePattern()
+        let status = configurePattern()
         var patternIdx = 0
         var matchingCount = 0
         var matchingIdx = [Int]()

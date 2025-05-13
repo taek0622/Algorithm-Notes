@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2161
 //  알고리즘 분류: 구현, 자료 구조, 큐
 
-class BOJ2161: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2161: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 258B
         let N = Int(readLine()!)!
         var cards = Array(1...N)

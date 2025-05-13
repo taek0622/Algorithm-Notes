@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1991
 //  알고리즘 분류: 트리, 재귀
 
-class BOJ1991: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1991: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

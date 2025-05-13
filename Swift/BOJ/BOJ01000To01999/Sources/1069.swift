@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ1069: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1069: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 518B
         let XYDT = readLine()!.split(separator: " ").map { Double($0)! }
         let distance = sqrt(XYDT[0] * XYDT[0] + XYDT[1] * XYDT[1])

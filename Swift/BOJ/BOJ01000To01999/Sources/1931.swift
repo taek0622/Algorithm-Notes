@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1931
 //  알고리즘 분류: 그리디 알고리즘, 정렬
 
-class BOJ1931: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1931: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72236KB, 시간: 156ms, 코드 길이: 403B
         let N = Int(readLine()!)!
         var meetings = [(Int, Int)]()

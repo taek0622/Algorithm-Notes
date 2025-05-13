@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/28438
 
-class BOJ28438: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ28438: Solvable {
+    public init() {}
+
+    public func run() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var A = Array(repeating: Array(repeating: 0, count: input[1]), count: input[0])
         var result = ""

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14889
 //  알고리즘 분류: 브루트포스 알고리즘, 백트래킹
 
-class BOJ14889: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14889: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 244ms, 코드 길이: 977B
         let N = Int(readLine()!)!
         var S = Array(repeating: Array(repeating: 0, count: N), count: N)

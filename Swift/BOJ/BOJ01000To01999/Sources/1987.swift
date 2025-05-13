@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1987
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 깊이 우선 탐색, 백트래킹
 
-class BOJ1987: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1987: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 1976ms, 코드 길이: 634B
         let RC = readLine()!.split(separator: " ").map { Int(String($0))! }
         var board = [[Int]]()

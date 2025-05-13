@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14623
 //  알고리즘 분류: 수학, 구현
 
-class BOJ14623: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14623: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 108B
         let B1 = Int(readLine()!, radix: 2)!
         let B2 = Int(readLine()!, radix: 2)!

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2290
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ2290: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2290: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 1709B
         let sn = readLine()!.split(separator: " ").map { String($0) }
         let (s, n) = (Int(sn[0])!, sn[1].map { $0 })

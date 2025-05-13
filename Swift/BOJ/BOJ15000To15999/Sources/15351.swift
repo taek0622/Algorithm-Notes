@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15351
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ15351: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15351: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

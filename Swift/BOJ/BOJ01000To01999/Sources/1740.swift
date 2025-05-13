@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1740
 //  알고리즘 분류: 수학, 비트마스킹
 
-class BOJ1740: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1740: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

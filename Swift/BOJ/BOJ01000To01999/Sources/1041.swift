@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1041
 //  알고리즘 분류: 수학, 그리디 알고리즘
 
-class BOJ1041: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1041: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 461B
         let N = Int(readLine()!)!
         let dice = readLine()!.split(separator: " ").map { Int($0)! }

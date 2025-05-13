@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18108
 //  알고리즘 분류: 수학, 사칙연산
 
-class BOJ18108: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18108: Solvable {
+    public init() {}
+
+    public func run() {
         // 2541 - 1998 = 543
         
         let input = Int(readLine()!)!

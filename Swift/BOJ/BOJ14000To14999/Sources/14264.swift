@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ14264: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14264: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79504KB, 시간: 12ms, 코드 길이: 74B
         let L = Double(readLine()!)!
         print(sqrt(3) * L * L / 4)

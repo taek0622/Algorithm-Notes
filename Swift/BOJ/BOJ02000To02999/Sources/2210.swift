@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2210
 //  알고리즘 분류: 그래프 이론, 브루트포스 알고리즘, 그래프 탐색, 깊이 우선 탐색
 
-class BOJ2210: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2210: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69508KB, 시간: 12ms, 코드 길이: 706B
         var board = Array(repeating: Array(repeating: "", count: 5), count: 5)
         let dx = [-1, 1, 0, 0]

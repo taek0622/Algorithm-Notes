@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2641
 //  알고리즘 분류: 구현
 
-class BOJ2641: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2641: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 8ms, 코드 길이: 1238B
         _ = readLine()
         let base = drawShape(readLine()!.split(separator: " ").map { String($0) })

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13305
 //  알고리즘 분류: 그리디 알고리즘
 
-class BOJ13305: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13305: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79612KB, 시간: 88ms, 코드 길이: 361B
         let N = Int(readLine()!)!
         let distance = readLine()!.split(separator: " ").map { Int($0)! }

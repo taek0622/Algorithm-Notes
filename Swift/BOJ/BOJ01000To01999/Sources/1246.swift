@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1246
 //  알고리즘 분류: 그리디 알고리즘, 정렬
 
-class BOJ1246: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1246: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 343B
         let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
         var P = [Int]()

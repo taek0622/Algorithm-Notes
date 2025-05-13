@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15792
 //  알고리즘 분류: 수학, 구현, 사칙연산, 임의 정밀도 / 큰 수 연산
 
-class BOJ15792: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15792: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 221B
         var AB = readLine()!.split(separator: " ").map { Int($0)! }
         var result = "\(AB[0] / AB[1])."

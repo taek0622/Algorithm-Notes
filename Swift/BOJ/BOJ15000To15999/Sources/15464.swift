@@ -10,8 +10,12 @@
 
 import Shared
 
-class BOJ15464: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15464: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 541B
         let N = Int(readLine()!)!
         let ids = readLine()!.split(separator: " ").map { Int($0)! }

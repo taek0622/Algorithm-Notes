@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1074
 //  알고리즘 분류: 분할 정복, 재귀
 
-class BOJ1074: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1074: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 678B
         let Nrc = readLine()!.split(separator: " ").map { Int(String($0))! }
         var count = -1

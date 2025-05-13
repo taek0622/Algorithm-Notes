@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2252
 //  알고리즘 분류: 그래프 이론, 위상 정렬, 방향 비순환 그래프
 
-class BOJ2252: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2252: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72752KB, 시간: 160ms, 코드 길이: 678B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var graph = Array(repeating: [Int](), count: NM[0] + 1)

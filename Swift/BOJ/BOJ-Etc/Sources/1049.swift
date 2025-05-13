@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1049
 
-class BOJ1049: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1049: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 490B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var setPrices = 1000

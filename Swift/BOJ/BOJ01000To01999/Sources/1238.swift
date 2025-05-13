@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1238
 //  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로
 
-class BOJ1238: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1238: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 84748KB, 시간: 28ms, 코드 길이: 2983B
         let NMX = readLine()!.split(separator: " ").map { Int(String($0))! }
         var goPath = Array(repeating: Array(repeating: 100001, count: NMX[0]), count: NMX[0])

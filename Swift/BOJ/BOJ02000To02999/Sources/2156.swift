@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2156
 //  알고리즘 분류: 다이나믹 프로그래밍
 
-class BOJ2156: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2156: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69380KB, 시간: 12ms, 코드 길이: 356B
         let n = Int(readLine()!)!
         var wines = [0]

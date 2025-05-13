@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15312
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ15312: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15312: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69236KB, 시간: 40ms, 코드 길이: 540B
         let counts = [3, 2, 1, 2, 3, 3, 2, 3, 3, 2, 2, 1, 2, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 1]
         let A = readLine()!.map { counts[Int($0.asciiValue!) - 65] }

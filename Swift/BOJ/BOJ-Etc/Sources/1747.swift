@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1747
 
-class BOJ1747: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1747: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70084KB, 시간: 84ms, 코드 길이: 429B
         let N = Int(readLine()!)!
         var numbers = Array(repeating: true, count: 1003002)

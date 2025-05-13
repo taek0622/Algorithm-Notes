@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2812
 //  알고리즘 분류: 자료 구조, 그리디 알고리즘, 스택
 
-class BOJ2812: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2812: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

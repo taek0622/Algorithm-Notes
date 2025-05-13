@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15964
 //  알고리즘 분류: 수학, 구현, 사칙연산
 
-class BOJ15964: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15964: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 124B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
 

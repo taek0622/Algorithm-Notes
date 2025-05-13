@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1236
 //  알고리즘 분류: 구현
 
-class BOJ1236: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1236: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 442B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var row = Array(repeating: false, count: NM[0])

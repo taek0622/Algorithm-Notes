@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1051
 //  알고리즘 분류: 구현, 브루트포스 알고리즘
 
-class BOJ1051: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1051: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 703B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var square = Array(repeating: Array(repeating: 0, count: NM[1]), count: NM[0])

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1835
 //  알고리즘 분류: 구현, 자료 구조, 시뮬레이션, 덱
 
-class BOJ1835: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1835: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 44ms, 코드 길이: 284B
         let N = Int(readLine()!)!
         var cards = Array(1...N)

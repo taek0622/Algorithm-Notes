@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18311
 //  알고리즘 분류: 구현
 
-class BOJ18311: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18311: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76860KB, 시간: 44ms, 코드 길이: 402B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         let distance = readLine()!.split(separator: " ").map { Int($0)! }

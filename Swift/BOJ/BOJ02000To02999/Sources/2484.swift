@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2484
 //  알고리즘 분류: 수학, 구현, 많은 조건 분기
 
-class BOJ2484: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2484: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1810B
         let N = Int(readLine()!)!
         var maxPrice = 0

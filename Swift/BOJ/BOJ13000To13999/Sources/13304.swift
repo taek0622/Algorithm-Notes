@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13304
 //  알고리즘 분류: 수학, 구현
 
-class BOJ13304: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13304: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 858B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var student = (g12: 0, g34m: 0, g34f: 0, g56m: 0, g56f: 0)

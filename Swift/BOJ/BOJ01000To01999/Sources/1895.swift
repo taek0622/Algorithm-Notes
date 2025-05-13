@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1895
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 정렬
 
-class BOJ1895: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1895: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 12ms, 코드 길이: 524B
         let RC = readLine()!.split(separator: " ").map { Int(String($0))! }
         var I = [[Int]]()

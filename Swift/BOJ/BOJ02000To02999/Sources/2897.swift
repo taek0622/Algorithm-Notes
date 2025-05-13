@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2897
 //  알고리즘 분류: 구현, 브루트포스 알고리즘
 
-class BOJ2897: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2897: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 899B
         let RC = readLine()!.split(separator: " ").map { Int($0)! }
         var road = Array(repeating: Array(repeating: "", count: RC[1]), count: RC[0])

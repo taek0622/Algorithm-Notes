@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1926
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ1926: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1926: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 75720KB, 시간: 64ms, 코드 길이: 955B
         let nm = readLine()!.split(separator: " ").map { Int($0)! }
         var paper = Array(repeating: Array(repeating: false, count: nm[1]), count: nm[0])

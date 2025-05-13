@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/10610
 
-class BOJ10610: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10610: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72336KB, 시간: 36ms, 코드 길이: 206B
         let number = Array(readLine()!).map { Int(String($0))! }
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/20040
 //  알고리즘 분류: 자료 구조, 분리 집합
 
-class BOJ20040: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20040: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 73012KB, 시간: 720ms, 코드 길이: 638B
         let nm = readLine()!.split(separator: " ").map { Int($0)! }
         var parents = Array(0..<nm[0])

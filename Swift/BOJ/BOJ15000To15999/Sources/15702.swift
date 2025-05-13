@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15702
 //  알고리즘 분류: 구현, 정렬
 
-class BOJ15702: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15702: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 526B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         let points = readLine()!.split(separator: " ").map { Int($0)! }

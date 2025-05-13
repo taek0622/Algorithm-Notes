@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1639
 //  알고리즘 분류: 구현, 브루트포스 알고리즘
 
-class BOJ1639: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1639: Solvable {
+    public init() {}
+
+    public func run() {
         let S = readLine()!.map { Int(String($0))! }
         var N = S.count / 2
         var idx = 0

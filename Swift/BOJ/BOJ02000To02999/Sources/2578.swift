@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2578
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ2578: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2578: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1231B
         var board = Array(repeating: Array(repeating: 0, count: 5), count: 5)
         var location = Array(repeating: (0, 0), count: 26)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2493
 //  알고리즘 분류: 자료 구조, 스택
 
-class BOJ2493: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2493: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 106148KB, 시간: 360ms, 코드 길이: 571B
         let N = Int(readLine()!)!
         var towers = readLine()!.split(separator: " ").map { Int($0)! }

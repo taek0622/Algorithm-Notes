@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2357
 //  알고리즘 분류: 자료 구조, 세그먼트 트리
 
-class BOJ2357: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2357: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76144KB, 시간: 436ms, 코드 길이: 1286B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var numbers = Array(repeating: 0, count: NM[0])

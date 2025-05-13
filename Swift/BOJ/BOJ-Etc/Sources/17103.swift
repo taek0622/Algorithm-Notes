@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/17103
 
-class BOJ17103: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17103: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70080KB, 시간: 76ms, 코드 길이: 470B
         let T = Int(readLine()!)!
         var primes = Array(repeating: true, count: 1000001)

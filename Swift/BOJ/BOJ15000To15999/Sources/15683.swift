@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/15683
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 시뮬레이션, 백트래킹
 
-class BOJ15683: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15683: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

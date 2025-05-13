@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14267
 //  알고리즘 분류: 다이나믹 프로그래밍, 그래프 이론, 그래프 탐색, 트리, 깊이 우선 탐색, 트리에서의 다이나믹 프로그래밍
 
-class BOJ14267: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14267: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76884KB, 시간: 152ms, 코드 길이: 408B
         let nm = readLine()!.split(separator: " ").map { Int($0)! }
         let superior = readLine()!.split(separator: " ").map { Int($0)! }

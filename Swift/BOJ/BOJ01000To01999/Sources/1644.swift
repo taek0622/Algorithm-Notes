@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1644
 //  알고리즘 분류: 수학, 정수론, 두 포인터, 소수 판정, 에라토스테네스의 체
 
-class BOJ1644: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1644: Solvable {
+    public init() {}
+
+    public func run() {
         solution3()
     }
 

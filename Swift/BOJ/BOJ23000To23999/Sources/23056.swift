@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/23056
 //  알고리즘 분류: 구현, 정렬
 
-class BOJ23056: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ23056: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 8ms, 코드 길이: 822B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var classes = Array(repeating: [String](), count: NM[0])

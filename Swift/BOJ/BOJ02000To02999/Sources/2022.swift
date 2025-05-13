@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ2022: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2022: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 443B
         let xyc = readLine()!.split(separator: " ").map { Double($0)! }
         var (left, right) = (0.0, min(xyc[0], xyc[1]))

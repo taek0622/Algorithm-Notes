@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2023
 //  알고리즘 분류: 수학, 정수론, 백트래킹, 소수 판정
 
-class BOJ2023: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2023: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 682B
         let N = Int(readLine()!)!
         var result = ""

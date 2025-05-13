@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1916
 //  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로
 
-class BOJ1916: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1916: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 77000KB, 시간: 188ms, 코드 길이: 2660B
         let N  = Int(readLine()!)!
         let M = Int(readLine()!)!

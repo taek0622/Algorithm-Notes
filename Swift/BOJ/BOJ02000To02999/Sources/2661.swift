@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2661
 //  알고리즘 분류: 백트래킹
 
-class BOJ2661: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2661: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 591B
         let N = Int(readLine()!)!
         var result = [Character]()

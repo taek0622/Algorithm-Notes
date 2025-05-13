@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ10179: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10179: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 149B
         let T = Int(readLine()!)!
 

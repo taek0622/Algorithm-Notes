@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2623
 //  알고리즘 분류: 그래프 이론, 위상 정렬, 방향 비순환 그래프
 
-class BOJ2623: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2623: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69256KB, 시간: 12ms, 코드 길이: 777B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var inDegree = Array(repeating: 0, count: NM[0])

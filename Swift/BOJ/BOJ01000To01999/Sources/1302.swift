@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1302
 //  알고리즘 분류: 자료 구조, 문자열, 정렬, 해시를 사용한 집합과 맵
 
-class BOJ1302: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1302: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

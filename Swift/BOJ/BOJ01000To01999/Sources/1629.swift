@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1629
 //  알고리즘 분류: 수학, 분할 정복을 이용한 거듭제곱
 
-class BOJ1629: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1629: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 271B
         let ABC = readLine()!.split(separator: " ").map { Int(String($0))! }
 

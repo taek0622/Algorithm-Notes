@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1021
 //  알고리즘 분류: 자료 구조, 덱
 
-class BOJ1021: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1021: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 
@@ -33,7 +37,7 @@ class BOJ1021: Solvable {
     // 메모리: 69104KB, 시간: 8ms, 코드 길이: 395B
     private func solution2() {
         let NM = readLine()!.split(separator: " ").map { Int(String($0))! }
-        var numbers = readLine()!.split(separator: " ").map { Int(String($0))! }
+        let numbers = readLine()!.split(separator: " ").map { Int(String($0))! }
         var A = Array(1...NM[0])
         var count = 0
 

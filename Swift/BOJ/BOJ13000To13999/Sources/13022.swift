@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13022
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ13022: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13022: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 731B
         let word = readLine()!.map { String($0) }
         var isCorrect = true

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2096
 //  알고리즘 분류: 다이나믹 프로그래밍, 슬라이딩 윈도우
 
-class BOJ2096: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2096: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 140ms, 코드 길이: 807B
         let N = Int(readLine()!)!
         var minDp = [0, 0, 0]

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14891
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ14891: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14891: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 974B
         var gear = Array(repeating: Array(repeating: 0, count: 8), count: 4)
 

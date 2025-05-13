@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/20157
 //  알고리즘 분류: 수학, 자료 구조, 기하학, 해시를 사용한 집합과 맵
 
-class BOJ20157: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20157: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 74416KB, 시간: 196ms, 코드 길이: 658B
         let N = Int(readLine()!)!
         var positiveBallons = [Double: Int]()

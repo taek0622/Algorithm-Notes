@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2003
 //  알고리즘 분류: 브루트포스 알고리즘, 누적 합, 두 포인터
 
-class BOJ2003: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2003: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/9506
 
-class BOJ9506: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9506: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 414B
         while let n = Int(readLine()!), n != -1 {
             var divisors = [Int]()

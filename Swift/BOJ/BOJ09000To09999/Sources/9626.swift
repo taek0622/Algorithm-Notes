@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9626
 //  알고리즘 분류: 구현
 
-class BOJ9626: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9626: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 604B
         let MN = readLine()!.split(separator: " ").map { Int($0)! }
         let ULRD = readLine()!.split(separator: " ").map { Int($0)! }

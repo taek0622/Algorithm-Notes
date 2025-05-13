@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2456
 //  알고리즘 분류: 구현, 많은 조건 분기
 
-class BOJ2456: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2456: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 648B
         let N = Int(readLine()!)!
         var votes = [[0, 0, 0], [0, 0, 0]]

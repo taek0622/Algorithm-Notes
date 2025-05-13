@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1417
 //  알고리즘 분류: 구현, 자료 구조, 그리디 알고리즘, 시뮬레이션, 우선순위 큐
 
-class BOJ1417: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1417: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 2001B
         let N = Int(readLine()!)!
         let dasom = Int(readLine()!)!

@@ -14,8 +14,12 @@
 
 import Foundation
 
-class BOJ2108: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2108: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 85764KB, 시간: 296ms, 코드 길이: 659B
         let N = Int(readLine()!)!
         var numbers = [Int]()

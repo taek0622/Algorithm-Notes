@@ -10,8 +10,12 @@
 
 import Shared
 
-class BOJ4821: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ4821: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 168ms, 코드 길이: 495B
         while let lastPage = Int(readLine()!), lastPage != 0 {
             let pages = readLine()!.split(separator: ",")

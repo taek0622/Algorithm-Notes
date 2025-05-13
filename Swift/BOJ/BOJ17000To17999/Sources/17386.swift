@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17386
 //  알고리즘 분류: 기하학, 선분 교차 판정
 
-class BOJ17386: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17386: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 668B
         let l1 = readLine()!.split(separator: " ").map { Int($0)! }
         let l2 = readLine()!.split(separator: " ").map { Int($0)! }

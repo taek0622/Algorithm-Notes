@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14467
 //  알고리즘 분류: 구현
 
-class BOJ14467: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14467: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 336B
         let N = Int(readLine()!)!
         var cow = Array(repeating: -1, count: 10)

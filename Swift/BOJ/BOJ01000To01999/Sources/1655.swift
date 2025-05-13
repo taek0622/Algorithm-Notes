@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1655
 //  알고리즘 분류: 자료 구조, 우선순위 큐
 
-class BOJ1655: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1655: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 71260KB, 시간: 92ms, 코드 길이: 2406B
         var maxHeap = Heap<Int>(compare: >)
         var minHeap = Heap<Int>(compare: <)
@@ -25,8 +29,8 @@ class BOJ1655: Solvable {
                 continue
             }
 
-            var maxRoot = maxHeap.root!
-            var minRoot = minHeap.root!
+            let maxRoot = maxHeap.root!
+            let minRoot = minHeap.root!
 
             if maxRoot > minRoot {
                 minHeap.heap[1] = maxRoot

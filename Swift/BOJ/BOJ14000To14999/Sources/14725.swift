@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14725
 //  알고리즘 분류: 자료 구조, 문자열, 트리, 트라이
 
-class BOJ14725: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14725: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69248KB, 시간: 12ms, 코드 길이: 823ㅠ
         let N = Int(readLine()!)!
         var tunnel = Tunnel()

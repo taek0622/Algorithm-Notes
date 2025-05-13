@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16928
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ16928: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16928: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 723B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }.reduce(0, +)
         var board = Array(0...100)

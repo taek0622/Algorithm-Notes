@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2644
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ2644: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2644: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 713B
         _ = Int(readLine()!)!
         let target = readLine()!.split(separator: " ").map { Int(String($0))! }

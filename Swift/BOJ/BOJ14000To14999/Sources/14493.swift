@@ -9,7 +9,9 @@
 //  알고리즘 분류: 수학, 구현, 시뮬레이션
 
 struct BOJ14493: Solvable {
-    func run() {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 56ms, 코드 길이: 294B
         let N = Int(readLine()!)!
         var second = 0

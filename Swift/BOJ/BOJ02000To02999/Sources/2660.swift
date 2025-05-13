@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2660
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 최단 경로, 플로이드-워셜
 
-class BOJ2660: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2660: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1707
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색, 이분 그래프
 
-class BOJ1707: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1707: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

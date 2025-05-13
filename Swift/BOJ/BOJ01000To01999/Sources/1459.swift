@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1459
 //  알고리즘 분류: 수학, 많은 조건 분기
 
-class BOJ1459: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1459: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 411B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var result = 0

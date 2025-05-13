@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/2748
 
-class BOJ2748: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2748: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 170B
         let n = Int(readLine()!)!
         var fibonacci = (0, 1)

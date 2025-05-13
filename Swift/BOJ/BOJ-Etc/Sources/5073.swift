@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/5073
 
-class BOJ5073: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ5073: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 414B
         while let input = readLine(), input != "0 0 0" {
             let sides = input.split(separator: " ").map { Int(String($0))! }.sorted()

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1308
 //  알고리즘 분류: 구현
 
-class BOJ1308: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1308: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1327B
         let monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
         let day1 = readLine()!.split(separator: " ").map { Int($0)! }

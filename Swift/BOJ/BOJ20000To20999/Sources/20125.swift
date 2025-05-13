@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/20125
 //  알고리즘 분류: 구현
 
-class BOJ20125: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20125: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70028KB, 시간: 64ms, 코드 길이: 780B
         let N = Int(readLine()!)!
         var cookie = Array(repeating: Array(repeating: false, count: N), count: N)

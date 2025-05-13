@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9291
 //  알고리즘 분류: 구현, 브루트포스 알고리즘
 
-class BOJ9291: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9291: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 12ms, 코드 길이: 1078B
         let T = Int(readLine()!)!
 

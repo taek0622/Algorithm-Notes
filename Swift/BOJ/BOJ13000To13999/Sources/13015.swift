@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13015
 //  알고리즘 분류: 구현
 
-class BOJ13015: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13015: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 857B
         let N = Int(readLine()!)!
         print(String(repeating: "*", count: N) + String(repeating: " ", count: (N-2)*2+1) + String(repeating: "*", count: N))

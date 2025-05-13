@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class RhynoFileIO {
+public final class RhynoFileIO {
     private let buffer: [UInt8]
     private var index: Int = 0
 
-    init(fileHandle: FileHandle = FileHandle.standardInput) {
+    public init(fileHandle: FileHandle = FileHandle.standardInput) {
         buffer = Array(try! fileHandle.readToEnd()!) + [UInt8(0)] // 인덱스 범위 넘어가는 것 방지
     }
 
@@ -21,7 +21,7 @@ final class RhynoFileIO {
         return buffer[index]
     }
 
-    @inline(__always) func readInt() -> Int {
+    @inline(__always) public func readInt() -> Int {
         var sum = 0
         var now = read()
         var isPositive = true
@@ -36,7 +36,7 @@ final class RhynoFileIO {
         return sum * (isPositive ? 1 : -1)
     }
 
-    @inline(__always) func readString() -> String {
+    @inline(__always) public func readString() -> String {
         var now = read()
 
         while now == 10 || now == 32 { now = read() } // 줄바꿈(10)과 공백(32) 무시
@@ -47,7 +47,7 @@ final class RhynoFileIO {
         return String(bytes: Array(buffer[beginIndex..<(index-1)]), encoding: .ascii)!
     }
 
-    @inline(__always) func readByteSequenceWithoutSpaceAndLineFeed() -> [UInt8] {
+    @inline(__always) public func readByteSequenceWithoutSpaceAndLineFeed() -> [UInt8] {
         var now = read()
 
         while now == 10 || now == 32 { now = read() } // 줄바꿈(10)과 공백(32) 무시

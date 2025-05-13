@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17952
 //  알고리즘 분류: 구현, 자료 구조, 시뮬레이션, 스택
 
-class BOJ17952: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17952: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 81596KB, 시간: 928ms, 코드 길이: 541B
         let N = Int(readLine()!)!
         var score = 0

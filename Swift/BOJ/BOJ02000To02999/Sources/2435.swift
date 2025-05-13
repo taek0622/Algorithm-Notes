@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2435
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 누적 합
 
-class BOJ2435: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2435: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 439B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         let temperature = readLine()!.split(separator: " ").map { Int($0)! }

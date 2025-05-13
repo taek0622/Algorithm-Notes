@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1766
 //  알고리즘 분류: 자료 구조, 그래프 이론, 우선순위 큐, 위상 정렬, 방향 비순환 그래프
 
-class BOJ1766: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1766: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

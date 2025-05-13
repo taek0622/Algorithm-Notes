@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1072
 
-class BOJ1072: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1072: Solvable {
+    public init() {}
+
+    public func run() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var X = input[0]
         var Y = input[1]

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2742
 //  알고리즘 분류: 구현
 
-class BOJ2742: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2742: Solvable {
+    public init() {}
+
+    public func run() {
         let input = Int(readLine()!)!
 
         var str = ""

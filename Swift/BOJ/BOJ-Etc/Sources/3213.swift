@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/3213
 
-class BOJ3213: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3213: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 12ms, 코드 길이: 770B
         let N = Int(readLine()!)!
         var pizza = 0

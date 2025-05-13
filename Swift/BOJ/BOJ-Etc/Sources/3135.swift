@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/3135
 
-class BOJ3135: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ3135: Solvable {
+    public init() {}
+
+    public func run() {
         let AB = readLine()!.split(separator: " ").map { Int(String($0))! }
         let N = Int(readLine()!)!
         var count = abs(AB[0] - AB[1])

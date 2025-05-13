@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1717
 //  알고리즘 분류: 자료 구조, 분리 집합
 
-class BOJ1717: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1717: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 81248KB, 시간: 184ms, 코드 길이: 732B
         let nm = readLine()!.split(separator: " ").map { Int($0)! }
         var setArray = Array(0...nm[0])

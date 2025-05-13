@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1524
 //  알고리즘 분류: 구현, 정렬
 
-class BOJ1524: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1524: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

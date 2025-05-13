@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/11948
 
-class BOJ11948: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11948: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 177B
         var ABCD = [Int]()
 

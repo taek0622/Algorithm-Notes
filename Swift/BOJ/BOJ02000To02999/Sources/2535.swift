@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2535
 //  알고리즘 분류: 구현, 정렬
 
-class BOJ2535: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2535: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 472B
         let N = Int(readLine()!)!
         var students = [(Int, Int, Int)]()

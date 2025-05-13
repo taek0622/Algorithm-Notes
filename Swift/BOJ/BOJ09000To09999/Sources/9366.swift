@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9366
 //  알고리즘 분류: 수학, 구현, 기하학, 사칙연산, 많은 조건 분기
 
-class BOJ9366: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9366: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 440B
         let T = Int(readLine()!)!
 

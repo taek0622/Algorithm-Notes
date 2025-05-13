@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/11051
 
-class BOJ11051: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11051: Solvable {
+    public init() {}
+
+    public func run() {
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         let N = input[0], K = input[1]
         var numbers = [Double]()

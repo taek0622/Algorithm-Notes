@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9251
 //  알고리즘 분류: 다이나믹 프로그래밍, 문자열
 
-class BOJ9251: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9251: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

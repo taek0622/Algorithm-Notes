@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17203
 //  알고리즘 분류: 구현, 누적 합
 
-class BOJ17203: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17203: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 413B
         let NQ = readLine()!.split(separator: " ").map { Int($0)! }
         let a = readLine()!.split(separator: " ").map { Int($0)! }

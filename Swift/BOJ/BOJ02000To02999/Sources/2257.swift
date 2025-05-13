@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2257
 //  알고리즘 분류: 자료 구조, 문자열, 스택
 
-class BOJ2257: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2257: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 535B
         let input = readLine()!.map { String($0) }
         var stack = [Int]()

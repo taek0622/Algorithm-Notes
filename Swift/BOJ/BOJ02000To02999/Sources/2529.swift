@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2529
 //  알고리즘 분류: 브루트포스 알고리즘, 백트래킹
 
-class BOJ2529: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2529: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 52ms, 코드 길이: 794B
         let k = Int(readLine()!)!
         var max = Array(repeating: "0", count: k+1).joined()

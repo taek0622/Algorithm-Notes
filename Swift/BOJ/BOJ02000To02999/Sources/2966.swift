@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2966
 //  알고리즘 분류: 구현
 
-class BOJ2966: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2966: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 682B
         let N = Int(readLine()!)!
         let sanguen = Array("ABC")

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/6118
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ6118: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6118: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72220KB, 시간: 88ms, 코드 길이: 803B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var graph = Array(repeating: [Int](), count: NM[0] + 1)

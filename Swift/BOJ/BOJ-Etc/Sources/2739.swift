@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/2739
 
-class BOJ2739: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2739: Solvable {
+    public init() {}
+
+    public func run() {
         let input = Int(readLine()!)!
 
         for i in 1...9 {

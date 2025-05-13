@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1780
 //  알고리즘 분류: 분할 정복, 재귀
 
-class BOJ1780: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1780: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 106864KB, 시간: 1296ms, 코드 길이: 1051B
         let N = Int(readLine()!)!
         var paper = [[Int]]()

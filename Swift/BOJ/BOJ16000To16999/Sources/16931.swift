@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16931
 //  알고리즘 분류: 구현, 기하학, 3차원 기하학
 
-class BOJ16931: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16931: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 674B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var shape = Array(repeating: Array(repeating: 0, count: NM[1]), count: NM[0])

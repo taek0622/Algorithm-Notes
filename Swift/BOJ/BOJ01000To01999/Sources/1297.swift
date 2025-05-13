@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ1297: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1297: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79508KB, 시간: 12ms, 코드 길이: 199B
         let DHW = readLine()!.split(separator: " ").map { Double($0)! }
         let x = sqrt((DHW[0] * DHW[0]) / (DHW[1] * DHW[1] + DHW[2] * DHW[2]))

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1197
 //  알고리즘 분류: 그래프 이론, 최소 스패닝 트리
 
-class BOJ1197: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1197: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 73900KB, 시간: 188ms, 코드 길이: 754B
         let VE = readLine()!.split(separator: " ").map { Int($0)! }
         var graph = Array(0...VE[0])

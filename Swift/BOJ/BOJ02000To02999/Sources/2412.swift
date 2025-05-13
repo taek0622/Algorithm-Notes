@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2412
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 너비 우선 탐색, 해시를 사용한 집합과 맵
 
-class BOJ2412: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2412: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 79736KB, 시간: 260ms, 코드 길이: 807B
         let nT = readLine()!.split(separator: " ").map { Int($0)! }
         var slots = [[Int]: Bool]()

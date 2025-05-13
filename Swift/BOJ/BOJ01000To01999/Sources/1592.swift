@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1592
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ1592: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1592: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 317B
         let NML = readLine()!.split(separator: " ").map { Int($0)! }
         var recieve = Array(repeating: 0, count: NML[0])

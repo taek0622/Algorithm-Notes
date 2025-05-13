@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1189
 //  알고리즘 분류: 그래프 이론, 브루트포스 알고리즘, 그래프 탐색, 깊이 우선 탐색, 백트래킹
 
-class BOJ1189: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1189: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 12ms, 코드 길이: 766B
         let RCK = readLine()!.split(separator: " ").map { Int($0)! }
         var visited = Array(repeating: Array(repeating: false, count: RCK[1]), count: RCK[0])

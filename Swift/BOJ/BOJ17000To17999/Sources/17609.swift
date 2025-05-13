@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17609
 //  알고리즘 분류: 문자열, 투 포인터
 
-class BOJ17609: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17609: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1706
 //  알고리즘 분류: 구현, 문자열, 정렬, 파싱
 
-class BOJ1706: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1706: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 8ms, 코드 길이: 578B
         let RC = readLine()!.split(separator: " ").map { Int($0)! }
         var puzzle = Array(repeating: Array(repeating: "", count: RC[1]), count: RC[0])

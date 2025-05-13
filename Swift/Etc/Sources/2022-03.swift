@@ -12,7 +12,9 @@ import Foundation
 import Shared
 
 class SMTC2203: Solvable {
-    func run() {
+    public init() {}
+
+    public func run() {
         C()
     }
 

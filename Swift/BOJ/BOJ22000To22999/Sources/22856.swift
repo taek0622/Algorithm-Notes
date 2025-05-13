@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/22856
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 트리
 
-class BOJ22856: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ22856: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70648KB, 시간: 168ms, 코드 길이: 321B
         let N = Int(readLine()!)!
         var tree = Array(repeating: (-1, -1), count: N+1)

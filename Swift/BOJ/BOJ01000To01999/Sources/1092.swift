@@ -8,12 +8,16 @@
 //  문제 링크: https://www.acmicpc.net/problem/1092
 //  알고리즘 분류: 그리디 알고리즘, 정렬
 
-class BOJ1092: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1092: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70100KB, 시간: 28ms, 코드 길이: 744B
-        let N = Int(readLine()!)!
+        _ = readLine()
         var cranes = readLine()!.split(separator: " ").map { Int($0)! }.sorted(by: >)
-        let M = Int(readLine()!)!
+        _ = readLine()
         var boxes = readLine()!.split(separator: " ").map { Int($0)! }.sorted(by: >)
 
         while !cranes.isEmpty && cranes.last! < boxes.last! {

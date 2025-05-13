@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/6679
 //  알고리즘 분류: 수학, 구현, 브루트포스 알고리즘, 사칙연산
 
-class BOJ6679: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6679: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69092KB, 시간: 8ms, 코드 길이: 394B
         for number in 1000...9999 {
             var num = number

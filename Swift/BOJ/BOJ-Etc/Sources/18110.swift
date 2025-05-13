@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ18110: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18110: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 85760KB, 시간: 168ms, 코드 길이: 346B
         let n = Int(readLine()!)!
         let trim = Int(round(Double(n) * 0.15))

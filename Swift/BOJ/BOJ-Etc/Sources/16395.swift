@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/16395
 
-class BOJ16395: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16395: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 466B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var triangle = Array(repeating: Array(repeating: 0, count: input[0] + 1), count: input[0] + 1)

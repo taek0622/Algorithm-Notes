@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2636
 //  알고리즘 분류: 구현, 그래프 이론, 그래프 탐색, 시뮬레이션, 너비 우선 탐색
 
-class BOJ2636: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2636: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 12ms, 코드 길이: 1053B
         let hw = readLine()!.split(separator: " ").map { Int($0)! }
         var board = Array(repeating: Array(repeating: 0, count: hw[1]), count: hw[0])

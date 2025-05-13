@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1963
 //  알고리즘 분류: 수학, 그래프 이론, 그래프 탐색, 정수론, 너비 우선 탐색, 소수 판정, 에라토스테네스의 체
 
-class BOJ1963: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1963: Solvable {
+    public init() {}
+
+    public func run() {
         let T = Int(readLine()!)!
         var primes = Array(0...10000)
 

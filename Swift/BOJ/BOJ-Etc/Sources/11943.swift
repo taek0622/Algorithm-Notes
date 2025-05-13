@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/11943
 
-class BOJ11943: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11943: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 207B
         let basket1 = readLine()!.split(separator: " ").map { Int(String($0))! }
         let basket2 = readLine()!.split(separator: " ").map { Int(String($0))! }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1406
 //  알고리즘 분류: 자료 구조, 스택, 연결 리스트
 
-class BOJ1406: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1406: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 95436KB, 시간: 264ms, 코드 길이: 483B
         var left = readLine()!.map { $0 }
         var right = [Character]()

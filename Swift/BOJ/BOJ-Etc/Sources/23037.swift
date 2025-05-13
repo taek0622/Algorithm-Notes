@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ23037: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ23037: Solvable {
+    public init() {}
+
+    public func run() {
         solution4()
     }
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/7287
 //  알고리즘 분류: 수학, 기하학, 피타고라스 정리
 
-class BOJ7510: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ7510: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 240B
         let n = Int(readLine()!)!
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1996
 //  알고리즘 분류: 구현
 
-class BOJ1996: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1996: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76988KB, 시간: 264ms, 코드 길이: 585B
         let N = Int(readLine()!)!
         var map = Array(repeating: Array(repeating: 0, count: N), count: N)

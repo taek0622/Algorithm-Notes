@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/7576
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ7576: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ7576: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 264492KB, 시간: 408ms, 코드 길이: 873B
         let MN = readLine()!.split(separator: " ").map { Int(String($0))! }
         var box = Array(repeating: Array(repeating: -1, count: MN[0]), count: MN[1])

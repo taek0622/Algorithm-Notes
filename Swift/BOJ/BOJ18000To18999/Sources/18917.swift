@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18917
 //  알고리즘 분류: 수학, 구현
 
-class BOJ18917: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18917: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 672ms, 코드 길이: 390B
         let M = Int(readLine()!)!
         var sum = 0

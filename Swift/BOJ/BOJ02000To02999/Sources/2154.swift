@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2154
 //  알고리즘 분류: 구현, 문자열, 브루트포스 알고리즘
 
-class BOJ2154: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2154: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 77404KB, 시간: 432ms, 코드 길이: 243B
         let N = readLine()!
         var sentence = ""

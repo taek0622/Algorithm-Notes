@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1980
 //  알고리즘 분류: 수학, 구현, 브루트포스 알고리즘
 
-class BOJ1980: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1980: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

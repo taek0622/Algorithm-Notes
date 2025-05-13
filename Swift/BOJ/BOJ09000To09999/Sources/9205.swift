@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9205
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ9205: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9205: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 12ms, 코드 길이: 1069B
         let T = Int(readLine()!)!
 

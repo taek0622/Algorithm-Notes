@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14716
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ14716: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14716: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70776KB, 시간: 24ms, 코드 길이: 826B
         let MN = readLine()!.split(separator: " ").map { Int($0)! }
         var banner = Array(repeating: Array(repeating: false, count: MN[1]), count: MN[0])

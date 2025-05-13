@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2577
 //  알고리즘 분류: 수학, 구현, 사칙연산
 
-class BOJ2577: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2577: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

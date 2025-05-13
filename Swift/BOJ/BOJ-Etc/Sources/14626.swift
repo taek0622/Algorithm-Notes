@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/14626
 
-class BOJ14626: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14626: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 366B
         let isbn = readLine()!.map { $0 != "*" ? Int(String($0))! : -1 }
         let ruinedNumber = isbn.firstIndex(of: -1)

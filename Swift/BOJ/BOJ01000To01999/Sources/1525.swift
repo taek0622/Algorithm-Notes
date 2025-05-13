@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1525
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 너비 우선 탐색, 해시를 사용한 집합과 맵
 
-class BOJ1525: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1525: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 107948KB, 시간: 384ms, 코드 길이: 845B
         var map = Array(repeating: Array(repeating: 0, count: 3), count: 3)
         var count = -1

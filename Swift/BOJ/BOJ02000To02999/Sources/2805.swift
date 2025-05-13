@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2805
 //  알고리즘 분류: 이분 탐색, 매개 변수 탐색
 
-class BOJ2805: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2805: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 145408KB, 시간: 580ms, 코드 길이: 625B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         let tree = readLine()!.split(separator: " ").map { Int($0)! }

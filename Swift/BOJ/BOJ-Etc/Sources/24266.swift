@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/24266
 
-class BOJ24266: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ24266: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 46B
         let n = Int(readLine()!)!
         print("\(n*n*n)\n3")

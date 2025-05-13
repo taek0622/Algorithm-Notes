@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/11723
 
-class BOJ11723: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11723: Solvable {
+    public init() {}
+
+    public func run() {
         let fileIO = RhynoFileIO()
         let M = fileIO.readInt()
         var S = Set<Int>()

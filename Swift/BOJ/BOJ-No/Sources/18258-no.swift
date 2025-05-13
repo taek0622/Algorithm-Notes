@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/18258
 
-class BOJ18258: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18258: Solvable {
+    public init() {}
+
+    public func run() {
         struct Queue {
             private var queue = [Int]()
             private var head = 0

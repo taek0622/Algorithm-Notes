@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/16430
 
-class BOJ16430: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16430: Solvable {
+    public init() {}
+
+    public func run() {
         solution3()
     }
 

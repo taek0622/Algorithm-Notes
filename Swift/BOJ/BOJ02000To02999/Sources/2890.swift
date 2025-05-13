@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2890
 //  알고리즘 분류: 구현, 문자열, 정렬
 
-class BOJ2890: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2890: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 8ms, 코드 길이: 424B
         let RC = readLine()!.split(separator: " ").map { Int($0)! }
         var remain = Array(repeating: RC[1], count: 9)

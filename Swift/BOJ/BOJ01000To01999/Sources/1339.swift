@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1339
 //  알고리즘 분류: 그리디 알고리즘
 
-class BOJ1339: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1339: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 361B
         let N = Int(readLine()!)!
         var dict = Array(repeating: 0, count: 26)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2979
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ2979: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2979: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 340B
         var time = Array(repeating: 0, count: 101)
         let ABC = [0] + readLine()!.split(separator: " ").map { Int($0)! }

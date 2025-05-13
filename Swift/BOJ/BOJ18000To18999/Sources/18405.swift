@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18405
 //  알고리즘 분류: 구현, 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ18405: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18405: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 72624KB, 시간: 24ms, 코드 길이: 879B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var tube = Array(repeating: Array(repeating: 0, count: NK[0]), count: NK[0])

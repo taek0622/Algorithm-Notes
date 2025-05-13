@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1173
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ1173: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1173: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 415B
         var NmMTR = readLine()!.split(separator: " ").map { Int($0)! }
         var (time, pulse) = (0, NmMTR[1])

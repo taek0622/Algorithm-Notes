@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/24482
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 정렬, 깊이 우선 탐색
 
-class BOJ24482: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ24482: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 87312KB, 시간: 372ms, 코드 길이: 633B
         let NMR = readLine()!.split(separator: " ").map { Int($0)! }
         var graph = Array(repeating: [Int](), count: NMR[0])

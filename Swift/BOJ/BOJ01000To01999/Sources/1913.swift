@@ -8,9 +8,13 @@
 //  문제 링크: https://www.acmicpc.net/problem/1913
 //  알고리즘 분류: 구현
 
-class BOJ1913: Solvable {
+import Shared
+
+public struct BOJ1913: Solvable {
     // 메모리: 95512KB, 시간: 220ms, 코드 길이: 1224B
-    func run() {
+    public init() {}
+
+    public func run() {
         enum Direction {
             case left
             case right

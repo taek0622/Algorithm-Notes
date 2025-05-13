@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/2576
 
-class BOJ2576: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2576: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 263B
         var sum = 0
         var minNumber = 100

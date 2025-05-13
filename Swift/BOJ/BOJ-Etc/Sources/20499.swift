@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/20499
 
-class BOJ20499: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20499: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 133B
         let KDA = readLine()!.split(separator: "/").map { Int(String($0))! }
         print(KDA[0] + KDA[2] < KDA[1] || KDA[1] == 0 ? "hasu" : "gosu")

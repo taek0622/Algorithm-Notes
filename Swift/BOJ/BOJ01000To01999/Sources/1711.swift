@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1711
 //  알고리즘 분류: 브루트포스 알고리즘, 기하학, 피타고라스 정리
 
-class BOJ1711: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1711: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

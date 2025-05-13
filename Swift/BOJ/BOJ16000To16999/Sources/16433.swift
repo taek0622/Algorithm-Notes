@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16433
 //  알고리즘 분류: 구현
 
-class BOJ16433: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16433: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69244KB, 시간: 8ms, 코드 길이: 561B
         let NRC = readLine()!.split(separator: " ").map { Int($0)! }
         var farm = Array(repeating: Array(repeating: false, count: NRC[0]), count: NRC[0])

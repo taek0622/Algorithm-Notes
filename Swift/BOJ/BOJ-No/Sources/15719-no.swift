@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ15719: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15719: Solvable {
+    public init() {}
+
+    public func run() {
         let N = Int(readLine()!)!
         let file = SumFileIO()
         let input = file.readInt()

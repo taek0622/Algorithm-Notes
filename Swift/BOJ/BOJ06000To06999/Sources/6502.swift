@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/6502
 //  알고리즘 분류: 수학, 구현, 기하학, 피타고라스 정리
 
-class BOJ6502: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6502: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 12ms, 코드 길이: 349B
         var idx = 1
 

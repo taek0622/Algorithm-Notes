@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1504
 //  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로
 
-class BOJ1504: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1504: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 74300KB, 시간: 256ms, 코드 길이: 2945B
         let NE = readLine()!.split(separator: " ").map { Int(String($0))! }
         var graph = Array(repeating: Array(repeating: 200000001, count: NE[0]), count: NE[0])

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1340
 //  알고리즘 분류: 구현, 문자열, 파싱
 
-class BOJ1340: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1340: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1163B
         let monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
         let today = readLine()!.split(separator: " ")

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1389
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 최단 경로, 플로이드-워셜
 
-class BOJ1389: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1389: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 28ms, 코드 길이: 804B
         let inf = 10000
         let NM = readLine()!.split(separator: " ").map { Int($0)! }

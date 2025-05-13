@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/9987
 
-class BOJ9987: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9987: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69136KB, 시간: 12ms, 코드 길이: 30712B
         let pokemons = [1: "Bulbasaur\nGrass Poison",
                         2: "Ivysaur\nGrass Poison",

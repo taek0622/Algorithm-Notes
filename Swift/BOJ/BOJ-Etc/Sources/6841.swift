@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/6841
 
-class BOJ6841: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6841: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69096KB, 시간: 8ms, 코드 길이: 469B
         let shortForm = ["CU": "see you", ":-)": "I’m happy", ":-(": "I’m unhappy",
                          ";-)": "wink", ":-P": "stick out my tongue", "(~.~)": "sleepy",

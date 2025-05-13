@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2343
 //  알고리즘 분류: 이분 탐색, 매개 변수 탐색
 
-class BOJ2343: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2343: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76292KB, 시간: 44ms, 코드 길이: 552B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         let lectures = readLine()!.split(separator: " ").map { Int($0)! }

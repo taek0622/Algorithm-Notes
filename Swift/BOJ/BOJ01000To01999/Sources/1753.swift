@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1753
 //  알고리즘 분류: 그래프 이론, 데이크스트라, 최단 경로
 
-class BOJ1753: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1753: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 82452KB, 시간: 588ms, 코드 길이: 2885B
         let INF = Int.max
         let VE = readLine()!.split(separator: " ").map { Int(String($0))! }

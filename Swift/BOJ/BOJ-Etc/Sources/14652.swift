@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/14652
 
-class BOJ14652: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14652: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 136B
         let location = readLine()!.split(separator: " ").map { Int(String($0))! }
         print("\(location[2]/location[1]) \(location[2]%location[1])")

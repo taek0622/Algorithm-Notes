@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1541
 //  알고리즘 분류: 수학, 그리디 알고리즘, 문자열, 파싱
 
-class BOJ1541: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1541: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

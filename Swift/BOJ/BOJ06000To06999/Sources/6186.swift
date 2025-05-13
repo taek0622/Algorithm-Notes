@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/6186
 //  알고리즘 분류: 구현, 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ6186: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6186: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 773B
         let RC = readLine()!.split(separator: " ").map { Int($0)! }
         var pasture = Array(repeating: Array(repeating: false, count: RC[1]), count: RC[0])

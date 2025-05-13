@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2630
 //  알고리즘 분류: 분할 정복, 재귀
 
-class BOJ2630: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2630: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69364KB, 시간: 16ms, 코드 길이: 836B
         let N = Int(readLine()!)!
         var paper = [[String]]()

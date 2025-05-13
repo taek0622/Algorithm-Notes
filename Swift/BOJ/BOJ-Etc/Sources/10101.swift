@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/10101
 
-class BOJ10101: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10101: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 308B
         var sum = 0
         var angles = Set<Int>()

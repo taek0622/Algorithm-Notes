@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1544
 //  알고리즘 분류: 구현, 자료 구조, 문자열, 브루트포스 알고리즘, 해시를 사용한 집합과 맵
 
-class BOJ1544: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1544: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 24ms, 코드 길이: 397B
         let N = Int(readLine()!)!
         var words = Set<String>()

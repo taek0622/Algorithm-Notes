@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16173
 //  알고리즘 분류: 구현, 그래프 이론, 브루트포스 알고리즘, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ16173: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16173: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 729B
         let N = Int(readLine()!)!
         var map = Array(repeating: Array(repeating: 0, count: N), count: N)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1806
 //  알고리즘 분류: 누적 합, 두 포인터
 
-class BOJ1806: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1806: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76292KB, 시간: 48ms, 코드 길이: 492B
         let NS = readLine()!.split(separator: " ").map { Int(String($0))! }
         let numbers = readLine()!.split(separator: " ").map { Int(String($0))! }

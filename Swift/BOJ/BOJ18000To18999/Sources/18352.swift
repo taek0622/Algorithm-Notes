@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18352
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 데이크스트라, 최단 경로
 
-class BOJ18352: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18352: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 101480KB, 시간: 1696ms, 코드 길이: 746B
         let NMKX = readLine()!.split(separator: " ").map { Int($0)! }
         var graph = [Int: [Int]]()

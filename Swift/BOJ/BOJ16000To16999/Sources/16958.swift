@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16958
 //  알고리즘 분류: 그래프 이론,  브루트포스 알고리즘, 기하학, 최단 경로, 플로이드-워셜
 
-class BOJ16958: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16958: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 16ms, 코드 길이: 1053B
         let NT = readLine()!.split(separator: " ").map { Int($0)! }
         var cities = Array(repeating: (false, 0, 0), count: NT[0])

@@ -9,7 +9,9 @@
 //  알고리즘 분류: 구현, 그리디 알고리즘
 
 struct BOJ23028: Solvable {
-    func run() {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 336B
         var NAB = readLine()!.split(separator: " ").map { Int($0)! }
 

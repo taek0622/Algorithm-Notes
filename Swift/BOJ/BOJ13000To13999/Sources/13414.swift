@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13414
 //  알고리즘 분류: 구현, 자료 구조, 해시를 사용한 집합과 맵
 
-class BOJ13414: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13414: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 88564KB, 시간: 280ms, 코드 길이: 261B
         let KL = readLine()!.split(separator: " ").map { Int($0)! }
         var students = [String: Int]()

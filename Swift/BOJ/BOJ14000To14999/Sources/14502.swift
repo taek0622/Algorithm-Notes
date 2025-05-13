@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14502
 //  알고리즘 분류: 구현, 그래프 이론, 브루트포스 알고리즘, 그래프 탐색, 너비 우선 탐색
 
-class BOJ14502: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14502: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

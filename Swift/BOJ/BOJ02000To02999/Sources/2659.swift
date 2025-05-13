@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2659
 //  알고리즘 분류: 구현, 브루트포스 알고리즘, 정렬
 
-class BOJ2659: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2659: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 813B
         var clockNumbers = Set<Int>()
 

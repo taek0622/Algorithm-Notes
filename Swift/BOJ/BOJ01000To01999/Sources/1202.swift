@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1202
 //  알고리즘 분류: 자료 구조, 그리디 알고리즘, 정렬, 우선순위 큐
 
-class BOJ1202: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1202: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 84356KB, 시간: 664ms, 코드 길이: 2286B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var jewels = Array(repeating: (0, 0), count: NK[0])

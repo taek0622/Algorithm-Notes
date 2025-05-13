@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2149
 //  알고리즘 분류: 구현, 문자열, 정렬
 
-class BOJ2149: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2149: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 624B
         let key = readLine()!.map { String($0) }.enumerated().sorted { $0.element < $1.element }.map { $0.offset }
         let crypt = readLine()!.map { String($0) }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9076
 //  알고리즘 분류: 구현, 정렬
 
-class BOJ9076: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9076: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 177B
         let T = Int(readLine()!)!
 

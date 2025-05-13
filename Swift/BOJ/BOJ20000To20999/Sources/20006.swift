@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/20006
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ20006: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20006: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 678B
         let pm = readLine()!.split(separator: " ").map { Int($0)! }
         var rooms = [[(Int, String)]]()

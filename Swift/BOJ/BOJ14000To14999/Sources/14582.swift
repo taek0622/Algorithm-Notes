@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14582
 //  알고리즘 분류: 구현
 
-class BOJ14582: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14582: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 332B
         var isReversal = false
         let geminies = readLine()!.split(separator: " ").map { Int($0)! }

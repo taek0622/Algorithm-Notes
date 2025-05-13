@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/6603
 //  알고리즘 분류: 수학, 조합론, 백트래킹, 재귀
 
-class BOJ6603: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6603: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 12ms, 코드 길이: 507B
         while let input = readLine(), input != "0" {
             let kS = input.split(separator: " ").map { String($0) }

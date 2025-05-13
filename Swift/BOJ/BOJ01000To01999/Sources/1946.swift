@@ -8,8 +8,13 @@
 //  문제 링크: https://www.acmicpc.net/problem/1946
 //  알고리즘 분류: 그리디 알고리즘, 정렬
 
-class BOJ1946: Solvable {
-    func run() {
+import Shared
+import Utility
+
+public struct BOJ1946: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

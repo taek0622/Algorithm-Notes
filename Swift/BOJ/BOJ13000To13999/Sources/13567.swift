@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13567
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ13567: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13567: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 728B
         let Mn = readLine()!.split(separator: " ").map { Int($0)! }
         var current = (x: 0, y: 0, d: 0)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1730
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ1730: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1730: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 1155B
         let N = Int(readLine()!)!
         var board = Array(repeating: Array(repeating: ".", count: N), count: N)

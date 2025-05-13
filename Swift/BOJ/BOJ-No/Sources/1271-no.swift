@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1271
 
-class BOJ1271: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1271: Solvable {
+    public init() {}
+
+    public func run() {
         let input = readLine()!.split(separator: " ").map { String($0) }
         var n = Array(input[0]).map { Int(String($0))! }
         let m = Array(repeating: 0, count: n.count - input[1].count) + Array(input[1]).map { Int(String($0))! }

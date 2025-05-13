@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1316
 
-class BOJ1316: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1316: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 500B
         let N = Int(readLine()!)!
         var countGroupWord = 0

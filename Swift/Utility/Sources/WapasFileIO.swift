@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WapasFileIO {
+public class WapasFileIO {
     @inline(__always) private var buffer: [UInt8] = Array(FileHandle.standardInput.readDataToEndOfFile()) + [0], byteIdx = 0
     
     @inline(__always) private func readByte() -> UInt8 {
@@ -15,7 +15,7 @@ class WapasFileIO {
         return buffer.withUnsafeBufferPointer { $0[byteIdx] }
     }
     
-    @inline(__always) func readInt() -> Int {
+    @inline(__always) public func readInt() -> Int {
         var number = 0, byte = readByte(), isNegative = false
         while byte == 10 || byte == 32 { byte = readByte() }
         if byte == 45 { byte = readByte(); isNegative = true }
@@ -23,7 +23,7 @@ class WapasFileIO {
         return number * (isNegative ? -1 : 1)
     }
     
-    @inline(__always) func readStirngSum() -> Int {
+    @inline(__always) public func readStirngSum() -> Int {
         var byte = readByte()
         while byte == 10 || byte == 32 { byte = readByte() }
         var sum = Int(byte)

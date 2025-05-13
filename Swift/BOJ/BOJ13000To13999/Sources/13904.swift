@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13904
 //  알고리즘 분류: 자료 구조, 그리디 알고리즘, 정렬, 우선순위 큐
 
-class BOJ13904: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13904: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

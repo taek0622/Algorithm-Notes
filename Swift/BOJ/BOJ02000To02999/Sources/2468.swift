@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2468
 //  알고리즘 분류: 그래프 이론, 브루트포스 알고리즘, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ2468: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2468: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69240KB, 시간: 60ms, 코드 길이: 886B
         let N = Int(readLine()!)!
         var area = [[Int]]()

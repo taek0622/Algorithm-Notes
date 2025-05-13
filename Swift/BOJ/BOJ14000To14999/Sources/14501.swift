@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14501
 //  알고리즘 분류: 다이나믹 프로그래밍, 브루트포스 알고리즘
 
-class BOJ14501: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14501: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 431B
         let N = Int(readLine()!)!
         var plan = [(0, 0)]

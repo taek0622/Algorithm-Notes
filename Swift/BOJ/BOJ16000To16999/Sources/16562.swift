@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16562
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 분리 집합
 
-class BOJ16562: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16562: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70016KB, 시간: 28ms, 코드 길이: 814B
         let NMk = readLine()!.split(separator: " ").map { Int($0)! }
         let A = readLine()!.split(separator: " ").map { Int($0)! }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1952
 //  알고리즘 분류: 수학, 구현, 시뮬레이션
 
-class BOJ1952: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1952: Solvable {
+    public init() {}
+
+    public func run() {
         let MN = readLine()!.split(separator: " ").map { Int($0)! }
         var result = MN.min()! * 2 - 1
 

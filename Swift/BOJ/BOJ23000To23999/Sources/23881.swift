@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/23881
 //  알고리즘 분류: 구현, 정렬, 시뮬레이션
 
-class BOJ23881: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ23881: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70116KB, 시간: 44ms, 코드 길이: 476B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var A = readLine()!.split(separator: " ").map { Int($0)! }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1966
 //  알고리즘 분류: 구현, 자료 구조, 시뮬레이션, 큐
 
-class BOJ1966: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1966: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 576B
         let T = Int(readLine()!)!
 

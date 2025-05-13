@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1330
 //  알고리즘 분류: 구현
 
-class BOJ1330: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1330: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

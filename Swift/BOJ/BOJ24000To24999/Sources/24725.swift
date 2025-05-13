@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/24725
 //  알고리즘 분류: 구현, 문자열, 브루트포스 알고리즘
 
-class BOJ24725: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ24725: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70040KB, 시간: 24ms, 코드 길이: 1962B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var mbti = [[String]]()

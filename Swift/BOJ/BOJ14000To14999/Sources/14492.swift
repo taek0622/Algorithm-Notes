@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14492
 //  알고리즘 분류: 수학, 구현, 선형대수학
 
-class BOJ14492: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14492: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69332KB, 시간: 96ms, 코드 길이: 517B
         let N = Int(readLine()!)!
         var A = Array(repeating: Array(repeating: false, count: N), count: N)

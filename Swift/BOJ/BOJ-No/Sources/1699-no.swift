@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ1699: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1699: Solvable {
+    public init() {}
+
+    public func run() {
         let N = Int(readLine()!)!
         var numbers = Array(repeating: 0, count: N+1)
         var count = 0

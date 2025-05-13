@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1027
 //  알고리즘 분류: 수학, 브루트포스 알고리즘, 기하학
 
-class BOJ1027: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1027: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 474B
         let N = Int(readLine()!)!
         let buildings = readLine()!.split(separator: " ").map { Int($0)! }

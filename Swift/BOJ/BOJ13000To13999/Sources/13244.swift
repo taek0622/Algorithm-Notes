@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/13244
 //  알고리즘 분류: 자료 구조, 그래프 이론, 그래프 탐색, 트리, 깊이 우선 탐색, 분리 집합
 
-class BOJ13244: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13244: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 20ms, 코드 길이: 1145B
         let T = Int(readLine()!)!
 

@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1010
 
-class BOJ1010: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1010: Solvable {
+    public init() {}
+
+    public func run() {
         let T = Int(readLine()!)!
 
         for _ in 0..<T {

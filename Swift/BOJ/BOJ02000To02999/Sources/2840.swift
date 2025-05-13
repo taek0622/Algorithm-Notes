@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2840
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ2840: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2840: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 695B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var wheel = Array(repeating: "?", count: NK[0])

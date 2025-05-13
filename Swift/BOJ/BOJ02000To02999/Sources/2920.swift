@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2920
 //  알고리즘 분류: 구현
 
-class BOJ2920: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2920: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 228B
         let note = Array(1...8)
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2667
 //  알고리즘 분류: 그래프 이론, 그래프 탐색, 너비 우선 탐색, 깊이 우선 탐색
 
-class BOJ2667: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2667: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 841B
         let N = Int(readLine()!)!
         var map = [[Int]]()

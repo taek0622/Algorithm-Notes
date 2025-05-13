@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1487
 //  알고리즘 분류: 브루트포스 알고리즘
 
-class BOJ1487: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1487: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 568B
         let N = Int(readLine()!)!
         var customers = [(Int, Int)]()

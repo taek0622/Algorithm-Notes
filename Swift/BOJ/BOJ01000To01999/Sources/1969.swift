@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1969
 //  알고리즘 분류: 구현, 문자열, 그리디 알고리즘, 브루트포스 알고리즘
 
-class BOJ1969: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1969: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 16ms, 코드 길이: 1242B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var DNA = Array(repeating: (A: 0, T: 0, G: 0, C: 0), count: input[1])

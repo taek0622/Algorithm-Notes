@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14563
 //  알고리즘 분류: 수학, 구현, 브루트포스 알고리즘, 정수론
 
-class BOJ14563: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14563: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 561B
         let T = Int(readLine()!)!
         let N = readLine()!.split(separator: " ").map { Int($0)! }

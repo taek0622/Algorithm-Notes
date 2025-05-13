@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9946
 //  알고리즘 분류: 구현, 문자열, 정렬
 
-class BOJ9946: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9946: Solvable {
+    public init() {}
+
+    public func run() {
         solution1()
     }
 

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1855
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ1855: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1855: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 4ms, 코드 길이: 479B
         let K = Int(readLine()!)!
         let crypt = readLine()!.map { String($0) }

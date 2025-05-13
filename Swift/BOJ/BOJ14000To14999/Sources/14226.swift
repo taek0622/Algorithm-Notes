@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14226
 //  알고리즘 분류: 다이나믹 프로그래밍, 그래프 이론, 그래프 탐색, 너비 우선 탐색
 
-class BOJ14226: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14226: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 73608KB, 시간: 12ms, 코드 길이: 623B
         let S = Int(readLine()!)!
         var visited = Array(repeating: Array(repeating: false, count: S * 2 + 1), count: S * 2 + 1)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1014
 //  알고리즘 분류: 다이나믹 프로그래밍, 비트마스킹, 최대 유량, 비트필드를 이용한 다이나믹 프로그래밍
 
-class BOJ1014: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1014: Solvable {
+    public init() {}
+
+    public func run() {
         let C = Int(readLine()!)!
 
         for _ in 0..<C {

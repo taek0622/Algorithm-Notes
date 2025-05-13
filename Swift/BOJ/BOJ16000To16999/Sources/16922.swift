@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/16922
 //  알고리즘 분류: 수학, 구현, 브루트포스 알고리즘, 조합론, 백트래킹
 
-class BOJ16922: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ16922: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 301B
         let N = Int(readLine()!)!
         var numbers = Set([0])

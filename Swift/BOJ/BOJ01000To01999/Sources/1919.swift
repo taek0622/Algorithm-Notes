@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1919
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ1919: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1919: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 380B
         let word1 = Array(readLine()!)
         let word2 = Array(readLine()!)

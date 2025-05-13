@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2557
 //  알고리즘 분류: 구현
 
-class BOJ2557: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2557: Solvable {
+    public init() {}
+
+    public func run() {
         print("Hello World!")
     }
 }

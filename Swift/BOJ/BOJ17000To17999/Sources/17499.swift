@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17499
 //  알고리즘 분류: 수학, 구현
 
-class BOJ17499: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17499: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 84536KB, 시간: 416ms, 코드 길이: 513B
         let NQ = readLine()!.split(separator: " ").map { Int($0)! }
         var a = readLine()!.split(separator: " ").map { Int($0)! }

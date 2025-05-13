@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ1212: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1212: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 87560KB, 시간: 792ms, 코드 길이: 279B
         let octa = readLine()!.map { String($0) }
         var binary = ""

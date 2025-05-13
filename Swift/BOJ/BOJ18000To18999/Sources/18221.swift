@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18221
 //  알고리즘 분류: 구현, 기하학
 
-class BOJ18221: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18221: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 81596KB, 시간: 156ms, 코드 길이: 888B
         let N = Int(readLine()!)!
         var professor = (0, 0)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1759
 //  알고리즘 분류: 수학, 브루트포스 알고리즘, 조합론, 백트래킹
 
-class BOJ1759: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1759: Solvable {
+    public init() {}
+
+    public func run() {
         solution2()
     }
 

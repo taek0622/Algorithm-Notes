@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/9935
 //  알고리즘 분류: 자료 구조, 문자열, 스택
 
-class BOJ9935: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ9935: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 94712KB, 시간: 340ms, 코드 길이: 383B
         let sentence = readLine()!
         let explosion = readLine()!

@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/22193
 
-class BOJ22193: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ22193: Solvable {
+    public init() {}
+
+    public func run() {
         let count = readLine()!.split(separator: " ").map { Int(String($0))! }.reduce(0, +)
         var (N, M) = (readLine()!.map { Int(String($0))! }, readLine()!.map { Int(String($0))! })
         var sum = Array(repeating: 0, count: count)

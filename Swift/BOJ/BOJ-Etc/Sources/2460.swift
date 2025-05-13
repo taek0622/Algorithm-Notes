@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/2460
 
-class BOJ2460: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2460: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 291B
         var population = 0
         var maxPopultaion = 0

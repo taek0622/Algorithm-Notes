@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2490
 //  알고리즘 분류: 구현
 
-class BOJ2490: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2490: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 303B
         for _ in 0..<3 {
             let input = readLine()!.split(separator: " ").filter { $0 == "0" }.count

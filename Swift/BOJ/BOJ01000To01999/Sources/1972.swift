@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1972
 //  알고리즘 분류: 구현, 자료 구조, 문자열, 해시를 사용한 집합과 맵
 
-class BOJ1972: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1972: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 8ms, 코드 길이: 530B
         while let input = readLine(), input != "*" {
             let sentence = input.map { String($0) }

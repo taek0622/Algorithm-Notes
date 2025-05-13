@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/15727
 
-class BOJ15727: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ15727: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 63B
         let t = Int(readLine()!)!
         print(t % 5 == 0 ? t / 5 : t / 5 + 1)

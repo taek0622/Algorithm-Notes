@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17269
 //  알고리즘 분류: 수학, 구현, 사칙연산
 
-class BOJ17269: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17269: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69112KB, 시간: 8ms, 코드 길이: 723B
         let dict = [3, 2, 1, 2, 4, 3, 1, 3, 1, 1, 3, 1, 3, 2, 1, 2, 2, 2, 1, 2, 1, 1, 1, 2, 2, 1]
         let NM = readLine()!.split(separator: " ").map { Int($0)! }

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/20546
 //  알고리즘 분류: 구현, 시뮬레이션
 
-class BOJ20546: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20546: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1094B
         let money = Int(readLine()!)!
         let price = readLine()!.split(separator: " ").map { Int($0)! }

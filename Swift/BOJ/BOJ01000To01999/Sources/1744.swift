@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1744
 //  알고리즘 분류: 그리디 알고리즘, 정렬, 많은 조건 분기
 
-class BOJ1744: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1744: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 784B
         let N = Int(readLine()!)!
         var positive = [Int]()

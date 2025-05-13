@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/13300
 
-class BOJ13300: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ13300: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69104KB, 시간: 12ms, 코드 길이: 482B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var students = Array(repeating: [0, 0], count: 6)

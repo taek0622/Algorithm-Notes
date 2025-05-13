@@ -9,8 +9,12 @@
 
 import Foundation
 
-class BOJ11576: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ11576: Solvable {
+    public init() {}
+
+    public func run() {
         let radix = readLine()!.split(separator: " ").map { Int(String($0))! }
         let digit = Int(readLine()!)!
         let numbers = readLine()!.uppercased().split(separator: " ").map { String($0) }

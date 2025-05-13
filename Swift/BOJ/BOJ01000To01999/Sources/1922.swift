@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1922
 //  알고리즘 분류: 그래프 이론, 최소 스패닝 트리
 
-class BOJ1922: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1922: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 74980KB, 시간: 192ms, 코드 길이: 663B
         let (N, M) = (Int(readLine()!)!, Int(readLine()!)!)
         var costs = [(Int, Int, Int)]()

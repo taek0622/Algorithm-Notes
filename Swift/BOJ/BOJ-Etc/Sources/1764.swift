@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1764
 
-class BOJ1764: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1764: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 76048KB, 시간: 80ms, 코드 길이: 475B
         let input = readLine()!.split(separator: " ").map { Int(String($0))! }
         var noListen = Set<String>()

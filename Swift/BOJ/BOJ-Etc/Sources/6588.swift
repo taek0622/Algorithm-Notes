@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/6588
 
-class BOJ6588: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6588: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70080KB, 시간: 204ms, 코드 길이: 538B
         var numbers = Array(repeating: true, count: 1000001)
         numbers[0...1] = [false, false]

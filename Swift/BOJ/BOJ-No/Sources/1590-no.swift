@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/1590
 
-class BOJ1590: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1590: Solvable {
+    public init() {}
+
+    public func run() {
         let NT = readLine()!.split(separator: " ").map { Int(String($0))! }
         var result = 2147483648
 

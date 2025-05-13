@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1358
 //  알고리즘 분류: 기하학
 
-class BOJ1358: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1358: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 562B
         let WHXYP = readLine()!.split(separator: " ").map { Double($0)! }
         let (W, H, X, Y, P) = (WHXYP[0], WHXYP[1], WHXYP[2], WHXYP[3], WHXYP[4])

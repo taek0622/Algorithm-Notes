@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/14647
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ14647: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ14647: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 70700KB, 시간: 100ms, 코드 길이: 717B
         let nm = readLine()!.split(separator: " ").map { Int($0)! }
         var board = Array(repeating: Array(repeating: 0, count: nm[1]), count: nm[0])

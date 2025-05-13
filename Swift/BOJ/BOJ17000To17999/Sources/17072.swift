@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17072
 //  알고리즘 분류: 구현
 
-class BOJ17072: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17072: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69464KB, 시간: 132ms, 코드 길이: 647B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var art = ""

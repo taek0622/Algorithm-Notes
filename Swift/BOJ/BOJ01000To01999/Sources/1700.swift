@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1700
 //  알고리즘 분류: 그리디 알고리즘
 
-class BOJ1700: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1700: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1114B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var stuffs = readLine()!.split(separator: " ").map { Int($0)! }

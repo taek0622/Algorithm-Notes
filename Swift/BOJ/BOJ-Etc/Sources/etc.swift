@@ -8,7 +8,9 @@
 import Foundation
 
 class problemETC: Solvable {
-    func run() {
+    public init() {}
+
+    public func run() {
         problem3()
     }
 

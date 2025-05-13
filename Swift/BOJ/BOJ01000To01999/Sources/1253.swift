@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1253
 //  알고리즘 분류: 자료 구조, 정렬, 이분 탐색, 두 포인터
 
-class BOJ1253: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1253: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69280KB, 시간: 28ms, 코드 길이: 602B
         let N = Int(readLine()!)!
         let A = readLine()!.split(separator: " ").map { Int($0)! }.sorted()

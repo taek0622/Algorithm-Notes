@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/2605
 //  알고리즘 분류: 구현, 자료 구조
 
-class BOJ2605: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ2605: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 244B
         let N = Int(readLine()!)!
         let nums = readLine()!.split(separator: " ").map { Int($0)! }

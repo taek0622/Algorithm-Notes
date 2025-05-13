@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1932
 //  알고리즘 분류: 다이나믹 프로그래밍
 
-class BOJ1932: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1932: Solvable {
+    public init() {}
+
+    public func run() {
         solution4()
     }
 

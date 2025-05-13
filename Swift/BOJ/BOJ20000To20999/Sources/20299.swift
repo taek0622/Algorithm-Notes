@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/20299
 //  알고리즘 분류: 구현
 
-class BOJ20299: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ20299: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 102380KB, 시간: 796ms, 코드 길이: 406B
         let NKL = readLine()!.split(separator: " ").map { Int($0)! }
         var rating = [Int]()

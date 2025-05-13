@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1709
 //  알고리즘 분류: 구현, 기하학, 애드 혹, 피타고라스 정리
 
-class BOJ1709: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1709: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 468ms, 코드 길이: 386B
         let N = Int(readLine()!)!
         let radius = N/2

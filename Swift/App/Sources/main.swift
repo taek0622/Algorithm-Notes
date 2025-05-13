@@ -16,14 +16,16 @@
 
 import Foundation
 
-import BOJ31000To31999
+import BOJ01000To01999
 import Shared
 
-let main = BOJ31066()
+let main = BOJ1491()
 main.run()
 
-class BOJ25966: Solvable {
-    func run() {
+public struct BOJ25966: Solvable {
+    public init() {}
+
+    public func run() {
         // 시간초과
         let NMq = readLine()!.split(separator: " ").map { Int($0)! }
         var array = Array(repeating: Array(repeating: 0, count: NMq[1]), count: NMq[0])
@@ -48,8 +50,10 @@ class BOJ25966: Solvable {
     }
 }
 
-class BOJ14584: Solvable {
-    func run() {
+public struct BOJ14584: Solvable {
+    public init() {}
+
+    public func run() {
         let crypt = readLine()!.map { Int($0.asciiValue!) - 97 }
         let N = Int(readLine()!)!
         var result = ""
@@ -75,8 +79,10 @@ class BOJ14584: Solvable {
     }
 }
 
-class BOJ22351: Solvable {
-    func run() {
+public struct BOJ22351: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: KB, 시간: ms, 코드 길이: B
         let S = readLine()!
         let target = S.map { Int(String($0))! }
@@ -114,8 +120,10 @@ class BOJ22351: Solvable {
     }
 }
 
-class BOJ19238: Solvable {
-    func run() {
+public struct BOJ19238: Solvable {
+    public init() {}
+
+    public func run() {
         let NMF = readLine()!.split(separator: " ").map { Int($0)! }
         var map = Array(repeating: Array(repeating: (0, 0, 0), count: NMF[0]), count: NMF[0])
 
@@ -182,8 +190,10 @@ class BOJ19238: Solvable {
     }
 }
 
-class BOJ17143: Solvable {
-    func run() {
+public struct BOJ17143: Solvable {
+    public init() {}
+
+    public func run() {
         enum Direction: Int {
             case up = 1
             case down = 2
@@ -271,8 +281,10 @@ class BOJ17143: Solvable {
     }
 }
 
-class BOJ17822: Solvable {
-    func run() {
+public struct BOJ17822: Solvable {
+    public init() {}
+
+    public func run() {
         let NMT = readLine()!.split(separator: " ").map { Int($0)! }
         var boards = Array(repeating: Array(repeating: 0, count: NMT[1]), count: NMT[0])
 
@@ -312,8 +324,10 @@ class BOJ17822: Solvable {
     }
 }
 
-class BOJ16236: Solvable {
-    func run() {
+public struct BOJ16236: Solvable {
+    public init() {}
+
+    public func run() {
         let N = Int(readLine()!)!
         var size = 2
         var eat = 0
@@ -401,8 +415,10 @@ class BOJ16236: Solvable {
     }
 }
 
-class BOJ19538: Solvable {
-    func run() {
+public struct BOJ19538: Solvable {
+    public init() {}
+
+    public func run() {
         let N = Int(readLine()!)!
         var t = Array(repeating: -1, count: N)
         var graph = [Int: [Int]]()
@@ -450,8 +466,10 @@ class BOJ19538: Solvable {
     }
 }
 
-class BOJ2650: Solvable {
-    func run() {
+public struct BOJ2650: Solvable {
+    public init() {}
+
+    public func run() {
         let N = Int(readLine()!)! / 2
         var lines = Array(repeating: ((0, 0), (0, 0)), count: N)
 
@@ -541,8 +559,10 @@ class BOJ2650: Solvable {
     }
 }
 
-class BOJ1325: Solvable {
-    func run() {
+public struct BOJ1325: Solvable {
+    public init() {}
+
+    public func run() {
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var trusts = Array(repeating: [Int](), count: NM[0]+1)
         var maxCount = 0
@@ -606,8 +626,10 @@ class BOJ1325: Solvable {
     }
 }
 
-class BOJ2580: Solvable {
-    func run() {
+public struct BOJ2580: Solvable {
+    public init() {}
+
+    public func run() {
         var sudoku = Array(repeating: Array(repeating: 0, count: 9), count: 9)
         var queue  = [(Int, Int)]()
 
@@ -677,7 +699,9 @@ class BOJ2580: Solvable {
 }
 
 class LinkedList {
-    func run() {
+    public init() {}
+
+    public func run() {
         var list = LinkedList<Int>()
         print(list)
         list.push(1)
@@ -815,7 +839,9 @@ func getAddress(address o: UnsafeRawPointer) -> String {
 }
 
 class Ex3_4 {
-    func run() {
+    public init() {}
+
+    public func run() {
         let A = Polynomial(degree: 3, coef: [4, 3, 5, 0])
         let B = Polynomial(degree: 4, coef: [3, 1, 0, 2, 1])
         let C = addPoly(A, B)
@@ -883,7 +909,9 @@ class Ex3_4 {
 }
 
 class SequenceList {
-    func run() {
+    public init() {}
+
+    public func run() {
         var array = [[[1, 2, 3, 4], [5, 6, 7, 8]], [[9, 10, 11, 12], [13, 14, 15, 16]]]
         for i in array.indices {
             for j in array[i].indices {

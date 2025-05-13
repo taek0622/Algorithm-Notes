@@ -10,8 +10,12 @@
 
 import Foundation
 
-class BOJ6986: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ6986: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 80692KB, 시간: 68ms, 코드 길이: 495B
         let NK = readLine()!.split(separator: " ").map { Int($0)! }
         var scores = Array(repeating: 0.0, count: NK[0])

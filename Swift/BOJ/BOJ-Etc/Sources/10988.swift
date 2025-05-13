@@ -7,8 +7,12 @@
 
 // 문제: https://www.acmicpc.net/problem/10988
 
-class BOJ10988: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ10988: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69096KB, 시간: 8ms, 코드 길이: 69B
         let word = readLine()!
         print(word == String(word.reversed()) ? 1 : 0)

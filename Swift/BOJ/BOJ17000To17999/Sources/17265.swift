@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/17265
 //  알고리즘 분류: 다이나믹 프로그래밍, 그래프 이론, 브루트포스 알고리즘, 그래프 탐색, 깊이 우선 탐색
 
-class BOJ17265: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ17265: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69108KB, 시간: 8ms, 코드 길이: 1082B
         let N = Int(readLine()!)!
         var map = Array(repeating: Array(repeating: "", count: N), count: N)

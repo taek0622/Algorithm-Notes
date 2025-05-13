@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/18238
 //  알고리즘 분류: 구현, 그리디 알고리즘, 문자열
 
-class BOJ18238: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ18238: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 310B
         let string = readLine()!.map { Int($0.asciiValue! - 65) }
         var time = string[0] > 26 - string[0] ? 26 - string[0] : string[0]

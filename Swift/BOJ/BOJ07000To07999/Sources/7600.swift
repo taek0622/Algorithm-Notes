@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/7600
 //  알고리즘 분류: 구현, 문자열
 
-class BOJ7600: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ7600: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69100KB, 시간: 8ms, 코드 길이: 301B
         while let input = readLine(), input != "#" {
             var alphabet = Array(repeating: false, count: 26)

@@ -8,8 +8,12 @@
 //  문제 링크: https://www.acmicpc.net/problem/1925
 //  알고리즘 분류: 구현, 기하학, 많은 조건 분기, 피타고라스 정리
 
-class BOJ1925: Solvable {
-    func run() {
+import Shared
+
+public struct BOJ1925: Solvable {
+    public init() {}
+
+    public func run() {
         // 메모리: 69116KB, 시간: 8ms, 코드 길이: 1106B
         var triangleX = [Int]()
         var triangleY = [Int]()
