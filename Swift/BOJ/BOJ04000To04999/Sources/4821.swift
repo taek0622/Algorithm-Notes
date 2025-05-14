@@ -10,8 +10,6 @@
 
 import Shared
 
-import Shared
-
 public struct BOJ4821: Solvable {
     public init() {}
 
