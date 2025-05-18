@@ -16,11 +16,49 @@
 
 import Foundation
 
-import BOJ30000To30999
+import BOJ13000To13999
 import Shared
 
-let main = BOJ30020()
+let main = BOJ13133()
 main.run()
+
+public struct BOJ31416: Solvable {
+    public init() {}
+
+    public func run() {
+        let Q = Int(readLine()!)!
+
+        for _ in 0..<Q {
+            let ABTV = readLine()!.split(separator: " ").map { Int($0)! }
+            let (TA, TB, VA, VB) = (ABTV[0], ABTV[1], ABTV[2], ABTV[3])
+            var time = 0
+
+            if TA * VA <= TB * VB {
+                time = TB * VB
+            } else {
+                var temp = TA * VA - TB * VB
+
+                if temp % 2 == 1 {
+                    temp = temp / 2 + 1
+                } else {
+                    temp = temp / 2
+                }
+
+                if temp % TA != 0 {
+                    if temp < TA {
+                        temp = TA
+                    } else {
+                        temp = temp / TA * TA
+                    }
+                }
+
+                time = temp + TB * VB
+            }
+
+            print(time)
+        }
+    }
+}
 
 public struct BOJ25966: Solvable {
     public init() {}
