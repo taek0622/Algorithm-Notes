@@ -8,6 +8,8 @@
 //  문제 링크: https://www.acmicpc.net/problem/33162
 //  알고리즘 분류: 수학, 구현, 시뮬레이션, 사칙연산
 
+import Shared
+
 public struct BOJ33162: Solvable {
     public init() {}
 
