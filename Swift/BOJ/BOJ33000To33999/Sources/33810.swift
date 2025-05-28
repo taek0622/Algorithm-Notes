@@ -9,6 +9,7 @@
 //  알고리즘 분류: 구현, 문자열
 
 import Shared
+
 public struct BOJ33810: Solvable {
     public init() {}
 
