@@ -16,11 +16,65 @@
 
 import Foundation
 
-import BOJ15000To15999
+import BOJ21000To21999
 import Shared
 
-let main = BOJ15686()
+let main = BOJ21608()
 main.run()
+
+public struct BOJ16235: Solvable {
+    public init() {}
+
+    public func run() {
+        let NMK = readLine()!.split(separator: " ").map { Int($0)! }
+        var land = Array(repeating: Array(repeating: 5, count: NMK[0]), count: NMK[0])
+        var A = Array(repeating: Array(repeating: 0, count: NMK[0]), count: NMK[0])
+        var trees = [(x: Int, y: Int, z: Int)]()
+        var year = 0
+
+        for row in 0..<NMK[0] {
+            A[row] = readLine()!.split(separator: " ").map { Int($0)! }
+        }
+
+        for _ in 0..<NMK[1] {
+            let input = readLine()!.split(separator: " ").map { Int($0)! }
+            trees.append((input[0] - 1, input[1] - 1, input[2]))
+        }
+
+        while year < NMK[2] {
+            year += 1
+            trees = trees.filter { $0.z != -1 }.sorted { $0.z < $1.z }
+            var nutrient = Array(repeating: Array(repeating: 0, count: NMK[0]), count: NMK[0])
+
+            // 봄
+            for idx in trees.indices {
+                if land[trees[idx].x][trees[idx].y] >= trees[idx].z {
+                    land[trees[idx].x][trees[idx].y] -= trees[idx].z
+                    trees[idx].z += 1
+                } else {
+                    nutrient[trees[idx].x][trees[idx].y] += trees[idx].z / 2
+                    trees[idx].z = -1
+                }
+            }
+
+            // 가을
+            for tree in trees.filter { $0.z % 5 == 0 } {
+                for (nr, nc) in [(tree.x-1, tree.y-1), (tree.x-1, tree.y), (tree.x-1, tree.y+1), (tree.x, tree.y-1), (tree.x, tree.y+1), (tree.x+1, tree.y-1), (tree.x+1, tree.y), (tree.x+1, tree.y+1)] where 0..<NMK[0] ~= nr && 0..<NMK[0] ~= nc {
+                    trees.append((nr, nc, 1))
+                }
+            }
+
+            // 겨울
+            for row in 0..<NMK[0] {
+                for col in 0..<NMK[0] {
+                    land[row][col] += A[row][col] + nutrient[row][col]
+                }
+            }
+        }
+
+        print(trees.count)
+    }
+}
 
 public struct BOJ31416: Solvable {
     public init() {}
