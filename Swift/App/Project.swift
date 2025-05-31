@@ -12,7 +12,7 @@ let project = Project(
             sources: ["Sources/**"],
             dependencies: [
                 .project(target: "Shared", path: "../Shared"),
-                .project(target: "BOJ02000To02999", path: "../BOJ/BOJ02000To02999"),
+                .project(target: "BOJ16000To16999", path: "../BOJ/BOJ16000To16999"),
             ]
         ),
     ]
