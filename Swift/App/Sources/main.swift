@@ -16,10 +16,10 @@
 
 import Foundation
 
-import BOJ16000To16999
+import BOJ17000To17999
 import Shared
 
-let main = BOJ16637()
+let main = BOJ17822()
 main.run()
 
 public struct BOJ16235: Solvable {
@@ -370,49 +370,6 @@ public struct BOJ17143: Solvable {
         }
 
         print(count)
-    }
-}
-
-public struct BOJ17822: Solvable {
-    public init() {}
-
-    public func run() {
-        let NMT = readLine()!.split(separator: " ").map { Int($0)! }
-        var boards = Array(repeating: Array(repeating: 0, count: NMT[1]), count: NMT[0])
-
-        for row in 0..<NMT[0] {
-            boards[row] = readLine()!.split(separator: " ").map { Int($0)! }
-        }
-
-        for idx in 0..<NMT[2] {
-            let xdk = readLine()!.split(separator: " ").map { Int($0)! }
-
-            for row in 0..<NMT[0] where (row+1) % xdk[0] == 0 {
-                if xdk[1] == 0 {
-                    let temp = boards[row].last!
-
-                    for col in 1..<NMT[1] {
-                        boards[row][col] = boards[row][col-1]
-                    }
-
-                    boards[row][0] = temp
-                } else {
-                    let temp = boards[row].first!
-
-                    for col in stride(from: NMT[1] - 1, to: 0, by: -1) {
-                        boards[row][col-1] = boards[row][col]
-                    }
-
-                    boards[row][NMT[1]-1] = temp
-                }
-            }
-
-            for row in 0..<NMT[0] {
-                for col in 0..<NMT[1] {
-                    
-                }
-            }
-        }
     }
 }
 
