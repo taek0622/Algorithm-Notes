@@ -16,11 +16,48 @@
 
 import Foundation
 
-import BOJ03000To03999
+import BOJ02000To02999
 import Shared
 
-let main = BOJ3425()
+let main = BOJ2846()
 main.run()
+
+public struct BOJ10253: Solvable {
+    public init() {}
+
+    public func run() {
+        let T = Int(readLine()!)!
+
+        for _ in 0..<T {
+            let ab = readLine()!.split(separator: " ").map { Double($0)! }
+            var (a, b) = (ab[0], ab[1])
+            var divisor = 2.0
+
+            while a > 0 {
+                if a / b >= 1 / divisor {
+                    let gcdValue = Double(gcd(Int(a), Int(b)))
+                    a /= gcdValue
+                    b /= gcdValue
+
+                    let divGCD = Double(gcd(Int(b), Int(divisor)))
+                    let prevB = b
+                    a *= (divisor / divGCD)
+                    b *= (divisor / divGCD)
+                    a -= (prevB / divGCD)
+                }
+
+                divisor += 1
+            }
+
+            print(Int(divisor)-1)
+        }
+
+        func gcd(_ num1: Int, _ num2: Int) -> Int {
+            if num2 % num1 == 0 { return num1 }
+            return gcd(num2, num1 % num2)
+        }
+    }
+}
 
 public struct BOJ16235: Solvable {
     public init() {}
