@@ -5,7 +5,7 @@
 //  Created by 김민택 on 7/10/25.
 //
 
-i//  문제 링크: https://www.acmicpc.net/problem/3029
+//  문제 링크: https://www.acmicpc.net/problem/3029
 //  알고리즘 분류: 수학, 구현, 문자열, 사칙연산
 
 import Shared
