@@ -14,6 +14,7 @@ public struct BOJ23809: Solvable {
     public init() {}
 
     public func run() {
+        // 메모리: 69100KB, 시간: 16ms, 코드 길이: 635B
         let N = Int(readLine()!)!
 
         for _ in 0..<N {
