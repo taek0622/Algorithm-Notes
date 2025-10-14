@@ -16,10 +16,10 @@
 
 import Foundation
 
-import BOJ14000To14999
+import BOJ30000To30999
 import Shared
 
-let main = BOJ14499()
+let main = BOJ30032()
 main.run()
 
 public struct BOJ10253: Solvable {
@@ -617,78 +617,6 @@ public struct BOJ1325: Solvable {
 
                 return dequeue.popLast()
             }
-        }
-    }
-}
-
-public struct BOJ2580: Solvable {
-    public init() {}
-
-    public func run() {
-        var sudoku = Array(repeating: Array(repeating: 0, count: 9), count: 9)
-        var queue  = [(Int, Int)]()
-
-        for row in 0..<9 {
-            let line = readLine()!.split(separator: " ").map { Int(String($0))! }
-            sudoku[row] = line
-
-            if line.contains(0) {
-                for col in line.indices where line[col] == 0 {
-                    queue.append((row, col))
-                }
-            }
-        }
-
-//        var idx = 0
-
-//        while idx < queue.count {
-        while !queue.isEmpty {
-//            let (x, y) = queue[idx]
-//            idx += 1
-            let (x, y) = queue.removeFirst()
-
-            var candidate = Set(1...9)
-
-            var xSection = 0..<3
-            var ySection = 0..<3
-
-            if 3..<6 ~= x {
-                xSection = 3..<6
-            } else if 6..<9 ~= x {
-                xSection = 6..<9
-            }
-
-            if 3..<6 ~= y {
-                ySection = 3..<6
-            } else if 6..<9 ~= y {
-                ySection = 6..<9
-            }
-
-            for row in xSection {
-                for col in ySection where candidate.contains(sudoku[row][col]) {
-                    candidate.remove(sudoku[row][col])
-                }
-            }
-
-            for col in 0..<9 where candidate.contains(sudoku[x][col]) {
-                candidate.remove(sudoku[x][col])
-            }
-
-            for row in 0..<9 where candidate.contains(sudoku[row][y]) {
-                candidate.remove(sudoku[row][y])
-            }
-
-            if candidate.count == 1 {
-                sudoku[x][y] = candidate.sorted()[0]
-                continue
-            }
-
-            queue.append((x, y))
-            print(queue)
-        }
-
-        sudoku.forEach {
-            print($0.map { String($0) }.joined(separator: " "))
         }
     }
 }
