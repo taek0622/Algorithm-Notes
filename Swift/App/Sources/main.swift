@@ -16,10 +16,10 @@
 
 import Foundation
 
-import BOJ30000To30999
+import BOJ31000To31999
 import Shared
 
-let main = BOJ30032()
+let main = BOJ31907()
 main.run()
 
 public struct BOJ10253: Solvable {
