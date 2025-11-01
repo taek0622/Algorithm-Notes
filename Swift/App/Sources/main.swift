@@ -16,7 +16,7 @@
 
 import Foundation
 
-import BOJ04000To04999
+import BOJ34000To34999
 import Shared
 
 let main = BOJ4388()

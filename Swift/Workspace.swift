@@ -40,6 +40,7 @@ let workspace = Workspace(
         "BOJ/BOJ31000To31999",
         "BOJ/BOJ32000To32999",
         "BOJ/BOJ33000To33999",
+        "BOJ/BOJ34000To34999",
         "BOJ/BOJ-Etc",
         "BOJ/BOJ-No",
         "Programmers",
