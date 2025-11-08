@@ -16,11 +16,116 @@
 
 import Foundation
 
-import BOJ31000To31999
+import BOJ23000To23999
 import Shared
 
-let main = BOJ31496()
+let main = BOJ23746()
 main.run()
+
+public struct BOJ2064: Solvable {
+    public init() {}
+
+    public func run() {
+        print()
+        let n = Int(readLine()!)!
+        var networkAddress = (255, 255, 255, 255)
+        var networkMask = ("")
+        // 176
+        // 128 64 32 16 8 4 2 1
+        // 10110000
+        // 11110000
+
+        for _ in 0..<n {
+            let ip = readLine()!.split(separator: ".").map { Int($0)! }
+            networkAddress.0 = networkAddress.0 & ip[0]
+            networkAddress.1 = networkAddress.0 & ip[1]
+            networkAddress.2 = networkAddress.0 & ip[2]
+            networkAddress.3 = networkAddress.0 & ip[3]
+        }
+    }
+}
+
+public struct BOJ17140: Solvable {
+    public init() {}
+
+    public func run() {
+        let rck = readLine()!.split(separator: " ").map { Int($0)! }
+        let (r, c) = (rck[0]-1, rck[1]-1)
+        var A = Array(repeating: Array(repeating: 0, count: 3), count: 3)
+        var sec = 0
+
+        for idx in 0..<3 {
+            A[idx] = readLine()!.split(separator: " ").map { Int($0)! }
+        }
+
+        while sec < 100 {
+            let (rSize, cSize) = (A.count, A[0].count)
+            print(A)
+
+            if r < rSize && c < cSize && A[r][c] == rck[2] {
+                print(sec)
+                break
+            }
+
+            sec += 1
+
+            if rSize >= cSize {
+                for row in A.indices {
+                    var num = Array(repeating: 0, count: 101)
+
+                    for col in A[row].indices {
+                        num[A[row][col]] += 1
+                    }
+
+                    let filteredNum = num.enumerated().filter { $0.offset != 0 && $0.element != 0 }.sorted {
+                        if $0.element == $1.element { return $0.offset < $1.offset }
+                        return $0.element < $1.element
+                    }.map { [$0.offset, $0.element ]}
+
+                    var newA = [Int]()
+
+                    for nums in filteredNum {
+                        newA.append(nums[0])
+                        newA.append(nums[1])
+                    }
+
+                    if newA.count < rSize {
+                        newA = newA + Array(repeating: 0, count: rSize - newA.count)
+                    } else if newA.count > 100 {
+                        newA = Array(newA[..<100])
+                    }
+
+                    A[row] = newA
+                }
+            } else {
+                
+            }
+
+            sec += 1
+        }
+
+        if sec > 100 {
+            print(-1)
+        }
+    }
+}
+
+public struct BOJ2580: Solvable {
+    public init() {}
+
+    public func run() {
+        var board = Array(repeating: Array(repeating: 0, count: 9), count: 9)
+        var blank = [(Int, Int)]()
+
+        for idx in 0..<9 {
+            board[idx] = readLine()!.split(separator: " ").map { Int($0)! }
+
+            for col in 0..<9 where board[idx][col] == 0 {
+                blank.append((idx, col))
+            }
+        }
+    }
+}
 
 public struct BOJ10253: Solvable {
     public init() {}
