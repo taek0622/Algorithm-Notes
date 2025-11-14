@@ -16,11 +16,44 @@
 
 import Foundation
 
-import BOJ07000To07999
+import BOJ02000To02999
 import Shared
 
-let main = BOJ7513()
+let main = BOJ2704()
 main.run()
+
+public struct BOJ21315: Solvable {
+    public init() {}
+
+    public func run() {
+        let N = Int(readLine()!)!
+//        let target = Array(readLine()!.split(separator: " ").map { Int($0)! }.reversed())
+        let KMul = [1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
+        print(mix(2, 1, [1,2,3,4,5].reversed()))
+
+//        for K1 in 1...9 where KMul[K1] < N {
+//            var cards = mix(K1, 1, Array(1...N).reversed())
+//
+//            for K2 in 1...9 where KMul[K2] < N {
+//                if mix(K2, 1, cards) == target {
+//                    print(K1, K2)
+//                }
+//            }
+//        }
+
+        func mix(_ K: Int, _ i: Int, _ cards: [Int]) -> [Int] {
+            if i == 1 {
+                return mix(K, i+1, Array(cards[...(N-KMul[K]-1)])) + Array(cards[N-KMul[K]]...)
+            }
+
+            if i == K+1 {
+                return Array(cards[(cards.count-1)...] + cards[...(cards.count-2)])
+            }
+
+            return mix(K, i+1, Array(cards[...(KMul[K-i+1]-1)])) + Array(cards[KMul[K-i+1]...])
+        }
+    }
+}
 
 public struct BOJ2064: Solvable {
     public init() {}
