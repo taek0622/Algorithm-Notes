@@ -1,0 +1,36 @@
+//
+//  30395.swift
+//  BOJ30000To30999
+//
+//  Created by 김민택 on 11/25/25.
+//
+
+//  문제 링크: https://www.acmicpc.net/problem/30395
+//  알고리즘 분류: 구현, 시뮬레이션
+
+import Shared
+
+public struct BOJ30395: Solvable {
+    public init() {}
+
+    public func run() {
+        // 메모리: 69104KB, 시간: 8ms, 코드 길이: 363B
+        let N = Int(readLine()!)!
+        let P = readLine()!.split(separator: " ").map { Int($0)! }
+        var (maxStreak, curStreak, freezeDay) = (0, 0, -2)
+
+        for idx in 0..<N {
+            if P[idx] != 0 {
+                curStreak += 1
+            } else if freezeDay + 2 > idx {
+                curStreak = 0
+            } else {
+                freezeDay = idx
+            }
+
+            maxStreak = max(maxStreak, curStreak)
+        }
+
+        print(maxStreak)
+    }
+}
