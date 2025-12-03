@@ -8,6 +8,8 @@
 //  문제 링크: https://www.acmicpc.net/problem/34553
 //  알고리즘 분류: 구현, 문자열
 
+import Shared
+
 public struct BOJ34553: Solvable {
     public init() {}
 
