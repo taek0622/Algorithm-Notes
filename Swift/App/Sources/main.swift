@@ -16,11 +16,58 @@
 
 import Foundation
 
-import BOJ12000To12999
+import BOJ32000To32999
 import Shared
 
-let main = BOJ12090()
+let main = BOJ32280()
 main.run()
+
+public struct BOJ11296: Solvable {
+    public init() {}
+
+    public func run() {
+        // 메모리: KB, 시간: ms, 코드 길이: B
+        let N = Int(readLine()!)!
+
+        for _ in 0..<N {
+            let input = readLine()!.split(separator: " ").map { String($0) }
+            var price = Double(input[0])!
+
+            if input[1] == "R" {
+                price *= 0.55
+            } else if input[1] == "G" {
+                price *= 0.7
+            } else if input[1] == "B" {
+                price *= 0.8
+            } else if input[1] == "Y" {
+                price *= 0.85
+            } else if input[1] == "O" {
+                price *= 0.9
+            } else {
+                price *= 0.95
+            }
+
+            if input[2] == "C" {
+                price *= 0.95
+            }
+
+            if input[3] == "P" {
+                price = Double(Int(price * 1000)) / Double(1000)
+            } else {
+                let priceSp = String(format: "%.2f", price).split(separator: ".").map { String($0) }
+                let digits = priceSp[1].map { String($0) }
+
+                if "0"..."5" ~= digits[1] {
+                    price = Double(priceSp[0] + "." + digits[0] + "0")!
+                }
+
+                price = Double(Int(price * 1000)) / Double(1000)
+            }
+
+            print("$\(String(format: "%.2f", price))")
+        }
+    }
+}
 
 public struct BOJ21315: Solvable {
     public init() {}
