@@ -14,7 +14,7 @@ public struct BOJ24074: Solvable {
     public init() {}
 
     public func run() {
-        // 메모리: 69104KB, 시간: 8ms, 코드 길이: 187B
+        // 메모리: 69104KB, 시간: 4ms, 코드 길이: 187B
         _ = readLine()
         let A = readLine()!.split(separator: " ").map { Int($0)! }
         let maxIdx = A.firstIndex(of: A.max()!)!
