@@ -23,7 +23,7 @@ public struct BOJ12015: Solvable {
             if a > partList.last! {
                 partList.append(a)
             } else {
-                var left = 0
+                var left = 1
                 var right = partList.count - 1
 
                 while left < right {
