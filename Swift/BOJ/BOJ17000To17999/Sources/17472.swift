@@ -14,7 +14,7 @@ public struct BOJ17472: Solvable {
     public init() {}
 
     public func run() {
-        // 메모리: 69116KB, 시간: 8ms, 코드 길이: 4452B
+        // 메모리: 69116KB, 시간: 8ms, 코드 길이: 3961B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var board = Array(repeating: Array(repeating: -1, count: NM[1]), count: NM[0])
         var islandNum = 0
@@ -98,6 +98,11 @@ public struct BOJ17472: Solvable {
         print(islandNum - 1 == lineCount ? minLength : -1)
 
         func union(_ node1: Int, _ node2: Int) {
+            if node1 < node2 {
+                parents[node2] = node1
+                return
+            }
+
             parents[node1] = node2
         }
 
@@ -158,28 +163,15 @@ public struct BOJ17472: Solvable {
                 while idx * 2 < heap.count {
                     let left = idx * 2
                     let right = left + 1
-
-                    if right < heap.count {
-                        if heap[idx] > heap[left] && heap[idx] > heap[right] {
-                            if heap[left] < heap[right] {
-                                heap.swapAt(idx, left)
-                                idx = left
-                            } else {
-                                heap.swapAt(idx, right)
-                                idx = right
-                            }
-                        } else if heap[idx] > heap[right] {
-                            heap.swapAt(idx, right)
-                            idx = right
-                        } else if heap[idx] > heap[left] {
-                            heap.swapAt(idx, left)
-                            idx = left
-                        } else {
-                            break
-                        }
-                    } else if heap[idx] > heap[left] {
-                        heap.swapAt(idx, left)
-                        idx = left
+                    var next = left
+                    
+                    if right < heap.count && heap[left] > heap[right] {
+                        next = right
+                    }
+                    
+                    if heap[idx] > heap[next] {
+                        heap.swapAt(idx, next)
+                        idx = next
                     } else {
                         break
                     }
