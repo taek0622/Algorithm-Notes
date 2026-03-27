@@ -14,7 +14,7 @@ public struct BOJ17472: Solvable {
     public init() {}
 
     public func run() {
-        // 메모리: KB, 시간: ms, 코드 길이: 4361B
+        // 메모리: 69116KB, 시간: 8ms, 코드 길이: 4452B
         let NM = readLine()!.split(separator: " ").map { Int($0)! }
         var board = Array(repeating: Array(repeating: -1, count: NM[1]), count: NM[0])
         var islandNum = 0
@@ -74,15 +74,16 @@ public struct BOJ17472: Solvable {
         var heap = Heap()
 
         for row in 0..<islandNum {
-            for col in 0..<islandNum where connection[row][col] < 101 {
+            for col in row..<islandNum where connection[row][col] < 101 {
                 heap.push(Node(start: row, end: col, value: connection[row][col]))
             }
         }
 
         var parents = Array(0..<islandNum)
         var minLength = 0
+        var lineCount = 0
 
-        while !heap.isEmpty {
+        while !heap.isEmpty && lineCount < islandNum - 1 {
             let node = heap.pop()!
             let group1 = find(node.start)
             let group2 = find(node.end)
@@ -90,16 +91,11 @@ public struct BOJ17472: Solvable {
             if group1 != group2 {
                 union(group1, group2)
                 minLength += node.value
+                lineCount += 1
             }
         }
 
-        var root = Set<Int>()
-
-        for idx in 0..<islandNum {
-            root.insert(find(idx))
-        }
-
-        print(root.count == 1 ? minLength : -1)
+        print(islandNum - 1 == lineCount ? minLength : -1)
 
         func union(_ node1: Int, _ node2: Int) {
             parents[node1] = node2
