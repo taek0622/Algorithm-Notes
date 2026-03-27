@@ -14,9 +14,9 @@ public struct BOJ17176: Solvable {
     public init() {}
 
     public func run() {
-        // 메모리: 76100KB, 시간: 68ms, 코드 길이: 299B
+        // 메모리: 76100KB, 시간: 72ms, 코드 길이: 302B
         _ = readLine()
-        let crypt = readLine()!.split(separator: " ").map { Int($0)! }.map { $0 == 0 ? " " : (1...26 ~= $0 ? String(Character(UnicodeScalar($0 + 64)!)) : String(Character(UnicodeScalar($0 + 70)!))) }.sorted()
+        let crypt = readLine()!.split(separator: " ").map { $0 == "0" ? " " : (1...26 ~= Int($0)! ? String(Character(UnicodeScalar(Int($0)! + 64)!)) : String(Character(UnicodeScalar(Int($0)! + 70)!))) }.sorted()
         let text = readLine()!.map { String($0) }.sorted()
         print(crypt == text ? "y" : "n")
     }
