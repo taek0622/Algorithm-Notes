@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2023/01/07.
 //
 
-// 문제: https://www.acmicpc.net/problem/1018
+//  문제 링크: https://www.acmicpc.net/problem/1018
+//  알고리즘 분류: 구현, 브루트포스 알고리즘
 
 import Shared
 

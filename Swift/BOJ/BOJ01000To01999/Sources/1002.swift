@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2023/01/17.
 //
 
-// 문제: https://www.acmicpc.net/problem/1002
+//  문제 링크: https://www.acmicpc.net/problem/1002
+//  알고리즘 분류: 수학, 기하학, 많은 조건 분기
 
 import Foundation
 

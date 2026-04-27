@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2023/02/08.
 //
 
-// 문제: https://www.acmicpc.net/problem/1009
+//  문제 링크: https://www.acmicpc.net/problem/1009
+//  알고리즘 분류: 수학, 구현
 
 import Shared
 

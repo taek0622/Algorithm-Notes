@@ -5,7 +5,8 @@
 //  Created by 김민택 on 2023/02/01.
 //
 
-// 문제: https://www.acmicpc.net/problem/1003
+//  문제 링크: https://www.acmicpc.net/problem/1003
+//  알고리즘 분류: 다이나믹 프로그래밍
 
 import Shared
 
