@@ -16,10 +16,10 @@
 
 import Foundation
 
-import BOJ03000To03999
+import Programmers
 import Shared
 
-let main = BOJ3079()
+let main = PGM64062()
 main.run()
 
 class LinkedList {
