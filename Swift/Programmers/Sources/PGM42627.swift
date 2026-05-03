@@ -6,7 +6,7 @@
 //
 
 //  문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/42627
-//  알고리즘 분류: 힙(Heap)
+//  문제 분류: 힙(Heap)
 
 import Foundation
 

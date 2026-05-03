@@ -6,7 +6,7 @@
 //
 
 //  문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/49189
-//  알고리즘 분류: 그래프
+//  문제 분류: 그래프
 
 import Foundation
 

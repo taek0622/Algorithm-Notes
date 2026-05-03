@@ -6,7 +6,7 @@
 //
 
 //  문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/12909
-//  알고리즘 분류: 스택/큐
+//  문제 분류: 스택/큐
 
 import Foundation
 
