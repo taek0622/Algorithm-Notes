@@ -19,7 +19,7 @@ import Foundation
 import Programmers
 import Shared
 
-let main = PGM81303()
+let main = PGM72414()
 main.run()
 
 class LinkedList {
