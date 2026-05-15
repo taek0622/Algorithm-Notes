@@ -21,35 +21,33 @@ public struct PGM60062: Solvable {
     }
 
     func solution(_ n: Int, _ weak: [Int], _ dist: [Int]) -> Int {
-        let res = search(n, weak, dist, dist.count)
-        print(res > 8 ? -1 : res)
-        return res > 8 ? -1 : res
-    }
+        var status = Array(repeating: 9, count: 1 << weak.count)
 
-    func search(_ n: Int, _ weak: [Int], _ dist: [Int], _ total: Int) -> Int {
-        if weak.count == 0 { return total - dist.count }
-        if dist.count == 0 { return 9 }
+        for now in dist.reversed() {
+            for idx in weak.indices {
+                var covered = 0
 
-        let weak = weak.sorted()
-        var dist = dist.sorted()
-        let now = dist.removeLast()
-        var minCount = 9
+                for cIdx in stride(from: idx+1, to: weak.count, by: 1) where weak[cIdx] <= weak[idx] + now {
+                    covered += 1
+                }
 
-        for idx in weak.indices {
-            let covered = weak[idx] + now
-            var next = [Int]()
+                for cIdx in 0..<idx where weak[idx] + now - n >= weak[cIdx] {
+                    covered += 1
+                }
 
-            for cIdx in stride(from: idx+1, to: weak.count, by: 1) where weak[cIdx] > covered {
-                next.append(weak[cIdx])
+                var num = 1 << (weak.count - idx - 1)
+                var temp = num
+
+                for _ in 0..<covered {
+                    temp = temp >> 1
+                    num += temp
+                }
+
+                status[num] = 1
             }
-
-            for cIdx in stride(from: 0, to: idx, by: 1) where weak[cIdx] + n > covered {
-                next.append(weak[cIdx] + n)
-            }
-
-            minCount = min(minCount, search(n, next, dist, total))
         }
+        print(status)
 
-        return minCount
+        return 0
     }
 }
