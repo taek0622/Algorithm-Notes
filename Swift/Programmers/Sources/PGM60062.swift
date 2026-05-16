@@ -22,32 +22,38 @@ public struct PGM60062: Solvable {
 
     func solution(_ n: Int, _ weak: [Int], _ dist: [Int]) -> Int {
         var status = Array(repeating: 9, count: 1 << weak.count)
+        status[0] = 0
+        let res = cover(0, &status, n, weak, dist.sorted(), dist.count)
+        print(res)
+        return res > 8 ? -1 : res
+    }
 
-        for now in dist.reversed() {
-            for idx in weak.indices {
-                var covered = 0
+    func cover(_ prevCovered: Int, _ status: inout [Int], _ n: Int, _ weak: [Int], _ dist: [Int], _ total: Int) -> Int {
+        if prevCovered == (1 << weak.count) - 1 { return total - dist.count }
 
-                for cIdx in stride(from: idx+1, to: weak.count, by: 1) where weak[cIdx] <= weak[idx] + now {
-                    covered += 1
-                }
+        var minCount = 9
 
-                for cIdx in 0..<idx where weak[idx] + now - n >= weak[cIdx] {
-                    covered += 1
-                }
+        if dist.count == 0 { return minCount }
 
-                var num = 1 << (weak.count - idx - 1)
-                var temp = num
+        var dist = dist
+        let now = dist.removeLast()
 
-                for _ in 0..<covered {
-                    temp = temp >> 1
-                    num += temp
-                }
+        for idx in weak.indices where 1<<(weak.count-idx-1) & prevCovered == 0 {
+            var nowCovered = 1 << (weak.count-idx-1)
 
-                status[num] = 1
+            for cIdx in stride(from: idx+1, to: weak.count, by: 1) where weak[cIdx] <= weak[idx] + now {
+                nowCovered = nowCovered | (1 << (weak.count-cIdx-1))
             }
-        }
-        print(status)
 
-        return 0
+            for cIdx in 0..<idx where weak[idx] + now - n >= weak[cIdx] {
+                nowCovered = nowCovered | (1 << (weak.count-cIdx-1))
+            }
+
+            nowCovered = nowCovered | prevCovered
+            status[nowCovered] = min(status[nowCovered], status[prevCovered] + 1)
+            minCount = min(minCount, cover(nowCovered, &status, n, weak, dist, total))
+        }
+
+        return minCount
     }
 }
