@@ -23,37 +23,39 @@ public struct PGM60062: Solvable {
     func solution(_ n: Int, _ weak: [Int], _ dist: [Int]) -> Int {
         var status = Array(repeating: 9, count: 1 << weak.count)
         status[0] = 0
-        let res = cover(0, &status, n, weak, dist.sorted(), dist.count)
-        print(res)
+        cover(0, &status, n, weak, dist, dist.count)
+        let res = status[(1 << weak.count) - 1]
         return res > 8 ? -1 : res
     }
 
-    func cover(_ prevCovered: Int, _ status: inout [Int], _ n: Int, _ weak: [Int], _ dist: [Int], _ total: Int) -> Int {
-        if prevCovered == (1 << weak.count) - 1 { return total - dist.count }
+    func cover(_ prevCovered: Int, _ status: inout [Int], _ n: Int, _ weak: [Int], _ dist: [Int], _ total: Int) {
+        if prevCovered == (1 << weak.count) - 1 { return }
 
-        var minCount = 9
-
-        if dist.count == 0 { return minCount }
+        if dist.count == 0 {
+            status[prevCovered] = min(9, status[prevCovered])
+            return
+        }
 
         var dist = dist
-        let now = dist.removeLast()
+        let friendDist = dist.removeLast()
 
-        for idx in weak.indices where 1<<(weak.count-idx-1) & prevCovered == 0 {
-            var nowCovered = 1 << (weak.count-idx-1)
+        for start in weak.indices where 1<<(weak.count-start-1) & prevCovered == 0 {
+            var nowCovered = 1 << (weak.count - start - 1)
 
-            for cIdx in stride(from: idx+1, to: weak.count, by: 1) where weak[cIdx] <= weak[idx] + now {
-                nowCovered = nowCovered | (1 << (weak.count-cIdx-1))
+            for cover in stride(from: start+1, to: weak.count, by: 1) where weak[cover] <= weak[start] + friendDist {
+                nowCovered = nowCovered | (1 << (weak.count - cover - 1))
             }
 
-            for cIdx in 0..<idx where weak[idx] + now - n >= weak[cIdx] {
-                nowCovered = nowCovered | (1 << (weak.count-cIdx-1))
+            for cover in 0..<start where weak[start] + friendDist - n >= weak[cover] {
+                nowCovered = nowCovered | (1 << (weak.count - cover - 1))
             }
 
             nowCovered = nowCovered | prevCovered
-            status[nowCovered] = min(status[nowCovered], status[prevCovered] + 1)
-            minCount = min(minCount, cover(nowCovered, &status, n, weak, dist, total))
-        }
 
-        return minCount
+            if status[nowCovered] > status[prevCovered] + 1 {
+                status[nowCovered] = status[prevCovered] + 1
+                cover(nowCovered, &status, n, weak, dist, total)
+            }
+        }
     }
 }
