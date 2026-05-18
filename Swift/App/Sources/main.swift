@@ -19,8 +19,68 @@ import Foundation
 import Programmers
 import Shared
 
-let main = PGM60062()
+let main = PGM118669()
 main.run()
+
+public struct PGM118669: Solvable {
+    public init() {}
+
+    public func run() {
+        print(solution(6, [[1, 2, 3], [2, 3, 5], [2, 4, 2], [2, 5, 4], [3, 4, 4], [4, 5, 3], [4, 6, 1], [5, 6, 1]], [1, 3], [5]) == [5, 3])
+        print(solution(7, [[1, 4, 4], [1, 6, 1], [1, 7, 3], [2, 5, 2], [3, 7, 4], [5, 6, 6]], [1], [2, 3, 4]) == [3, 4])
+        print(solution(7, [[1, 2, 5], [1, 4, 1], [2, 3, 1], [2, 6, 7], [4, 5, 1], [5, 6, 1], [6, 7, 1]], [3, 7], [1, 5]) == [5, 1])
+        print(solution(5, [[1, 3, 10], [1, 4, 20], [2, 3, 4], [2, 4, 6], [3, 5, 20], [4, 5, 6]], [1, 2], [5]) == [5, 6])
+    }
+
+    func solution(_ n: Int, _ paths: [[Int]], _ gates: [Int], _ summits: [Int]) -> [Int] {
+        var times = Array(repeating: [(Int, Int)](), count: n+1)
+
+        for path in paths {
+            times[path[0]].append((path[1], path[2]))
+            times[path[1]].append((path[0], path[2]))
+        }
+
+        var heap = Heap<Point>(compare: <)
+
+        return []
+    }
+
+    struct Point: Comparable {
+        let end: Int
+        let time: Int
+
+        static func < (lhs: Point, rhs: Point) -> Bool {
+            return lhs.time < rhs.time
+        }
+    }
+
+    struct Heap<T: Comparable> {
+        private var heap = [T]()
+        private var compare: (T, T) -> Bool
+
+        init(compare: @escaping (T, T) -> Bool) {
+            self.compare = compare
+        }
+
+        mutating func push(_ element: T) {
+            var idx = heap.count
+            heap.append(element)
+
+            while idx > 0 {
+                if compare(heap[(idx-1)/2], heap[idx]) {
+                    break
+                }
+
+                heap.swapAt(idx, (idx-1)/2)
+                idx = (idx - 1) / 2
+            }
+        }
+
+        mutating func pop() -> T? {
+            return nil
+        }
+    }
+}
 
 class LinkedList {
     public init() {}
