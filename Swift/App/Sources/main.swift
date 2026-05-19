@@ -34,6 +34,7 @@ public struct PGM118669: Solvable {
 
     func solution(_ n: Int, _ paths: [[Int]], _ gates: [Int], _ summits: [Int]) -> [Int] {
         var times = Array(repeating: [(Int, Int)](), count: n+1)
+        var start = gates
 
         for path in paths {
             times[path[0]].append((path[1], path[2]))
