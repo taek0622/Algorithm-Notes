@@ -34,19 +34,32 @@ public struct PGM118669: Solvable {
 
     func solution(_ n: Int, _ paths: [[Int]], _ gates: [Int], _ summits: [Int]) -> [Int] {
         var times = Array(repeating: [(Int, Int)](), count: n+1)
-        var start = gates
+        var start = Array(repeating: false, count: n+1)
+        var end = Array(repeating: false, count: n+1)
+        var heap = Heap<Point>(compare: <)
+        var idx = 0
+        var pathTime = Array(repeating: Array(repeating: 2000000000001, count: n+1), count: n+1)
 
         for path in paths {
             times[path[0]].append((path[1], path[2]))
             times[path[1]].append((path[0], path[2]))
+            pathTime[path[0]][path[1]] = path[2]
+            pathTime[path[1]][path[0]] = path[2]
+
+            if start[path[0]] && start[path[1]] { continue }
+            else if start[path[0]] { heap.push(Point(start: path[0], end: path[1], time: path[2])) }
+            else if start[path[1]] { heap.push(Point(start: path[1], end: path[0], time: path[2])) }
         }
 
-        var heap = Heap<Point>(compare: <)
+        while !heap.isEmpty {
+            let now = heap.pop()!
+        }
 
         return []
     }
 
     struct Point: Comparable {
+        let start: Int
         let end: Int
         let time: Int
 
@@ -58,6 +71,9 @@ public struct PGM118669: Solvable {
     struct Heap<T: Comparable> {
         private var heap = [T]()
         private var compare: (T, T) -> Bool
+        var isEmpty: Bool {
+            return heap.isEmpty
+        }
 
         init(compare: @escaping (T, T) -> Bool) {
             self.compare = compare
@@ -78,7 +94,26 @@ public struct PGM118669: Solvable {
         }
 
         mutating func pop() -> T? {
-            return nil
+            if isEmpty { return nil }
+
+            heap.swapAt(0, heap.count - 1)
+            let res = heap.removeLast()
+            var idx = 0
+
+            while idx * 2 < heap.count {
+                var next = idx * 2
+
+                if next + 1 < heap.count && compare(heap[next+1], heap[next]) {
+                    next += 1
+                }
+
+                if compare(heap[next], heap[idx]) {
+                    heap.swapAt(idx, next)
+                    idx = next
+                }
+            }
+
+            return res
         }
     }
 }
