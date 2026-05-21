@@ -53,6 +53,9 @@ public struct PGM118669: Solvable {
 
         while !heap.isEmpty {
             let now = heap.pop()!
+
+            // start end time -> time 정렬
+            // start - end 순으로 pathTime 최적화
         }
 
         return []
